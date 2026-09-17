@@ -165,6 +165,22 @@ ANTHROPIC_API_KEY=<key>
 
 ---
 
+## Corpus
+
+47 public circulars: 25 SEBI, 22 NSE. Selected for variety rather than
+recency — roughly half are substantive circulars carrying obligations,
+thresholds and definitions; a third are amendments or timeline extensions that
+reference earlier circulars; the remainder are table-heavy operational notices.
+
+The amendment circulars matter: they create a supersession graph, where a gold
+answer can be correct with respect to a circular that has since been modified.
+NSE circulars are substantially tabular, which is the harder chunking case.
+
+`data/corpus_manifest.txt` lists the document IDs. PDFs are not redistributed;
+`data/documents/` holds the extracted text every gold-span offset is relative to.
+
+---
+
 ## Pipeline
 
 ```bash
