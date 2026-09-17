@@ -110,9 +110,10 @@ def quality_report(doc_id: str, text: str) -> list[str]:
 
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
-    pdfs = sorted(RAW.glob("*.pdf"))
+    pdfs = sorted(p for p in RAW.iterdir() if p.suffix.lower() == ".pdf")
     if not pdfs:
         sys.exit(f"No PDFs in {RAW}")
+    print(f"extracting {len(pdfs)} documents\n")
 
     flagged = []
     for p in pdfs:
