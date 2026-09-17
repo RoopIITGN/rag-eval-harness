@@ -4,3 +4,4 @@ __pycache__/
 *.pyc
 data/raw_pdfs/
 data/runs.jsonl
+*:Zone.Identifier
