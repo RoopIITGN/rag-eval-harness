@@ -1,0 +1,32 @@
+# Per-metric acceptance thresholds for the CI gate.
+#
+# Margins matter: with ~60 queries each one moves recall by 1.7 points, and
+# judge scores carry their own variance. A threshold set exactly at the
+# observed value will block good changes roughly half the time.
+#
+# Policy: fail only on the SECOND consecutive breach (see gate.py --retry),
+# so a single noisy run doesn't block a PR.
+
+retrieval:
+  recall_at_5:
+    min: 0.75          # set ~2 SE below the measured baseline
+    on_breach: block
+  recall_at_50:
+    min: 0.88
+    on_breach: warn    # ceiling metric; a dip is informative, not fatal
+
+generation:
+  groundedness:
+    min: 0.85
+    on_breach: block
+  citation_validity:       # deterministic, no judge variance -- can be strict
+    min: 1.00
+    on_breach: block
+  refusal_rate:
+    max: 0.25          # over-refusal is a failure mode too
+    on_breach: warn
+
+cost:
+  p95_retrieval_ms:
+    max: 400
+    on_breach: warn

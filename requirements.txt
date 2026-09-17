@@ -1,0 +1,31 @@
+# PyTorch CPU-only build.
+#
+# The PyTorch index is listed first so pip resolves torch from there rather
+# than PyPI. The default PyPI wheel bundles CUDA (~2.5GB unpacked) and will
+# exhaust memory on a constrained WSL setup. No GPU is used in this project.
+#
+# PyPI is the fallback index for everything else.
+--index-url https://download.pytorch.org/whl/cpu
+--extra-index-url https://pypi.org/simple
+
+torch>=2.4.0
+
+# Retrieval
+azure-search-documents>=11.5.0
+sentence-transformers>=3.0.0
+langchain-text-splitters>=0.3.0
+tiktoken>=0.8.0
+
+# Ingestion
+pdfplumber>=0.11.0
+
+# Generation and eval
+anthropic>=0.39.0
+pydantic>=2.9.0
+python-dotenv>=1.0.0
+
+# Metrics
+scipy>=1.14.0
+
+# Tests
+pytest>=8.3.0
