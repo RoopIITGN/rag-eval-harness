@@ -1,0 +1,113 @@
+CIRCULAR
+HO/47/16/13(5)2026-MRD-POD1/ I/20735/2026 September 09, 2026
+To,
+The Managing Directors / Chief Executive Officers,
+All Recognized Stock Exchanges having Commodity Derivatives Segment
+Sir / Madam,
+Sub: Review of Position Limits for Clients and Penalty Provisions for Violation /
+Breach of Position Limits for Commodity Derivatives Segment
+1. The norms relating to position limits in the commodity derivatives segment are
+prescribed under Chapter 3 of SEBI Master Circular for Commodity Derivatives
+segment dated Aug 04, 2023. The current position limits were introduced in 2017,
+aligned with market conditions prevailing at that time. SEBI has been receiving
+representations to review the position limit norms applicable for agri commodity
+derivatives, as prescribed under Para 3.5.2 of the aforesaid circular. Further,
+representations have been received for capping of penalty for position limit violation
+as prescribed under Para 3.4.3.
+2. Accordingly, based on representations received from stakeholders, recommendations
+by the Working Group (WG) on 'Review of current regulatory norms applicable to Agri
+Commodity Derivatives Segment' and CDAC and public comments received, and with
+the objective of facilitating Ease of Doing Business, it has been decided to modify the
+following provisions contained in Paragraph 3.4.3 and Paragraph 3.5.2 of the
+aforesaid circular:
+2.1. Position Limit Violation:
+Annexure J under sub-para (ii) of Para 3.4.3 regarding "Monitoring of Position Limits"
+of Chapter 3 of the SEBI Master Circular dated Aug 04, 2023, stands revised as under:
+Penal provisions for position limit violation – Annexure J
+The following penal provisions are made to discourage/prevent open interest
+violations at Commodity level / near month contract level-
+(1) Monetary penalty on the concerned member for violations at Client level in the
+open interest (either on own account or on account of clients/clubbed client level) are
+linked to the quantum/value of violation committed and to be charged from the
+concerned member for every day of violation, as under:
+a) Where the violation is more than 2% of the prescribed limit(s) – Limit exceeded
+x Closing price x number of days such violation continued x 2% (0.02) or Rs.
+2,00,000/- whichever is lower.
+b) Where the violation is up to 2% of the prescribed limit(s) – Limit exceeded x
+Closing price x number of days such violation continued x 2% (0.02) or Rs.
+10,000/- whichever is lower.
+(Option penalty computed based on near calendar month underlying future
+close price)
+c) The member has to ensure reduction in position and to bring it within the
+prescribed limit(s) by the next trading day after the day of violation. In case
+such violation continues, the Exchange would square-off the excess position
+without any further notice to the member by putting the orders on behalf of the
+member in that client code and will not be responsible for the consequences of
+such square-off.
+(2) In case, the instance at 1(a) above is observed for more than 3 times for a trading
+member in a calendar month, the Exchange would put the concerned member on
+square off mode for a period of one day, if the violation is on account of the same
+commodity.
+(3) In case, the instances above including 1(a) and 1(b), are observed for more than
+3 times for a trading member in a calendar month, a penalty equivalent to the penalty
+charged for the said open interest violation would also be additionally imposed on
+trading member. However, the trading members shall be exempted from the
+imposition of such additional penalty where the open position violation arises
+exclusively on account of clubbing of positions.
+(4) Further, in case repeated violations of such nature are observed by SEBI, SEBI
+may consider action against the concerned member.
+The penalty as stated above, will be credited to the Investor Protection Fund of the
+Exchange.
+2.2. Definition of 'Broad Commodity':
+The definition of 'Broad Commodity' under Paragraph 3.5.2(i)(b) of Chapter 3 of the
+SEBI Master Circular dated Aug 04, 2023, stands modified as under:
+An agricultural commodity will be classified as 'Broad Commodity' if it is not a
+'Sensitive Commodity' and satisfies the following criteria:
+Average deliverable supply for past five years is at least 10 Lakh Metric Ton (MT) in
+quantitative terms or is at least INR 5,000 Crore in monetary terms.
+2.3. Client Level Numeric Position Limits:
+Paragraph 3.5.2(iii) of Chapter 3 of the SEBI Master Circular dated Aug 04, 2023,
+stands revised as under:
+Numerical Value of overall client level open position limits for each commodity shall
+be calculated from 'deliverable supply' available in a particular year, as per its category
+as given below:
+Category of Commodity Position limits
+Broad 2% of the deliverable supply
+Narrow 1% of the deliverable supply
+Sensitive 0.5% of the deliverable supply
+The numbers arrived based upon above formula should be rounded off
+downward to appropriate number of zeroes.
+Category of Commodity | Position limits
+  Category of Commodity: Broad; Position limits: 2% of the deliverable supply
+  Category of Commodity: Narrow; Position limits: 1% of the deliverable supply
+  Category of Commodity: Sensitive; Position limits: 0.5% of the deliverable supply
+  Category of Commodity: The numbers arrived based upon above formula should be rounded off
+downward to appropriate number of zeroes.
+
+The commodities which may shift from narrow category to broad category post change
+in definition of broad category, shall initially retain position limit of 1% for one year.
+Thereafter, pursuant to a review by the exchange and upon satisfaction, the exchange
+may increase the position limit of such commodities to 2% as per the applicable
+position limits for the broad category.
+3. The circular shall come into force with immediate effect.
+4. The Exchanges are advised to:
+4.1. take necessary steps and put in place necessary systems for implementation of
+the above.
+4.2. make necessary amendments to the relevant bye-laws, rules and regulations,
+wherever required, for the implementation of the above; and,
+4.3. bring the provisions of this circular to the notice of the market participants
+(including investors) and disseminate the same on their web.
+5. This circular is issued in exercise of the powers conferred under Section 11(1) of the
+Securities and Exchange Board of India Act 1992, read with Regulation 51 of the
+Securities Contracts (Regulation) (Stock Exchanges and Clearing Corporations)
+Regulations, 2018, to protect the interests of investors in securities and to promote
+the development of, and to regulate the securities market.
+6. The Circular is issued with the approval of the competent authority.
+7. This Circular is available on SEBI website www.sebi.gov.in under the category
+"Circulars" and "Info for Commodity Derivatives".
+Yours faithfully,
+Neetika Rajpal
+Deputy General Manager
+Market Regulation Department
+Email: neetikar@sebi.gov.in
+Phone Number: +91-22-26449628

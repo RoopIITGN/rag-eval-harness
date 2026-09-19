@@ -1,0 +1,34 @@
+NSE Clearing Limited
+DEPARTMENT: FUTURES AND OPTIONS SEGMENT
+Download Ref No: NCL/CMPT/75463 Date: July 29, 2026
+Circular Ref. No: 095/2026
+All Members/Custodians/PCM
+Sub: Change in Collateral Timings
+This is in partial modification to circular ref. no. 090/2026 (Download Ref No: NCL/CMPT/75321 dated July 21,
+2026) regarding timings for collateral addition and release.
+The revised cut-off time for placing the release request with NCL shall be as follows:
+Type Current cut off time New cut off time
+Cash and FDR Release:
+Intraday 9:00 PM 8:00 PM
+End of Day 8:00 PM 8:00 PM
+Securities EOD 9:00 PM 8:00 PM
+The above timings shall be made effective from July 30, 2026.
+For and on behalf of
+NSE Clearing Limited
+Huzefa Mahuvawala
+Chief Risk Officer
+Telephone No Email id
+1800 266 0050 (IVR Option 2) collaterals_ops@nsccl.co.in
+Non-Confidential
+DEPARTMENT: FUTURES AND OPTIONS SEGMENT | 
+  DEPARTMENT: FUTURES AND OPTIONS SEGMENT: Download Ref No: NCL/CMPT/75463; : Date: July 29, 2026
+  DEPARTMENT: FUTURES AND OPTIONS SEGMENT: Circular Ref. No: 095/2026
+
+ | Type |  |  | Current cut off time |  |  | New cut off time | 
+  : Cash and FDR Release:; Type: Cash and FDR Release:
+  : Intraday; : 9:00 PM; : 8:00 PM
+  Type: End of Day; Current cut off time: 8:00 PM; New cut off time: 8:00 PM
+  : Securities EOD; : 9:00 PM; : 8:00 PM
+
+Telephone No | Email id
+  Telephone No: 1800 266 0050 (IVR Option 2); Email id: collaterals_ops@nsccl.co.in

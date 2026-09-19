@@ -1,0 +1,258 @@
+National Stock Exchange of India Limited
+Circular
+Department: FUTURES & OPTIONS
+Download Ref No: NSE/FAOP/75731 Date: August 13, 2026
+Circular Ref. No: 115/2026
+All Members,
+DIVIDEND: Adjustment of Futures and Options contracts in the security HINDPETRO
+In pursuance of SEBI guidelines as prescribed from time to time for adjustments to futures and
+options contracts on announcement of corporate action, the members are informed of the following:
+Particulars Details
+Symbol HINDPETRO
+Company name HINDUSTAN PETROLEUM CORPORATION LIMITED
+Type of corporate action Dividend
+Face value Rs 10/-
+Dividend amount Rs 19.25/-
+Ex date & effective date 14-Aug-2026
+Revised option strike prices* Refer Annexure 1
+* Adjustment details can be referred at below link.
+https://www.nseindia.com/products-services/equity-derivatives-corporate-actions-adjustments
+Other Important Points to be noted:
+• The above changes shall be effective from the exdate / effective date as given above table.
+• The revised options strike/futures base prices and the lot size on account of adjustment would
+appear in decimal places and shall be rounded off to the nearest tick size and the lot size shall
+be rounded off to the nearest integer. The details would be available in the latest in the
+contract.gz / MII contract and spread files.
+• Members are advised to load the updated contract.gz/ MII contract
+(NSE_FO_contract_ddmmyyyy.csv.gz) and spread(NSE_FO_spdcontract_ddmmyyyy.csv.gz)
+files on the trading application before trading on the ex-date / effective date. These files can
+be obtained from the directory faoftp/faocommon on the Extranet server.
+• Additionally, the MII contract and spread files are also available on NSE website on the below
+path : https://www.nseindia.com/all-reports-derivatives
+• The methodology for position adjustments shall be separately intimated by respective
+Clearing Corporation.
+Department: FUTURES & OPTIONS | 
+  Department: FUTURES & OPTIONS: Download Ref No: NSE/FAOP/75731; : Date: August 13, 2026
+  Department: FUTURES & OPTIONS: Circular Ref. No: 115/2026
+
+Particulars | Details
+  Particulars: Symbol; Details: HINDPETRO
+  Particulars: Company name; Details: HINDUSTAN PETROLEUM CORPORATION LIMITED
+  Particulars: Type of corporate action; Details: Dividend
+  Particulars: Face value; Details: Rs 10/-
+  Particulars: Dividend amount; Details: Rs 19.25/-
+  Particulars: Ex date & effective date; Details: 14-Aug-2026
+  Particulars: Revised option strike prices*; Details: Refer Annexure 1
+
+National Stock Exchange of India Limited
+For and on behalf of
+National Stock Exchange of India Limited
+Aarti Surve
+Chief Manager
+Toll Free No Email id
+1800-266-0050 (Option 1) msm@nse.co.in
+Annexure 1
+Instrument OLD STRIKE REVISED STRIKE
+Sr. No. Underlying EXPIRY DATE
+Type PRICE PRICE
+1 OPTSTK HINDPETRO 25-AUG-2026 320.00 300.75
+2 OPTSTK HINDPETRO 25-AUG-2026 330.00 310.75
+3 OPTSTK HINDPETRO 25-AUG-2026 340.00 320.75
+4 OPTSTK HINDPETRO 25-AUG-2026 350.00 330.75
+5 OPTSTK HINDPETRO 25-AUG-2026 360.00 340.75
+6 OPTSTK HINDPETRO 25-AUG-2026 370.00 350.75
+7 OPTSTK HINDPETRO 25-AUG-2026 380.00 360.75
+8 OPTSTK HINDPETRO 25-AUG-2026 390.00 370.75
+9 OPTSTK HINDPETRO 25-AUG-2026 400.00 380.75
+10 OPTSTK HINDPETRO 25-AUG-2026 410.00 390.75
+11 OPTSTK HINDPETRO 25-AUG-2026 420.00 400.75
+12 OPTSTK HINDPETRO 25-AUG-2026 430.00 410.75
+13 OPTSTK HINDPETRO 25-AUG-2026 440.00 420.75
+14 OPTSTK HINDPETRO 25-AUG-2026 450.00 430.75
+15 OPTSTK HINDPETRO 25-AUG-2026 460.00 440.75
+16 OPTSTK HINDPETRO 29-SEP-2026 320.00 300.75
+17 OPTSTK HINDPETRO 29-SEP-2026 340.00 320.75
+18 OPTSTK HINDPETRO 29-SEP-2026 350.00 330.75
+19 OPTSTK HINDPETRO 29-SEP-2026 360.00 340.75
+20 OPTSTK HINDPETRO 29-SEP-2026 370.00 350.75
+21 OPTSTK HINDPETRO 29-SEP-2026 380.00 360.75
+22 OPTSTK HINDPETRO 29-SEP-2026 390.00 370.75
+23 OPTSTK HINDPETRO 29-SEP-2026 400.00 380.75
+24 OPTSTK HINDPETRO 29-SEP-2026 410.00 390.75
+25 OPTSTK HINDPETRO 29-SEP-2026 420.00 400.75
+26 OPTSTK HINDPETRO 29-SEP-2026 430.00 410.75
+Toll Free No | Email id
+  Toll Free No: 1800-266-0050 (Option 1); Email id: msm@nse.co.in
+
+Sr. No. | Instrument
+Type | Underlying | EXPIRY DATE | OLD STRIKE
+PRICE | REVISED STRIKE
+PRICE
+  Sr. No.: 1; Instrument
+Type: OPTSTK; Underlying: HINDPETRO; EXPIRY DATE: 25-AUG-2026; OLD STRIKE
+PRICE: 320.00; REVISED STRIKE
+PRICE: 300.75
+  Sr. No.: 2; Instrument
+Type: OPTSTK; Underlying: HINDPETRO; EXPIRY DATE: 25-AUG-2026; OLD STRIKE
+PRICE: 330.00; REVISED STRIKE
+PRICE: 310.75
+  Sr. No.: 3; Instrument
+Type: OPTSTK; Underlying: HINDPETRO; EXPIRY DATE: 25-AUG-2026; OLD STRIKE
+PRICE: 340.00; REVISED STRIKE
+PRICE: 320.75
+  Sr. No.: 4; Instrument
+Type: OPTSTK; Underlying: HINDPETRO; EXPIRY DATE: 25-AUG-2026; OLD STRIKE
+PRICE: 350.00; REVISED STRIKE
+PRICE: 330.75
+  Sr. No.: 5; Instrument
+Type: OPTSTK; Underlying: HINDPETRO; EXPIRY DATE: 25-AUG-2026; OLD STRIKE
+PRICE: 360.00; REVISED STRIKE
+PRICE: 340.75
+  Sr. No.: 6; Instrument
+Type: OPTSTK; Underlying: HINDPETRO; EXPIRY DATE: 25-AUG-2026; OLD STRIKE
+PRICE: 370.00; REVISED STRIKE
+PRICE: 350.75
+  Sr. No.: 7; Instrument
+Type: OPTSTK; Underlying: HINDPETRO; EXPIRY DATE: 25-AUG-2026; OLD STRIKE
+PRICE: 380.00; REVISED STRIKE
+PRICE: 360.75
+  Sr. No.: 8; Instrument
+Type: OPTSTK; Underlying: HINDPETRO; EXPIRY DATE: 25-AUG-2026; OLD STRIKE
+PRICE: 390.00; REVISED STRIKE
+PRICE: 370.75
+  Sr. No.: 9; Instrument
+Type: OPTSTK; Underlying: HINDPETRO; EXPIRY DATE: 25-AUG-2026; OLD STRIKE
+PRICE: 400.00; REVISED STRIKE
+PRICE: 380.75
+  Sr. No.: 10; Instrument
+Type: OPTSTK; Underlying: HINDPETRO; EXPIRY DATE: 25-AUG-2026; OLD STRIKE
+PRICE: 410.00; REVISED STRIKE
+PRICE: 390.75
+  Sr. No.: 11; Instrument
+Type: OPTSTK; Underlying: HINDPETRO; EXPIRY DATE: 25-AUG-2026; OLD STRIKE
+PRICE: 420.00; REVISED STRIKE
+PRICE: 400.75
+  Sr. No.: 12; Instrument
+Type: OPTSTK; Underlying: HINDPETRO; EXPIRY DATE: 25-AUG-2026; OLD STRIKE
+PRICE: 430.00; REVISED STRIKE
+PRICE: 410.75
+  Sr. No.: 13; Instrument
+Type: OPTSTK; Underlying: HINDPETRO; EXPIRY DATE: 25-AUG-2026; OLD STRIKE
+PRICE: 440.00; REVISED STRIKE
+PRICE: 420.75
+  Sr. No.: 14; Instrument
+Type: OPTSTK; Underlying: HINDPETRO; EXPIRY DATE: 25-AUG-2026; OLD STRIKE
+PRICE: 450.00; REVISED STRIKE
+PRICE: 430.75
+  Sr. No.: 15; Instrument
+Type: OPTSTK; Underlying: HINDPETRO; EXPIRY DATE: 25-AUG-2026; OLD STRIKE
+PRICE: 460.00; REVISED STRIKE
+PRICE: 440.75
+  Sr. No.: 16; Instrument
+Type: OPTSTK; Underlying: HINDPETRO; EXPIRY DATE: 29-SEP-2026; OLD STRIKE
+PRICE: 320.00; REVISED STRIKE
+PRICE: 300.75
+  Sr. No.: 17; Instrument
+Type: OPTSTK; Underlying: HINDPETRO; EXPIRY DATE: 29-SEP-2026; OLD STRIKE
+PRICE: 340.00; REVISED STRIKE
+PRICE: 320.75
+  Sr. No.: 18; Instrument
+Type: OPTSTK; Underlying: HINDPETRO; EXPIRY DATE: 29-SEP-2026; OLD STRIKE
+PRICE: 350.00; REVISED STRIKE
+PRICE: 330.75
+  Sr. No.: 19; Instrument
+Type: OPTSTK; Underlying: HINDPETRO; EXPIRY DATE: 29-SEP-2026; OLD STRIKE
+PRICE: 360.00; REVISED STRIKE
+PRICE: 340.75
+  Sr. No.: 20; Instrument
+Type: OPTSTK; Underlying: HINDPETRO; EXPIRY DATE: 29-SEP-2026; OLD STRIKE
+PRICE: 370.00; REVISED STRIKE
+PRICE: 350.75
+  Sr. No.: 21; Instrument
+Type: OPTSTK; Underlying: HINDPETRO; EXPIRY DATE: 29-SEP-2026; OLD STRIKE
+PRICE: 380.00; REVISED STRIKE
+PRICE: 360.75
+  Sr. No.: 22; Instrument
+Type: OPTSTK; Underlying: HINDPETRO; EXPIRY DATE: 29-SEP-2026; OLD STRIKE
+PRICE: 390.00; REVISED STRIKE
+PRICE: 370.75
+  Sr. No.: 23; Instrument
+Type: OPTSTK; Underlying: HINDPETRO; EXPIRY DATE: 29-SEP-2026; OLD STRIKE
+PRICE: 400.00; REVISED STRIKE
+PRICE: 380.75
+  Sr. No.: 24; Instrument
+Type: OPTSTK; Underlying: HINDPETRO; EXPIRY DATE: 29-SEP-2026; OLD STRIKE
+PRICE: 410.00; REVISED STRIKE
+PRICE: 390.75
+  Sr. No.: 25; Instrument
+Type: OPTSTK; Underlying: HINDPETRO; EXPIRY DATE: 29-SEP-2026; OLD STRIKE
+PRICE: 420.00; REVISED STRIKE
+PRICE: 400.75
+  Sr. No.: 26; Instrument
+Type: OPTSTK; Underlying: HINDPETRO; EXPIRY DATE: 29-SEP-2026; OLD STRIKE
+PRICE: 430.00; REVISED STRIKE
+PRICE: 410.75
+
+National Stock Exchange of India Limited
+Instrument OLD STRIKE REVISED STRIKE
+Sr. No. Underlying EXPIRY DATE
+Type PRICE PRICE
+27 OPTSTK HINDPETRO 29-SEP-2026 440.00 420.75
+28 OPTSTK HINDPETRO 29-SEP-2026 460.00 440.75
+29 OPTSTK HINDPETRO 27-OCT-2026 320.00 300.75
+30 OPTSTK HINDPETRO 27-OCT-2026 340.00 320.75
+31 OPTSTK HINDPETRO 27-OCT-2026 360.00 340.75
+32 OPTSTK HINDPETRO 27-OCT-2026 380.00 360.75
+33 OPTSTK HINDPETRO 27-OCT-2026 400.00 380.75
+34 OPTSTK HINDPETRO 27-OCT-2026 420.00 400.75
+35 OPTSTK HINDPETRO 27-OCT-2026 440.00 420.75
+36 OPTSTK HINDPETRO 27-OCT-2026 460.00 440.75
+37 OPTSTK HINDPETRO 27-OCT-2026 480.00 460.75
+Sr. No. | Instrument
+Type | Underlying | EXPIRY DATE | OLD STRIKE
+PRICE | REVISED STRIKE
+PRICE
+  Sr. No.: 27; Instrument
+Type: OPTSTK; Underlying: HINDPETRO; EXPIRY DATE: 29-SEP-2026; OLD STRIKE
+PRICE: 440.00; REVISED STRIKE
+PRICE: 420.75
+  Sr. No.: 28; Instrument
+Type: OPTSTK; Underlying: HINDPETRO; EXPIRY DATE: 29-SEP-2026; OLD STRIKE
+PRICE: 460.00; REVISED STRIKE
+PRICE: 440.75
+  Sr. No.: 29; Instrument
+Type: OPTSTK; Underlying: HINDPETRO; EXPIRY DATE: 27-OCT-2026; OLD STRIKE
+PRICE: 320.00; REVISED STRIKE
+PRICE: 300.75
+  Sr. No.: 30; Instrument
+Type: OPTSTK; Underlying: HINDPETRO; EXPIRY DATE: 27-OCT-2026; OLD STRIKE
+PRICE: 340.00; REVISED STRIKE
+PRICE: 320.75
+  Sr. No.: 31; Instrument
+Type: OPTSTK; Underlying: HINDPETRO; EXPIRY DATE: 27-OCT-2026; OLD STRIKE
+PRICE: 360.00; REVISED STRIKE
+PRICE: 340.75
+  Sr. No.: 32; Instrument
+Type: OPTSTK; Underlying: HINDPETRO; EXPIRY DATE: 27-OCT-2026; OLD STRIKE
+PRICE: 380.00; REVISED STRIKE
+PRICE: 360.75
+  Sr. No.: 33; Instrument
+Type: OPTSTK; Underlying: HINDPETRO; EXPIRY DATE: 27-OCT-2026; OLD STRIKE
+PRICE: 400.00; REVISED STRIKE
+PRICE: 380.75
+  Sr. No.: 34; Instrument
+Type: OPTSTK; Underlying: HINDPETRO; EXPIRY DATE: 27-OCT-2026; OLD STRIKE
+PRICE: 420.00; REVISED STRIKE
+PRICE: 400.75
+  Sr. No.: 35; Instrument
+Type: OPTSTK; Underlying: HINDPETRO; EXPIRY DATE: 27-OCT-2026; OLD STRIKE
+PRICE: 440.00; REVISED STRIKE
+PRICE: 420.75
+  Sr. No.: 36; Instrument
+Type: OPTSTK; Underlying: HINDPETRO; EXPIRY DATE: 27-OCT-2026; OLD STRIKE
+PRICE: 460.00; REVISED STRIKE
+PRICE: 440.75
+  Sr. No.: 37; Instrument
+Type: OPTSTK; Underlying: HINDPETRO; EXPIRY DATE: 27-OCT-2026; OLD STRIKE
+PRICE: 480.00; REVISED STRIKE
+PRICE: 460.75

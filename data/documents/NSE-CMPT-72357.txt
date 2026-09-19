@@ -1,0 +1,105 @@
+NSE Clearing Limited
+DEPARTMENT: FUTURE & OPTIONS SEGMENT
+Download Ref No: NCL/CMPT/72357 Date: January 16, 2026
+Circular Ref. No: 007/2026
+All Members/Custodians/PCM
+Sub: Change in Collateral Timings
+This is with reference to circular ref. no. 043/2025 (Download Ref No: NCL/CMPT/67750 dated April 29, 2025)
+regarding timings for collateral addition and release.
+Based on the feedback received from the members the revised timing for collateral addition and release shall be as
+follows:
+Addition of Cash and Fixed Deposit Receipt as collateral:
+The cut-off time for deposit of Cash and Fixed Deposit Receipt shall be 7:30 pm on all settlement days.
+Release of Collaterals:
+Collateral Type Request Type Cut-off
+time for
+requesting
+release
+Cash/FDR/Bank Guarantee Immediate 8:00 pm
+Cash/FDR/Bank Guarantee EOD/Value date 8:00 pm
+Pledged Securities (Batch 1) * Immediate 9:00 am
+Pledged Securities (Batch 2) Immediate 9:30 am
+Pledged Securities (Batch 3) Immediate 10:00 am
+Pledged Securities (Batch 4) Immediate 12:00 pm
+Pledged Securities (Batch 5) Immediate 2:00 pm
+Pledged Securities (Batch 6) Immediate 3:00 pm
+Pledged Securities (Batch 7) Immediate 4:00 pm
+Pledged Securities (Batch 8) Immediate 5:00 pm
+Pledged Securities (Batch 9) Immediate 6:00 pm
+Pledged Securities (Batch 10) Immediate 7:00 pm
+Pledged Securities Immediate/EOD 8:00 pm
+Non-Confidential
+DEPARTMENT: FUTURE & OPTIONS SEGMENT | 
+  DEPARTMENT: FUTURE & OPTIONS SEGMENT: Download Ref No: NCL/CMPT/72357; : Date: January 16, 2026
+  DEPARTMENT: FUTURE & OPTIONS SEGMENT: Circular Ref. No: 007/2026
+
+Collateral Type | Request Type | Cut-off
+time for
+requesting
+release
+  Collateral Type: Cash/FDR/Bank Guarantee; Request Type: Immediate; Cut-off
+time for
+requesting
+release: 8:00 pm
+  Collateral Type: Cash/FDR/Bank Guarantee; Request Type: EOD/Value date; Cut-off
+time for
+requesting
+release: 8:00 pm
+  Collateral Type: Pledged Securities (Batch 1) *; Request Type: Immediate; Cut-off
+time for
+requesting
+release: 9:00 am
+  Collateral Type: Pledged Securities (Batch 2); Request Type: Immediate; Cut-off
+time for
+requesting
+release: 9:30 am
+  Collateral Type: Pledged Securities (Batch 3); Request Type: Immediate; Cut-off
+time for
+requesting
+release: 10:00 am
+  Collateral Type: Pledged Securities (Batch 4); Request Type: Immediate; Cut-off
+time for
+requesting
+release: 12:00 pm
+  Collateral Type: Pledged Securities (Batch 5); Request Type: Immediate; Cut-off
+time for
+requesting
+release: 2:00 pm
+  Collateral Type: Pledged Securities (Batch 6); Request Type: Immediate; Cut-off
+time for
+requesting
+release: 3:00 pm
+  Collateral Type: Pledged Securities (Batch 7); Request Type: Immediate; Cut-off
+time for
+requesting
+release: 4:00 pm
+  Collateral Type: Pledged Securities (Batch 8); Request Type: Immediate; Cut-off
+time for
+requesting
+release: 5:00 pm
+  Collateral Type: Pledged Securities (Batch 9); Request Type: Immediate; Cut-off
+time for
+requesting
+release: 6:00 pm
+  Collateral Type: Pledged Securities (Batch 10); Request Type: Immediate; Cut-off
+time for
+requesting
+release: 7:00 pm
+  Collateral Type: Pledged Securities; Request Type: Immediate/EOD; Cut-off
+time for
+requesting
+release: 8:00 pm
+
+NSE Clearing Limited
+*In case of request for release of repledge securities towards pay-in requirement clearing members should
+ensure that such request is made one-day prior to pay-in and not on the pay-in date.
+The above timings shall be made effective from January 19, 2026.
+For and on behalf of
+NSE Clearing Limited
+Huzefa Mahuvawala
+Chief Risk Officer
+Telephone No Email id
+1800 266 0050 (IVR Option 2) collaterals_ops@nsccl.co.in
+Non-Confidential
+Telephone No | Email id
+  Telephone No: 1800 266 0050 (IVR Option 2); Email id: collaterals_ops@nsccl.co.in

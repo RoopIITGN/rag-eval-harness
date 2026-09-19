@@ -1,0 +1,43 @@
+National Stock Exchange of India Limited
+Circular
+Department: FUTURES & OPTIONS
+Download Ref No: NSE/FAOP/75371 Date: July 23, 2026
+Circular Ref. No: 106/2026
+All Members,
+Introduction of Futures & Options Contracts on Three Individual Securities
+Members are advised to note that based on the stock selection criteria as prescribed by SEBI vide master
+circular no. SEBI/HO/MRD-PoD2/CIR/P/2024/00181 dated December 30, 2024 and approval received from
+SEBI, members are hereby notified that the futures and options contracts on following securities would be
+available for trading w.e.f. August 26, 2026, subject to fulfilment of eligibility criteria of Quarter sigma
+computation cycle of August 2026.
+Sr. No. Symbol Security Name
+1 ATHERENERG Ather Energy Limited
+2 MAHABANK Bank of Maharashtra
+3 SAGILITY Sagility Limited
+Other Important Points to be noted:
+• The market lot and scheme of strikes of the above mentioned securities shall be informed to members
+on August 25, 2026 through a separate circular.
+• The details of applicable quantity freeze shall be available in the contract file which shall be applicable
+for trading on August 26, 2026.
+• Members are advised to load the updated contract.gz and NSE_FO_contract_ddmmyyyy.csv.gz file in
+the trading application before trading on the effective date. This file can be obtained from the directory
+faoftp/faocommon on the Extranet server. Additionally, members can access the MII contract file -
+NSE_FO_contract_ddmmyyyy.csv.gz on the website path:- https://www.nseindia.com/all-reports-
+derivatives.
+For and on behalf of
+National Stock Exchange of India Limited
+Khushal Shah
+Associate Vice President
+Toll Free No Email id
+1800-266-0050 (Option 1) msm@nse.co.in
+Department: FUTURES & OPTIONS | 
+  Department: FUTURES & OPTIONS: Download Ref No: NSE/FAOP/75371; : Date: July 23, 2026
+  Department: FUTURES & OPTIONS: Circular Ref. No: 106/2026
+
+Sr. No. | Symbol | Security Name
+  Sr. No.: 1; Symbol: ATHERENERG; Security Name: Ather Energy Limited
+  Sr. No.: 2; Symbol: MAHABANK; Security Name: Bank of Maharashtra
+  Sr. No.: 3; Symbol: SAGILITY; Security Name: Sagility Limited
+
+Toll Free No | Email id
+  Toll Free No: 1800-266-0050 (Option 1); Email id: msm@nse.co.in

@@ -1,0 +1,42 @@
+National Stock Exchange of India Limited
+Circular
+Department: FUTURES & OPTIONS
+Download Ref No: NSE/FAOP/74942 Date: June 30, 2026
+Circular Ref. No: 94/2026
+All Members,
+Quantity Freeze Limits for Indices
+In pursuance to chapter 1.9 Quantity freeze for futures & options contracts in F&O consolidated circular no.
+NSE/FAOP/73928 dated April 28, 2026. As per the computation methodology mentioned in the circular, the
+quantity freeze limits for derivatives contracts on indices shall be applicable as under w.e.f. July 01, 2026:
+Sr. No. INDEX SYMBOL QUANTITY FREEZE LIMIT
+1 BANKNIFTY 600
+2 NIFTY 1800
+3 FINNIFTY 1800
+4 MIDCPNIFTY 2800
+5 NIFTYNXT50 600
+• Members are advised to load the updated contract.gz and NSE_FO_contract_ddmmyyyy.csv.gz file in
+the trading application before trading on the effective date. This file can be obtained from the directory
+faoftp/faocommon on the Extranet server.
+• Additionally, members can access the contract file - NSE_FO_contract_ddmmyyyy.csv.gz on the
+website path - https://www.nseindia.com/all-reports-derivatives
+• Details of quantity freeze in respect of each underlying is also available on the website on this path -
+https://www.nseindia.com/products-services/equity-derivatives-contract-information.
+For and on behalf of
+National Stock Exchange of India Limited
+Aarti Surve
+Chief Manager
+Toll Free No Email id
+1800-266-0050 (Option 1) msm@nse.co.in
+Department: FUTURES & OPTIONS | 
+  Department: FUTURES & OPTIONS: Download Ref No: NSE/FAOP/74942; : Date: June 30, 2026
+  Department: FUTURES & OPTIONS: Circular Ref. No: 94/2026
+
+Sr. No. | INDEX SYMBOL | QUANTITY FREEZE LIMIT
+  Sr. No.: 1; INDEX SYMBOL: BANKNIFTY; QUANTITY FREEZE LIMIT: 600
+  Sr. No.: 2; INDEX SYMBOL: NIFTY; QUANTITY FREEZE LIMIT: 1800
+  Sr. No.: 3; INDEX SYMBOL: FINNIFTY; QUANTITY FREEZE LIMIT: 1800
+  Sr. No.: 4; INDEX SYMBOL: MIDCPNIFTY; QUANTITY FREEZE LIMIT: 2800
+  Sr. No.: 5; INDEX SYMBOL: NIFTYNXT50; QUANTITY FREEZE LIMIT: 600
+
+Toll Free No | Email id
+  Toll Free No: 1800-266-0050 (Option 1); Email id: msm@nse.co.in

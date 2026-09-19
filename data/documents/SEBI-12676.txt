@@ -1,0 +1,299 @@
+CIRCULAR
+SEBI/HO/OIAE/OIAE_IAD-3/P/CIR/2026/12676 May 29, 2026
+To,
+1. Asset Management Companies (AMCs) of Mutual Funds (MFs) and their
+Registrars to an issue and share Transfer Agents (RTAs)
+2. Recognized Depositories
+3. Registered Depository Participants
+Dear Sir / Madam,
+Subject: Ease of doing investments - Modified Norms for Nomination in Demat
+Accounts and Mutual Fund Folios
+1. SEBI had issued a circular on ‘Revise and Revamp Nomination Facilities in the
+Indian Securities Market’ (“Circular”) dated January 10, 2025, for demat accounts
+and mutual fund folios, with effect from March 01, 2025, in order to enhance the
+ease of investor on-boarding and the nomination process with the objective of
+preventing the generation of unclaimed assets.
+2. SEBI had received representations from stakeholders raising certain operational
+challenges in implementation of the aforesaid circular.
+3. Accordingly, after considering these representations and the feedback in the public
+consultation, it has been decided to modify the norms for nomination in demat
+accounts and mutual fund folios to enhance the ease of investor on-boarding and
+ease the nomination process as under:
+Modified Norms on Nomination to be implemented by regulated entities for
+Demat Accounts and Mutual Fund Folios:
+4. Default choice of nomination:
+4.1. For all single accounts / folios opened on or after the date of implementation
+of this Circular, the investor shall mandatorily provide nomination, unless
+declaration form for ‘opt-out’ is submitted as per format mentioned in the
+Circular.
+4.2. Nomination will be optional for jointly held demat account/ folios.
+4.3. The consent of all the joint-holders shall be required for providing or
+changing nominee regardless of mode of operations.
+5. Number of nominees:
+5.1. Investors can provide up to 3 nominees.
+5.2. In case of multiple nominees, upon the demise of the investor, the nominees
+may either continue in the same account / folio or open separate account /
+folio, for their respective holding.
+6. Mode of providing Nomination:
+6.1. The regulated entities shall make the nomination form available to the
+investors as per the format provided in Annexure-A.
+6.2. The investors shall have an option to submit the nomination either online or
+offline.
+For Online nomination -
+Regulated entities offering online mode for nomination shall provide the
+facility as per the format in Annexure-A. Validation shall be through:
+ Digital Signature Certificate; or
+ Aadhaar-based e-sign or by using any other e-sign facility recognized
+under Information Technology Act, 2000; or
+ Two factor authentication (2FA) in which one of the factors shall be
+a One-Time Password (OTP) sent to the registered mobile number
+and email address of the investor.
+For physical / offline nomination-
+The nomination form shall be signed under wet signature of the account /
+folio holder and signature of witness shall not be required. However, if the
+account / folio holder affixes his / her thumb impression (instead of wet
+signature), then the same shall be witnessed by two persons and details of
+such witnesses (name and address) shall be duly captured in the
+nomination form.
+7. Information to be captured in nomination form:
+a. Mandatory information: Name of nominee and the nature of relationship of
+the nominee with the investor. Date of birth is mandatory, in case the nominee
+is a minor.
+b. Optional information: contact details of nominee like mobile number, e-mail
+address, percentage share of each nominee, KYC / identifier of the nominee
+and details of the guardian, if the nominee(s) is / are minor/s.
+Where the percentage share of each nominee is not specified, the assets in the
+account / folio shall be apportioned among the nominees equally. Any odd lot
+after division shall be transferred to the first nominee mentioned in the form.
+c. The regulated entities shall facilitate the investors, who choose to key-in / fill-in
+all or any or none of optional information, to do so by providing all the fields in
+sub-paragraph 7 b. above, in the nomination form (both online and offline
+mode).
+8. Opt-out of nomination:
+Investors may opt-out of nomination by:
+a) Filling up the declaration form for ‘opt-out’ as per format provided in
+Annexure-B; or
+b) Choosing the ‘opt-out’ option online; the regulated entity shall display the
+declaration message in Annexure-B. The investor shall have to agree
+by choosing this option to proceed ahead, without nomination.
+9. Changes or cancellation of nomination:
+9.1. Investors can provide, changes or cancel nominations any number of times.
+9.2. The forms in Annexure A and B would also be applicable for any
+subsequent change / cancellation of nomination and also for existing
+investors.
+9.3. Regulated entities shall provide acknowledgement to the investor for each
+and every instance of nomination / subsequent change.
+10. Obligations of the regulated entities:
+10.1. In the periodic statement of account / holding statement furnished to the
+investor, the regulated entity shall print, either;
+a) name(s) of the nominee(s) or
+b) Yes / No - whether or not nomination has been made by the investor
+as per the choice exercised by investor in the nomination form.
+10.2. For existing and newly opened accounts / folios, without nomination
+(including opt-outs), the Depository Participants/ Mutual Fund RTAs shall:
+a. Send bi-annual messages to such investors by way of emails and SMS,
+nudging and guiding them to provide nomination
+b. Cause to display of pop-up message on the benefits of nomination, on
+the web / mobile application / platform, on the first log-in of the day in to
+the account.
+Provided that the messages and the pop-ups shall not be sent/ displayed to
+the investors who have provided the nomination.
+11. The foregoing clauses shall be applicable mutatis-mutandis for existing accounts
+and folios also.
+12. Regulated entities shall implement / upgrade their systems to provide facilities to
+the investors as per this circular.
+13. This circular shall come into effect from September 01, 2026.
+14. Depositories are advised to take steps to make necessary amendments to the
+relevant bye-laws, rules and regulations for the implementation of this circular.
+15. This circular supersedes all the earlier circulars issued by SEBI with respect to
+nomination for demat accounts and mutual fund folios and such supersession shall
+be effective from the date of this circular. For ease of reference, such circulars are
+listed below:
+a. HO/42/36/12(4)2025-OIAE-IAD3 dated December 11, 2025
+b. SEBI/HO/OIAE/OIAE_IAD-3/P/CIR/2025/110 dated July 30, 2025
+c. SEBI/HO/OIAE/OIAE_IAD-3/P/ON/2025/0027 dated February 28, 2025
+d. SEBI/HO/OIAE/OIAE_IAD-3/P/ON/2025 dated January 10, 2025
+e. SEBI/HO/MIRSD/POD-1/P/CIR/2024/81 dated June 10, 2024
+f. SEBI/ HO/IMD/IMD-PoD-1/P/CIR/2024/29 dated April 30, 2024
+g. SEBI/HO/MIRSD/MIRSD-PoD-1/P/CIR/2023/193 dated December 27, 2023
+h. SEBI/HO/MIRSD/MIRSD-PoD-1/P/CIR/2023/181 dated November 17, 2023
+i. SEBI/ HO/IMD/IMD-IPOD1/P/CIR/2023/160 dated September 27, 2023
+j. SEBI/HO/MIRSD/MIRSD-PoD-1/P/CIR/2023/158 dated September 26, 2023
+k. SEBI/ HO/IMD/IMD-IPOD1/P/CIR/2023/47 dated March 28, 2023
+l. SEBI/HO/MIRSD/MIRSD-PoD-1/P/CIR/2023/42 dated March 27, 2023
+m. SEBI/HO/MIRSD/MIRSD-PoD-1/P/CIR/2023/37 dated March 16, 2023
+n. SEBI/ HO/IMD/IMD-IDOF1/P/CIR/2022/105 dated July 29, 2022
+o. SEBI/HO/IMD/IMD-IIDOF3/P/CIR/2022/82 dated June 15, 2022
+p. SEBI/HO/MIRSD/MIRSD_RTAMB/P/CIR/2022/23 dated February 24, 2022
+q. SEBI/HO/MIRSD/RTAMB/CIR/P/2021/601 dated July 23, 2021
+r. MFD/CIR/07/213/2002 dated July 02, 2002
+16. This circular is issued in exercise of the powers conferred under Section 11(1) of
+the Securities and Exchange Board of India Act, 1992 to protect the interests of
+investors in securities and to promote the development of, and to regulate the
+securities market. This circular is issued with the approval of the competent
+authority.
+17. This Circular is available on SEBI website at www.sebi.gov.in under the categories
+“Legal → Circulars”.
+Yours faithfully,
+S. Manjesh Roy
+General Manager
+Officer of Investor Assistance and Education
+Investor Awareness Division - 3
+Tel no.: +91-22-2644 9710 or 4045 9710
+manjeshsr@sebi.gov.in
+***
+Annexure-A
+Format for providing Nomination for Demat Account and MF Folios
+Mandatory Details
+1. I / We wish to make nomination [as per details given below]
+(You can nominate upto 3 persons)
+Details 1st Nominee 2nd Nominee 3rd Nominee
+1 Name of the nominee*
+2 Relationship with the
+Applicant
+3 Date of Birth (to be provided in
+case the nominee is a minor)
+2. I want the following nomination details to be printed in the account / holding
+statements (tick one of the boxes below):
+☐ Name of the Nominee(s)
+☐ Whether nomination given: Yes / No (not name of the nominee)
+3. Optional details of nomination:
+Details 1st Nominee 2nd Nominee 3rd Nominee
+a) % Share of nominee**
+(equal share if % is not
+specified)
+b) Mobile of nominee***
+(Please note that the DP / MF
+RTA will be able to reach out to
+your nominee if you provide the
+contact details)
+c) Email ID of nominee***
+(Please note that the DP / MF
+RTA will be able to reach out to
+your nominee if you provide the
+contact details)
+d) Specify Personal identifier
+document
+ Aadhaar (last four digit), PAN,
+Driving Licence, Passport ***
+**Any odd lot after division shall be transferred to the first nominee mentioned in the form.
+*** The aforesaid details shall be optionally provided for the Guardian, in case of nominee is a minor.
+ | Details | 1st Nominee |  |  | 2nd Nominee | 3rd Nominee
+  : 1; Details: Name of the nominee*
+  : 2; Details: Relationship with the
+Applicant
+  : 3; Details: Date of Birth (to be provided in
+case the nominee is a minor)
+
+ | Details | 1st Nominee |  |  | 2nd Nominee | 3rd Nominee
+  : a); Details: % Share of nominee**
+(equal share if % is not
+specified)
+  : b); Details: Mobile of nominee***
+(Please note that the DP / MF
+RTA will be able to reach out to
+your nominee if you provide the
+contact details)
+  : c); Details: Email ID of nominee***
+(Please note that the DP / MF
+RTA will be able to reach out to
+your nominee if you provide the
+contact details)
+  : d); Details: Specify Personal identifier
+document
+ Aadhaar (last four digit), PAN,
+Driving Licence, Passport ***
+  : **Any odd lot after division shall be transferred to the first nominee mentioned in the form.
+*** The aforesaid details shall be optionally provided for the Guardian, in case of nominee is a minor.
+
+4. Signature:
+Name(s) of holder(s) Signature(s) of holder****
+Sole / First Holder (Mr./Ms.)
+Second Holder (Mr./Ms.)
+Third Holder (Mr./Ms.)
+****If nomination is submitted:
+ Online: validate through Digital Signature Certificate or Aadhaar-based e-sign
+or by using any other e-sign facility recognized under Information Technology
+Act, 2000 or two factor authentication (2FA) in which one of the factors shall be
+a One-Time Password (OTP) sent to the registered mobile number and email
+address.
+ Physical / offline: wet signature (signature of witness shall not be required).
+However, if thumb impression (instead of wet signature) is affixed, then the same
+shall be witnessed by two persons and details of such witnesses (name and
+address) shall be duly provided in this form.
+Note:
+ Investors can provide, changes or cancel nominations any number of times.
+ The signature of all the joint holders shall be obtained for providing / changing
+nomination regardless of mode of operations.
+ This nomination shall supersede any prior nomination made by the investor(s), if
+any.
+ Investors can change nomination any number of times.
+ Investor have the right to receive acknowledgement of the nomination form for
+each instance of nomination / subsequent change.
+***
+Name(s) of holder(s) | Signature(s) of holder****
+  Name(s) of holder(s): Sole / First Holder (Mr./Ms.)
+  Name(s) of holder(s): Second Holder (Mr./Ms.)
+  Name(s) of holder(s): Third Holder (Mr./Ms.)
+  Name(s) of holder(s): ****If nomination is submitted:
+ Online: validate through Digital Signature Certificate or Aadhaar-based e-sign
+or by using any other e-sign facility recognized under Information Technology
+Act, 2000 or two factor authentication (2FA) in which one of the factors shall be
+a One-Time Password (OTP) sent to the registered mobile number and email
+address.
+ Physical / offline: wet signature (signature of witness shall not be required).
+However, if thumb impression (instead of wet signature) is affixed, then the same
+shall be witnessed by two persons and details of such witnesses (name and
+address) shall be duly provided in this form.
+
+Annexure-B
+Declaration for Opting-out of Nomination
+I hereby confirm that I do not wish to appoint any nominee(s) to my demat account/
+mutual fund folio at this point of time.
+I understand that –
+(i) the nomination helps to quickly identify the person for transfer of securities
+and helps in faster and smoother transmission of my securities to my legal
+heir(s) after my demise.
+(ii) in the absence of a nomination, my legal heir(s) may require the submission
+of certain additional legal or court-issued documents which may delay the
+process of transmission of securities to my legal heir(s).
+(iii) if no claim is made on the account / folio for a prolonged period after my
+demise, the holdings may be treated as unclaimed assets and they may be
+transferred to Investor Education and protection Fund Authority (IEPF) in
+accordance with the applicable regulatory framework.
+I confirm that I have understood the above implications and that my decision to opt
+out of nomination is voluntary.
+Name and Signature of Holder
+* Signature of witness, along with name and address are required, if the account holder
+affixes thumb impression instead of signature.
+***
+I hereby confirm that I do not wish to appoint any nominee(s) to my demat account/
+mutual fund folio at this point of time.
+I understand that –
+(i) the nomination helps to quickly identify the person for transfer of securities
+and helps in faster and smoother transmission of my securities to my legal
+heir(s) after my demise.
+(ii) in the absence of a nomination, my legal heir(s) may require the submission
+of certain additional legal or court-issued documents which may delay the
+process of transmission of securities to my legal heir(s).
+(iii) if no claim is made on the account / folio for a prolonged period after my
+demise, the holdings may be treated as unclaimed assets and they may be
+transferred to Investor Education and protection Fund Authority (IEPF) in
+accordance with the applicable regulatory framework.
+I confirm that I have understood the above implications and that my decision to opt
+out of nomination is voluntary.
+  I hereby confirm that I do not wish to appoint any nominee(s) to my demat account/
+mutual fund folio at this point of time.
+I understand that –
+(i) the nomination helps to quickly identify the person for transfer of securities
+and helps in faster and smoother transmission of my securities to my legal
+heir(s) after my demise.
+(ii) in the absence of a nomination, my legal heir(s) may require the submission
+of certain additional legal or court-issued documents which may delay the
+process of transmission of securities to my legal heir(s).
+(iii) if no claim is made on the account / folio for a prolonged period after my
+demise, the holdings may be treated as unclaimed assets and they may be
+transferred to Investor Education and protection Fund Authority (IEPF) in
+accordance with the applicable regulatory framework.
+I confirm that I have understood the above implications and that my decision to opt
+out of nomination is voluntary.: Name and Signature of Holder

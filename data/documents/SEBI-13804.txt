@@ -1,0 +1,123 @@
+CIRCULAR
+HO/47/11/11(1)2026-MRD-POD3/I/13804/2026 June 15, 2026
+To
+All Recognized Stock Exchanges
+All Recognized Clearing Corporations
+All Asset Management Companies of Mutual Funds
+Association of Mutual Funds in India
+Sir/Madam,
+Subject: Norms for Base Price, Price Bands, Call Auction in pre-open session and
+Close-out procedure for Exchange Traded Funds (ETFs)
+1. In terms of Paragraph 2.3.1 of Chapter 1 of SEBI Master Circular for “Stock Exchanges
+and Clearing Corporations” dated December 30, 2024 (hereinafter referred to as “Master
+Circular”), individual scrip wise price bands up to 20% either way for all scrips in the rolling
+settlement except for the scrips on which derivatives products are available, has been
+prescribed. Further, in terms of Paragraph 2.5 of Chapter 1 of the Master Circular, dynamic
+price bands (operating range) have been prescribed for scrips on which derivative
+products are available. These price bands are applied on the T-1 day closing price.
+2. Currently, for Exchange Traded Funds (ETFs) (based on Equity, Debt and Commodities),
+a fixed price band of +20% (except for Overnight ETFs, for which the price band is +5%)
+is applicable on the base price, which is T-2 day Net Asset Value (NAV) of the ETFs.
+3. In order to address the issues involved due to lag of 1 trading day in base price of ETFs
+and the fixed price band of ETFs not being commensurate with the price range of the
+underlying; and based on the recommendations of the Working Group of Stock
+Exchanges, the matter was discussed in the Secondary Market Advisory Committee of
+SEBI (SMAC). Based on the recommendations of the SMAC, comments received through
+public consultation and subsequent discussion with various stakeholders, the norms for
+determination of base price, price bands, call auction in pre-open session and close-out
+mark-up for ETFs are provided below:
+4. Base Price for ETFs
+4.1. Considering the operational challenges in usage of T-1 day closing NAV of the ETFs as
+base price, to start with, the base price for determination of price bands of ETFs shall be
+T-1 day Closing Price i.e. last 30 minutes of Volume Weighted Average Price (VWAP) of
+the ETF.
+4.2. In case there is no trading in the ETF during the last 30 minutes of T-1 day, then base
+price shall be the Last Traded Price (LTP) of the day. Further, in case there is no trade
+on T-1 day, then base price shall be the latest available closing NAV of the ETF.
+4.3. The Base price shall be adjusted for corporate action(s), if any.
+4.4. However, the Stock Exchanges and Asset Management Companies of Mutual Funds
+shall jointly address the operational challenges to implement the use of T-1 day closing
+NAV of the ETFs as the base price w.e.f. April 01, 2027.
+5. Price Bands for ETFs
+5.1. For Equity ETFs and Debt ETFs (other than Overnight ETFs and Liquid ETFs):
+5.1.1. For Equity ETFs and Debt ETFs (other than Overnight ETFs and Liquid ETFs), there
+shall be dynamic price bands, with an initial price band of +10%, which can be flexed
+upto +20% after a cooling off period.
+5.1.2. The cooling off period shall be of 15 minutes after trades are executed at or above
+9.90% and so on, during which trading shall continue within the prevailing price band.
+If the trades are executed at or above 9.90% and so on, during the last 30 minutes of
+trading, then the cooling-off period shall be of 5 minutes.
+5.1.3. The price band would be flexed by 5% of the base price after the cooling off period, for
+a maximum of two instances in one direction.
+5.1.4. The price band shall be flexed only in the direction of the price movement without
+corresponding adjustment (sliding) of the band on the opposite side.
+5.1.5. Flexing of price band for an ETF at one exchange shall be applicable for other
+exchanges.
+5.2. For Overnight ETFs and Liquid ETFs:
+5.2.1. Overnight ETFs and Liquid ETFs shall have a fixed price band of +5%.
+5.3. Commodity ETFs (Gold/Silver):
+5.3.1. For Commodity ETFs, there shall be dynamic price bands, with an initial price band of
++6%. The price band would be flexed by 3% of the base price, after a cooling off period.
+5.3.2. In case the price movement in the international markets is more than the aggregate
+Daily Price Limit (DPL) of +9%, the same may be further relaxed in stages of 3% by
+the Stock Exchange with the cooling-off period. For such instances, the Stock
+Exchanges shall give appropriate notice to the market along with all the relevant details
+and justification for the same.
+5.3.3. The cooling off period shall be of 15 minutes after the trades are executed at or above
+5.90% and so on, during which trading shall continue within the prevailing price band.
+If the trades are executed at or above 5.90% and so on, during the last 30 minutes of
+trading, then the cooling-off period shall be of 5 minutes.
+5.3.4. The price band shall be flexed only in the direction of the price movement without
+corresponding adjustment (sliding) of the band on the opposite side.
+5.3.5. Flexing of price band for an ETF at one exchange shall be applicable for other
+exchanges.
+5.3.6. In the event of exceptional circumstances, where there is extreme price movement in
+the underlying commodities beyond the initial price band of 6% in the international
+markets, after the closure of trading of the ETFs on domestic exchanges, the stock
+exchanges can relax the initial price band, by giving appropriate notice to the market.
+5.3.7. There will be no upper or lower cap of the price bands and no restriction on the number
+of times the price bands can be flexed during the trading session.
+6. Close-out Procedure for ETFs
+6.1. For Overnight ETFs and Liquid ETFs
+“The close-out price will be the highest price recorded in that ETF on the exchange in
+the settlement in which the concerned contract was entered into and up to the date of
+auction or close out”
+OR
+“5% above the latest available closing price at the exchange on the day on which
+auction offers are called for”
+whichever is higher.
+6.2. For all other ETFs the existing provisions as specified in paragraph 2.1 of Chapter 3 of
+the Master Circular shall remain applicable.
+6.3. The existing provisions on “Auction” and “Proceeds from Auction or Close-out” as
+specified at paragraphs 2.2 and 2.3 respectively of Chapter 3 of the Master Circular shall
+continue to be applicable for ETFs.
+7. Call Auction in Pre-open Session for Commodity ETFs (Gold/Silver)
+7.1. The commodities underlying the Commodity ETFs are traded continuously across various
+international jurisdictions, while the corresponding ETFs trade only during the trading
+hours of domestic stock exchanges.
+7.2. To enable efficient price discovery, similar to scrips, it has been decided that a call auction
+in the pre-open session shall be conducted for Commodity ETFs to facilitate discovery of
+the equilibrium price for trading in units of such ETFs.
+7.3. The mechanism for the call auction in pre-open session shall be the same as prescribed
+at Paragraph 17.1 of Chapter 1 of the Master Circular.
+8. Applicability: The provisions of the circular shall come into effect from 1st September,
+2026.
+9. All MIIs are advised to:
+9.1. take necessary steps and put in place necessary systems for implementation of the
+above.
+9.2. make necessary amendments to the relevant bye-laws, rules and regulations, wherever
+required, for the implementation of the above; and.
+9.3. bring the provisions of this circular to the notice of the market participants (including
+investors) and disseminate the same on their website.
+10. This circular is issued in exercise of the powers conferred under section 11(1) of the
+Securities and Exchange Board of India Act 1992 read with regulation 51 of the Securities
+Contracts (Regulation) (Stock Exchanges and Clearing Corporations) Regulations, 2018,
+to protect the interests of investors in securities and to promote the development of, and
+to regulate the securities market.
+11. This circular is available on SEBI website at www.sebi.gov.in at “Legal Framework -
+Circulars.”
+Yours faithfully,
+Hruda Ranjan Sahoo
+General Manager
+Tel. No. 022-26449586
+Email: hrsahoo@sebi.gov.in

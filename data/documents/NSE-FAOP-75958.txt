@@ -1,0 +1,45 @@
+National Stock Exchange of India Limited
+Circular
+Department: FUTURES & OPTIONS
+Download Ref No: NSE/FAOP/75958 Date: August 25, 2026
+Circular Ref. No: 119/2026
+All Members,
+Introduction of Futures & Options Contracts on Three Individual Securities
+In continuation to Exchange circular Ref. No. NSE/FAOP/75371 dated July 23, 2026 members are
+requested to note the market lot for the below securities which will be available for trading from August
+26, 2026 are as follows:
+Sr. No. Security Name Symbol Lot Size
+1 Ather Energy Limited ATHERENERG 375
+2 Bank of Maharashtra MAHABANK 6500
+3 Sagility Limited SAGILITY 12000
+Accordingly, members are requested to note the following:
+1. The scheme of strikes for the above-mentioned security is provided as Annexure A.
+2. For the above mentioned securities, the futures contracts shall have the same tick size as
+applicable for the underlying security in CM Segment and for the options contracts its tick
+size shall kept as per directions provided in circular NSE/FAOP/70382 dated September
+23, 2025.
+3. The details of applicable quantity freeze shall be available in the contract file which shall
+be applicable for trading on August 26, 2026. Members are advised to load the updated
+contract.gz and NSE_FO_contract_ddmmyyyy.csv.gz file in the trading application before
+trading on the effective date. This file can be obtained from the directory
+faoftp/faocommon on the Extranet server.
+4. Additionally, members can access the contract file - NSE_FO_contract_ddmmyyyy.csv.gz
+on the website path:- https://www.nseindia.com/all-reports-derivatives
+For and on behalf of
+National Stock Exchange of India Limited
+Aarti Surve
+Chief Manager
+Department: FUTURES & OPTIONS | 
+  Department: FUTURES & OPTIONS: Download Ref No: NSE/FAOP/75958; : Date: August 25, 2026
+  Department: FUTURES & OPTIONS: Circular Ref. No: 119/2026
+
+Sr. No. | Security Name | Symbol | Lot Size
+  Sr. No.: 1; Security Name: Ather Energy Limited; Symbol: ATHERENERG; Lot Size: 375
+  Sr. No.: 2; Security Name: Bank of Maharashtra; Symbol: MAHABANK; Lot Size: 6500
+  Sr. No.: 3; Security Name: Sagility Limited; Symbol: SAGILITY; Lot Size: 12000
+
+National Stock Exchange of India Limited
+Toll Free No Email id
+1800-266-0050 (Option 1) msm@nse.co.in
+Toll Free No | Email id
+  Toll Free No: 1800-266-0050 (Option 1); Email id: msm@nse.co.in

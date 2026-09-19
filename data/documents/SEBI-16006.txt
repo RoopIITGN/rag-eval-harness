@@ -1,0 +1,61 @@
+CIRCULAR
+HO/(92)2026-IMD-POD-2/I/16006/2026 July 10, 2026
+All Mutual Funds/
+All Asset Management Companies (AMCs)/
+All Trustee Companies/ Board of Trustees of Mutual Funds/
+Association of Mutual Funds in India (AMFI)/
+Sir / Madam,
+Subject: Intraday borrowing facility availed by mutual funds
+1. In order to address liquidity mismatches due to difference in market settlement
+timings, SEBI vide Gazette Notification no. CG-MH-E-07072026-274229 dated July
+3, 2026 carried out amendment to SEBI (Mutual Funds) Regulations, 2026 to
+permit intraday borrowings by mutual funds for various purposes as specified in
+this circular.
+2. Accordingly, in supersession of the guidelines on borrowings of mutual funds
+specified in clause 5.9.1 of the SEBI Master Circular for Mutual Funds dated March
+20, 2026 (“the Master Circular”) and SEBI Circular no. HO/(92)2026-IMD-POD-
+2/I/7885/2026 dated March 25, 2026, intraday borrowings by mutual funds
+shall be subject to the following conditions:
+2.1. Mutual Funds may avail intraday borrowings for the following purposes:
+2.1.1. All unitholder pay-outs such as redemptions, IDCW pay-outs, interest etc.
+2.1.2. Pay-in with respect to investments made by the scheme.
+2.1.3. MTM obligations and foreign exchange settlements.
+2.1.4. Repayment of existing borrowings.
+2.2. The quantum of intraday borrowings shall be limited to:
+2.2.1. Guaranteed receivables such as inflows from RBI, Clearing Corporations,
+subscription inflows received in scheme bank accounts etc.
+2.2.2. Non-guaranteed receivables sighted during the day such as inflows from
+maturity proceeds and/or secondary market settlement from NCDs, CP,
+CDs, OTC Swaps, etc. and to be received by the scheme by end of the day.
+2.2.3. Intraday borrowing in addition to clause 2.2.1 and 2.2.2 may be availed
+by AMCs solely for the purpose of meeting redemption and other pay-out
+to the unitholders as specified under Regulation 42(1) of SEBI (Mutual
+Funds) Regulations, 2026.
+2.3. AMCs shall be responsible for ensuring that intraday borrowings are repaid
+by end of the day and any intraday borrowings converted to overnight
+borrowings are within regulatory limits and for the purposes allowed in
+Regulation 42(1) of SEBI (Mutual Funds) Regulations, 2026.
+2.4. Boards of AMC and Trustees of a mutual fund shall approve the policy for use
+of intraday borrowing facility. The policy shall be made available on the
+website of AMC. The policy shall, inter-alia, include approval processes,
+monitoring mechanism etc.
+2.5. AMCs shall maintain scheme wise records detailing the underlying liquidity
+mismatch and the expected source of repayment for the intra-day borrowing.
+2.6. AMCs shall ensure compliance of clauses 6 and 7 of Fourth Schedule of SEBI
+(Mutual Funds) Regulations, 2026 and para 17.7 of the Master Circular.
+2.7. In line with para 11.10 of the Master Circular, cost of intraday borrowing, if
+any, shall be borne by the AMC. Further, any loss or cost incurred, on account
+of any unforeseen event or delay in receiving the funds from receivables as
+mentioned at clause 2.2.1 and 2.2.2 above shall also be borne by the AMC.
+3. This circular shall come into effect from September 1, 2026.
+4. The circular is issued in exercise of powers conferred under Section 11 (1) of the
+Securities and Exchange Board of India Act, 1992, read with the provisions of
+Regulation 42(2) and Regulation 84 of SEBI (Mutual Funds) Regulations, 2026, to
+protect the interest of investors in securities and to promote the development of,
+and to regulate the securities market.
+5. This Circular is available at www.sebi.gov.in under the link “Legal > Circulars”.
+Yours sincerely,
+Priyanka Mahapatra
+General Manager
+Investment Management Department
+Email: priyankam@sebi.gov.in

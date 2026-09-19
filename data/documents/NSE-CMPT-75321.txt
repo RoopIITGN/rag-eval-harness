@@ -1,0 +1,81 @@
+NSE Clearing Limited
+DEPARTMENT: FUTURES AND OPTIONS SEGMENT
+Download Ref No: NCL/CMPT/75321 Date: July 21, 2026
+Circular Ref. No: 090/2026
+All Members/Custodians/PCM
+Sub: Change in Collateral Timings
+This is with reference to circular ref. no. 050/2026 (Download Ref No: NCL/CMPT/73997 dated April 30, 2026)
+regarding timings for collateral addition and release.
+Based on the feedback received from the members the revised timing for collateral addition and release shall be as
+follows:
+Type Current cut off time New cut off time
+Cash and FDR Addition 7:30 PM 9:00 PM
+Cash and FDR Release:
+Intraday 8:00 PM 9:00 PM
+End of Day 8:00 PM 8:00 PM
+Allocation 8:00 PM 11:30 PM
+Pledge Securities
+Batches New Release Timing
+1 8:30 AM
+2 9:00 AM
+3 9:30 AM
+4 10:00 AM
+5 11:00 AM
+6 12:00 PM
+7 1:00 PM
+8 2:00 PM
+9 3:00 PM
+10 3:30 PM
+11 4:00 PM
+Non-Confidential
+DEPARTMENT: FUTURES AND OPTIONS SEGMENT | 
+  DEPARTMENT: FUTURES AND OPTIONS SEGMENT: Download Ref No: NCL/CMPT/75321; : Date: July 21, 2026
+  DEPARTMENT: FUTURES AND OPTIONS SEGMENT: Circular Ref. No: 090/2026
+
+ | Type |  |  | Current cut off time |  |  | New cut off time | 
+  Type: Cash and FDR Addition; Current cut off time: 7:30 PM; New cut off time: 9:00 PM
+  : Cash and FDR Release:
+  : Intraday; : 8:00 PM; : 9:00 PM
+  : End of Day; : 8:00 PM; : 8:00 PM
+  Type: Allocation; Current cut off time: 8:00 PM; New cut off time: 11:30 PM
+
+Pledge Securities |  |  |  |  | 
+  : Batches; : New Release Timing
+  : 1; : 8:30 AM
+  Pledge Securities: 2; : 9:00 AM
+  : 3; : 9:30 AM
+  Pledge Securities: 4; : 10:00 AM
+  : 5; : 11:00 AM
+  Pledge Securities: 6; : 12:00 PM
+  : 7; : 1:00 PM
+  Pledge Securities: 8; : 2:00 PM
+  : 9; : 3:00 PM
+  Pledge Securities: 10; : 3:30 PM
+  : 11; : 4:00 PM
+
+NSE Clearing Limited
+12 4:30 PM
+13 5:00 PM
+14 6:00 PM
+15 7:00 PM
+16 8:00 PM
+EOD 9:00 PM
+*In case of request for release of repledged securities towards pay-in requirement clearing members should
+ensure that such request is made one day prior to pay-in and not on the pay-in date.
+The above timings shall be made effective from July 22, 2026.
+For and on behalf of
+NSE Clearing Limited
+Huzefa Mahuvawala
+Chief Risk Officer
+Telephone No Email id
+1800 266 0050 (IVR Option 2) collaterals_ops@nsccl.co.in
+Non-Confidential
+12 |  |  | 4:30 PM |  | 
+  : 13; : 5:00 PM
+  12: 14; 4:30 PM: 6:00 PM
+  : 15; : 7:00 PM
+  12: 16; 4:30 PM: 8:00 PM
+  : EOD; : 9:00 PM
+
+Telephone No | Email id
+  Telephone No: 1800 266 0050 (IVR Option 2); Email id: collaterals_ops@nsccl.co.in

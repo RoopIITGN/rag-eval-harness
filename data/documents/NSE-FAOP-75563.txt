@@ -1,0 +1,58 @@
+National Stock Exchange of India Limited
+Circular
+Department: FUTURES & OPTIONS
+Download Ref No: NSE/FAOP/75563 Date: August 04, 2026
+Circular Ref. No: 112/2026
+All Members,
+DIVIDEND: Adjustment of Futures and Options contracts in the security INDUSTOWER
+In pursuance of SEBI guidelines as prescribed from time to time for adjustments to futures and
+options contracts on announcement of corporate action, the members are informed of the following:
+Particulars Details
+Symbol INDUSTOWER
+Company name Indus Towers Limited
+Type of corporate action Dividend
+Face value Rs 10/-
+Dividend amount Rs 14/-
+Ex date & effective date 10-August-2026
+Revised option strike prices* Will be provided one day prior to the ex-date / effective date.
+* Adjustment details can be referred at below link.
+https://www.nseindia.com/products-services/equity-derivatives-corporate-actions-adjustments
+Other Important Points to be noted:
+• The above changes shall be effective from the ex-date / effective date as given above table.
+• The revised options strike/futures base prices and the lot size on account of adjustment would
+appear in decimal places and shall be rounded off to the nearest tick size and the lot size shall
+be rounded off to the nearest integer. The details would be available in the latest contract.gz
+file.
+• The details of the revised option strike prices, futures prices, lot size and quantity freeze limit
+wherever applicable, will be provided in the contract.gz / MII contract and spread files
+available one day prior to the ex-date / effective date.
+• Members are advised to load the updated contract.gz/ MII contract
+(NSE_FO_contract_ddmmyyyy.csv.gz) and spread (NSE_FO_spdcontract_ddmmyyyy.csv.gz)
+files on the trading application before trading on the ex-date / effective date. These files can
+be obtained from the directory faoftp/faocommon on the Extranet server.
+• Additionally, the MII contract and spread files are also available on NSE website on the below
+path: https://www.nseindia.com/all-reports-derivatives
+• The methodology for position adjustments shall be separately intimated by respective
+Clearing Corporation.
+Department: FUTURES & OPTIONS | 
+  Department: FUTURES & OPTIONS: Download Ref No: NSE/FAOP/75563; : Date: August 04, 2026
+  Department: FUTURES & OPTIONS: Circular Ref. No: 112/2026
+
+Particulars | Details
+  Particulars: Symbol; Details: INDUSTOWER
+  Particulars: Company name; Details: Indus Towers Limited
+  Particulars: Type of corporate action; Details: Dividend
+  Particulars: Face value; Details: Rs 10/-
+  Particulars: Dividend amount; Details: Rs 14/-
+  Particulars: Ex date & effective date; Details: 10-August-2026
+  Particulars: Revised option strike prices*; Details: Will be provided one day prior to the ex-date / effective date.
+
+National Stock Exchange of India Limited
+For and on behalf of
+National Stock Exchange of India Limited
+Bharat Gandhi
+Associate Vice President
+Toll Free No Email id
+1800-266-0050 (Option 1) msm@nse.co.in
+Toll Free No | Email id
+  Toll Free No: 1800-266-0050 (Option 1); Email id: msm@nse.co.in

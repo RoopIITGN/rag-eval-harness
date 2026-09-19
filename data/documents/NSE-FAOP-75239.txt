@@ -1,0 +1,125 @@
+National Stock Exchange of India Limited
+Circular
+Department: FUTURES & OPTIONS
+Download Ref No: NSE/FAOP/75239 Date: July 16, 2026
+Circular Ref. No: 103/2026
+All Members,
+Introduction of Futures and Options Contracts on Nifty India FPI 150 Index
+Exchange is pleased to inform members that with reference to approval received from SEBI, Futures and
+Options contracts on Nifty India FPI 150 Index shall be made available for trading in Future & Options segment
+w.e.f. August 12, 2026.
+The relevant information about the monthly futures and options contracts are as given in Annexure 1.
+The settlement procedure and details shall be intimated separately by the respective clearing corporations.
+Members may note that there is no change in the structure of any of the reports.
+The contract.gz file and MII contract (NSE_FO_contract_ddmmyyyy.csv.gz) and spread
+(NSE_FO_spdcontract_ddmmyyyy.csv.gz) files made available to trading members on the NSE Extranet (Path:
+/faoftp/faocommon) from August 11, 2026, end of day will reflect the new monthly futures and options
+contracts. Further, members are advised to load the above file in the trading application before trading on
+August 12, 2026.
+For and on behalf of
+National Stock Exchange of India Limited
+Khushal Shah
+Associate Vice President
+Toll Free No Email id
+1800-266-0050 (Option 1) msm@nse.co.in
+Department: FUTURES & OPTIONS | 
+  Department: FUTURES & OPTIONS: Download Ref No: NSE/FAOP/75239; : Date: July 16, 2026
+  Department: FUTURES & OPTIONS: Circular Ref. No: 103/2026
+
+Toll Free No | Email id
+  Toll Free No: 1800-266-0050 (Option 1); Email id: msm@nse.co.in
+
+National Stock Exchange of India Limited
+Annexure – 1
+Contract Specifications
+Particulars Futures Options
+Symbol NIFTYFPI NIFTYFPI
+Instrument FUTIDX OPTIDX
+Tick Size (Price Re 0.05 Re 0.05
+Steps)
+Underlying Nifty India FPI 150 index Nifty India FPI 150 index
+Asset name
+Contract Size 1100 1100
+(Lot Size)
+Trading Cycle 3 serial monthly contracts. 3 serial monthly contracts.
+Expiry Day “Last Tuesday” of the expiry month for the monthly contracts. If the “Last Tuesday” is a
+trading holiday, then the expiry day shall be previous trading day.
+Strike Scheme - Narrow Range
+Step Value: 5
+Strike scheme : 20-1-20
+---------------------------------------------------
+Wide Range
+Step Value: 20
+Strike scheme: 12-1-12
+(Including 20 strikes due to strike interval of
+5)
+Option Type - Call European (CE) and Put European (PE)
+Particulars | Futures | Options
+  Particulars: Symbol; Futures: NIFTYFPI; Options: NIFTYFPI
+  Particulars: Instrument; Futures: FUTIDX; Options: OPTIDX
+  Particulars: Tick Size (Price
+Steps); Futures: Re 0.05; Options: Re 0.05
+  Particulars: Underlying
+Asset name; Futures: Nifty India FPI 150 index; Options: Nifty India FPI 150 index
+  Particulars: Contract Size
+(Lot Size); Futures: 1100; Options: 1100
+  Particulars: Trading Cycle; Futures: 3 serial monthly contracts.; Options: 3 serial monthly contracts.
+  Particulars: Expiry Day; Futures: “Last Tuesday” of the expiry month for the monthly contracts. If the “Last Tuesday” is a
+trading holiday, then the expiry day shall be previous trading day.
+  Particulars: Strike Scheme; Futures: -; Options: Narrow Range
+Step Value: 5
+Strike scheme : 20-1-20
+---------------------------------------------------
+Wide Range
+Step Value: 20
+Strike scheme: 12-1-12
+(Including 20 strikes due to strike interval of
+5)
+  Particulars: Option Type; Futures: -; Options: Call European (CE) and Put European (PE)
+
+National Stock Exchange of India Limited
+Settlement Cash Settled Cash Settled
+Daily Settlement Closing price of the futures contract. If -
+Price illiquid, then theoretical price will be
+considered.
+Final Settlement Index closing value on the last trading Index closing value on the last trading day
+Price day
+Price Band Operating range of 10% of the base price A contract specific price range based on its
+delta value is computed and updated daily
+Quantity Freeze 8500 8500
+Spread M1-M2; M1-M3; M2-M3 -
+Contracts
+On August 12, 2026, the following expiry cycle will be available:
+Expiry Cycle Expiry Day
+August-2026 August 25, 2026
+September-2026 September 29, 2026
+October -2026 October 27, 2026
+Daily Settlement
+Price | Closing price of the futures contract. If
+illiquid, then theoretical price will be
+considered. | -
+  Daily Settlement
+Price: Final Settlement
+Price; Closing price of the futures contract. If
+illiquid, then theoretical price will be
+considered.: Index closing value on the last trading
+day; -: Index closing value on the last trading day
+  Daily Settlement
+Price: Price Band; Closing price of the futures contract. If
+illiquid, then theoretical price will be
+considered.: Operating range of 10% of the base price; -: A contract specific price range based on its
+delta value is computed and updated daily
+  Daily Settlement
+Price: Quantity Freeze; Closing price of the futures contract. If
+illiquid, then theoretical price will be
+considered.: 8500; -: 8500
+  Daily Settlement
+Price: Spread
+Contracts; Closing price of the futures contract. If
+illiquid, then theoretical price will be
+considered.: M1-M2; M1-M3; M2-M3; -: -
+
+Expiry Cycle | Expiry Day
+  Expiry Cycle: August-2026; Expiry Day: August 25, 2026
+  Expiry Cycle: September-2026; Expiry Day: September 29, 2026
+  Expiry Cycle: October -2026; Expiry Day: October 27, 2026

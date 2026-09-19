@@ -29,6 +29,7 @@ from __future__ import annotations
 import re
 import sys
 from pathlib import Path
+from datetime import datetime
 
 import pdfplumber
 
@@ -110,9 +111,13 @@ def quality_report(doc_id: str, text: str) -> list[str]:
 
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
+    Path("reports").mkdir(exist_ok=True)
     pdfs = sorted(p for p in RAW.iterdir() if p.suffix.lower() == ".pdf")
     if not pdfs:
         sys.exit(f"No PDFs in {RAW}")
+
+    log_lines = [f"# extraction run {datetime.now().isoformat(timespec='seconds')}", f"# {len(pdfs)} documents\n"]
+
     print(f"extracting {len(pdfs)} documents\n")
 
     flagged = []
@@ -123,15 +128,21 @@ def main():
 
         warns = quality_report(p.stem, text)
         status = "  ".join(warns) if warns else "ok"
-        print(f"{p.stem:32s} {len(text):>7,d} chars   {status}")
+        line = f"{p.stem:32s} {len(text):>7,d} chars   {status}"
+        print(line)
+        log_lines.append(line)
         if warns:
             flagged.append(p.stem)
 
     print(f"\n{len(pdfs)} extracted -> {OUT}")
     if flagged:
+        log_lines.append(f"\n# flagged for review: {', '.join(flagged)}")
         print(f"\nOPEN THESE AND READ THEM before going further:")
         for f in flagged:
             print(f"  {OUT / (f + '.txt')}")
+
+    Path("reports/extraction_log.txt").write_text("\n".join(log_lines) + "\n")
+    print(f"\nlog written to reports/extraction_log.txt")
 
 
 if __name__ == "__main__":

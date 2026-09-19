@@ -1,0 +1,41 @@
+National Stock Exchange of India Limited
+Circular
+Department: FUTURES & OPTIONS
+Download Ref No: NSE/FAOP/74408 Date: May 26, 2026
+Circular Ref. No: 70/2026
+All Members,
+Introduction of Futures & Options Contracts on Two Individual Securities
+In continuation to Exchange circular Ref. No. NSE/FAOP/74151 dated May 11, 2026 members are
+requested to note the market lot for the below securities which will be available for trading from May
+27, 2026 are as follows:
+Sr. No. Security Name Symbol Lot Size
+1 GE Vernova T&D India Limited GVT&D 125
+2 Radico Khaitan Limited RADICO 150
+Accordingly, members are requested to note the following:
+1. The scheme of strikes for the above-mentioned security is provided as Annexure A.
+2. For the above mentioned securities, the futures contracts shall have the same tick size as
+applicable for the underlying security in CM Segment and for the options contracts its size
+shall be Re 0.05.
+3. The details of applicable quantity freeze shall be available in the contract file which shall
+be applicable for trading on May 27, 2026. Members are advised to load the updated
+contract.gz and NSE_FO_contract_ddmmyyyy.csv.gz file in the trading application before
+trading on the effective date. This file can be obtained from the directory
+faoftp/faocommon on the Extranet server.
+4. Additionally, members can access the contract file - NSE_FO_contract_ddmmyyyy.csv.gz
+on the website path:- https://www.nseindia.com/all-reports-derivatives
+For and on behalf of
+National Stock Exchange of India Limited
+Aarti Surve
+Chief Manager
+Toll Free No Email id
+1800-266-0050 (Option 1) msm@nse.co.in
+Department: FUTURES & OPTIONS | 
+  Department: FUTURES & OPTIONS: Download Ref No: NSE/FAOP/74408; : Date: May 26, 2026
+  Department: FUTURES & OPTIONS: Circular Ref. No: 70/2026
+
+Sr. No. | Security Name | Symbol | Lot Size
+  Sr. No.: 1; Security Name: GE Vernova T&D India Limited; Symbol: GVT&D; Lot Size: 125
+  Sr. No.: 2; Security Name: Radico Khaitan Limited; Symbol: RADICO; Lot Size: 150
+
+Toll Free No | Email id
+  Toll Free No: 1800-266-0050 (Option 1); Email id: msm@nse.co.in

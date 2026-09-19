@@ -1,0 +1,62 @@
+HO/47/14/13(2)2026-MRD-POD2/I/16590/2026 July 17, 2026
+To,
+All Depositories
+All Recognized Stock Exchanges (SEs)
+All Registrar and Transfer Agents (RTAs)
+All Depository Participants (DPs)
+All Mutual Funds (MFs) / All Asset Management Companies (AMCs)
+Association of Mutual Funds in India (AMFI)
+Sir/Madam,
+Subject: Extending facility of creating standing instructions for Systematic
+Withdrawal Plan (SWP)/ Systematic Transfer Plan (STP) for Mutual Fund units
+held in demat form
+1. Mutual Fund investors can avail the facility of SWP by creating standing
+instructions with Mutual Fund or its RTA for periodic redemption of specified
+number of Mutual Fund units or amount. Mutual Fund investors can also avail
+the facility of STP by creating standing instructions for transferring their
+investment in one scheme of Mutual Fund to another scheme of the same
+Mutual Fund, by way of redemption from one scheme and subscription to the
+other scheme of the same Mutual Fund.
+2. Presently, the facility of creating such standing instructions for SWP / STP
+mandate is not available for the Mutual Fund units held in demat form.
+3. In this context, taking into account the representations received from the
+Depositories, recommendations of a Working Group setup by SEBI and
+recommendations of Secondary Market Advisory Committee of SEBI, it has
+been decided to extend the facility of creating standing instruction for SWP/STP
+mandate for the Mutual Fund units held in demat form, to facilitate ease of doing
+business.
+4. The aforesaid facility shall be implemented in the following two phases-
+4.1. In Phase - I, the facility shall be made available for “Unit-based SWP
+/ STP” i.e. standing instructions based on fixed number of units to be
+redeemed at a specified frequency for withdrawal or for purchasing
+units of another scheme of the same Mutual Fund.
+4.2. In Phase - ll, the facility shall be extended to “Amount-based SWP /
+STP” i.e. standing instruction for fixed amount which is required as
+pay-out at a specified frequency or for purchasing units of another
+scheme of the same Mutual Fund.
+5. Depositories shall be the nodal facilitator for implementation of this framework
+and shall ensure the implementation of Phase - I by January 31, 2027 and
+implementation of Phase - ll by April 30, 2027.
+6. Further, Depositories are directed to :
+6.1. Jointly publish a standard framework on their website to
+operationalize the aforesaid facility by October 31, 2026.
+6.2. Make amendments to the relevant bye-laws, rules and regulations
+for the implementation of the above framework, as may be
+applicable/necessary;
+6.3. Carry out system changes, if any, to implement the above framework;
+6.4. Disseminate the provisions of this circular on their website.
+7. The provisions of this circular shall come into force with immediate effect.
+8. This circular is being issued in exercise of powers conferred under Section
+11(1) of the Securities and Exchange Board of India Act, 1992 read with Section
+26(3) of Depositories Act, 1996 and Regulation 97 of Securities and Exchange
+Board of India (Depositories and Participants) Regulations, 2018 to protect the
+interest of investors in securities and to promote development of, and to
+regulate securities market.
+9. This circular is available on SEBI website at www.sebi.gov.in at “Legal
+Framework - Circulars.”
+10. The circular has been issued with the approval of the competent authority.
+Yours faithfully,
+Sanjay Singh Bhati
+General Manager
+Tel. No. 022-26449222
+Email: ssbhati@sebi.gov.in

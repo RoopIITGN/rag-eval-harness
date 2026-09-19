@@ -1,0 +1,33 @@
+National Stock Exchange of India Limited
+Circular
+Department: FUTURES & OPTIONS SEGMENT
+Download Ref No: NSE/FAOP/74774 Date: June 18, 2026
+Circular Ref. No: 88/2026
+All Members,
+Exclusion of Futures and Options contracts on DALBHARAT
+This is in reference to SEBI Circular Ref. No: SEBI/HO/MRD/MRD-PoD-2/P/CIR/2024/116 dated August 30,
+2024 regarding eligibility criteria of stocks.
+Members are requested to note that the contracts for new expiry months in the following security will not be
+issued on expiry of existing contract months:
+Sr. No Symbol Security Name
+1 DALBHARAT DALMIA BHARAT LIMITED
+However, the existing unexpired contracts of expiry months June 2026, July 2026 and August 2026 would
+continue to be available for trading till their respective expiry and new strikes would also be introduced in the
+existing contract months.
+Accordingly, no contracts shall be available for trading in the above-mentioned security with effect from August
+26, 2026.
+For and on behalf of
+National Stock Exchange of India Limited
+Khushal Shah
+Associate Vice President
+Toll Free No Email id
+1800-266-0050 (Option 1) msm@nse.co.in
+Department: FUTURES & OPTIONS SEGMENT | 
+  Department: FUTURES & OPTIONS SEGMENT: Download Ref No: NSE/FAOP/74774; : Date: June 18, 2026
+  Department: FUTURES & OPTIONS SEGMENT: Circular Ref. No: 88/2026
+
+Sr. No | Symbol | Security Name
+  Sr. No: 1; Symbol: DALBHARAT; Security Name: DALMIA BHARAT LIMITED
+
+Toll Free No | Email id
+  Toll Free No: 1800-266-0050 (Option 1); Email id: msm@nse.co.in

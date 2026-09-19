@@ -1,0 +1,1632 @@
+परिपत्र/Circular
+HO/38/13/11(14)2026-MIRSD-POD/I/17111/2026 July 23, 2026
+To,
+All Listed Companies
+All Registrars to an Issue and Share Transfer Agents (“RTAs”)
+All Depositories
+All Depository Participants (“DPs”)
+All Mutual Funds/All Asset Management Companies (“AMCs”)
+Association of Mutual Funds in India (“AMFI”)
+All Investors’ Associations
+Madam / Sir,
+Sub: Ease of Doing Investment and Ease of Doing Business – Simplification and
+standardisation of the framework for transmission of securities
+1. As an on-going measure to enhance ease of dealing in securities markets and with
+a view to make the transmission process more efficient and investor friendly,
+SEBI has reviewed the process being followed by processing entities (i.e. listed
+companies/ RTAs / Depositories/ DPs / AMCs) for effecting transmission of
+securities.
+2. Accordingly, in terms of Regulation 40(7) of the Securities and Exchange Board
+of India (Listing Obligations and Disclosure Requirements) Regulations, 2015
+(“LODR Regulations”), as amended vide Gazette Notification no. SEBI/LAD-
+NRO/GN/2026/312 dated July 10th, 2026, it has been decided to specify the revised
+transmission framework for securities as prescribed in Annexure to this Circular.
+3. Key features of the revised framework:
+3.1. Introduction of a harmonised, standardised and risk-based process for
+transmission of securities.
+
+  : परिपत्र/Circular
+
+All Listed Companies
+  All Listed Companies: All Registrars to an Issue and Share Transfer Agents (“RTAs”)
+  All Listed Companies: All Depositories
+  All Listed Companies: All Depository Participants (“DPs”)
+  All Listed Companies: All Mutual Funds/All Asset Management Companies (“AMCs”)
+  All Listed Companies: Association of Mutual Funds in India (“AMFI”)
+  All Listed Companies: All Investors’ Associations
+  All Listed Companies: Madam / Sir,
+
+3.2. New category for low value claims, namely, Quick Transmission Processing
+(“QTP”) and revision of monetary threshold limits for transmission of securities
+under the simplified documentation framework, as under:
+Claims threshold under Claims threshold
+Quick Transmission under simplified
+Type of holding Processing (QTP)1 documentation
+(₹ in Thousands) (₹ in Lakhs)
+Securities in physical
+10 103
+mode 2
+Securities in
+30 30
+dematerialised mode4
+3.3. Standardisation of documentation requirements and the procedures for
+transmission including the following:
+ Removal of mandatory requirement of Probate of Will, in line with recent
+amendments to succession laws.
+ Combined affidavit-cum-No Objection Certificate(“NOC”) in place of
+separate affidavit and NOC.
+ In addition to original/attested copy of death certificate, acceptance of copy
+of death certificate with QR Code as an eligible document in view of ease
+of verification.
+ For death certificates issued in foreign jurisdictions, permitting additional
+modes for verification from overseas branches of Indian banks or any
+1 New category for small investors having low value claims
+2 Per listed entity/Mutual Fund (MF)/Specialized Investment Fund (SIF) units in Statement of
+Account (SOA) form per AMC
+3 Listed entity may, at its discretion, enhance the value of securities from the threshold limit
+of rupees ten lakhs, in case of securities held in physical mode.
+4 Per beneficial owner for securities
+Type of holding |  | Claims threshold under |  |  | Claims threshold | 
+  Claims threshold under: Quick Transmission; Claims threshold: under simplified
+  Claims threshold under: Processing (QTP)1; Claims threshold: documentation
+  Claims threshold under: (₹ in Thousands); Claims threshold: (₹ in Lakhs)
+  Type of holding: Securities in physical
+mode 2; : 10; : 103
+  Type of holding: Securities in
+dematerialised mode4; : 30; : 30
+
+foreign bank with whom Indian banks have correspondent banking
+relationship.
+4. The provisions of this circular and the revised transmission framework specified in
+Annexure along with model forms provided therein, shall come into force with
+effect from 30 days from the date of issuance of this circular.
+5. Notwithstanding the above, the processing entities shall strive to process
+transmission requests received before the said date in terms of the revised
+framework to give benefit of the simplified procedure to investors. Further, in such
+cases, if certain documents have already been submitted by the investor, the
+processing entities shall not seek re-submission of such documents in the new
+formats.
+6. Processing entities shall provide monthly reports as per the following format to
+SEBI regarding processing of transmission requests under revised transmission
+framework for a period of 6 months on rta@sebi.gov.in :
+Number of Number of cases processed during the month Number
+Category cases Received Approved Rejected Cases where of cases
+pending at additional pending
+the documents at the end
+beginning were sought of the
+of the with reasons month
+month
+QTP
+Simplified
+Above
+threshold
+7. This circular is issued in exercise of powers conferred under Section 11(1) of
+Chapter IV of the Securities and Exchange Board of India Act, 1992 and section
+19 of the Depositories Act, 1996 read with regulation 101 of the SEBI (Listing
+Obligations and Disclosure Requirements) Regulations, 2015 and Regulation 37
+and 38 of Securities and Exchange Board of India (Registrars to an Issue and
+Share Transfer Agents) Regulations, 2025, to protect the interests of investors in
+securities and to promote the development of, and to regulate the securities
+markets.
+Category | Number of
+cases
+pending at
+the
+beginning
+of the
+month | Number of cases processed during the month |  |  |  | Number
+of cases
+pending
+at the end
+of the
+month
+  Number of cases processed during the month: Received; : Approved; : Rejected; : Cases where
+additional
+documents
+were sought
+with reasons
+  Category: QTP
+  Category: Simplified
+  Category: Above
+threshold
+
+8. This circular is available on SEBI website at www.sebi.gov.in under the category:
+‘Legal → Circulars’.
+Yours faithfully,
+Aradhana Verma
+General Manager
+Market Intermediaries Regulation and Supervision Department
+Tel. No. 022-2644-9633
+Email id – aradhanad@sebi.gov.in
+Annexure
+Simplifying and standardising the framework for transmission of securities
+1. Applicability
+1.1 The framework shall apply to transmission of listed securities and units
+issued by Asset Management Companies (“AMCs”) consequent to demise
+of sole holder/ all joint holders of securities.
+1.2 All listed Companies, Registrar and Share Transfer Agents (“RTAs”),
+Depositories, Depository Participants and AMCs, shall adhere to the
+procedure and documentation to be followed for transmission of securities.
+1.3 Further, the framework shall not apply where there is any dispute or
+contesting/competing claims. In such cases, the claimants shall be required
+to resolve the matter through appropriate judicial or legal proceedings.
+2. Definitions
+2.1 Unless the context otherwise requires,
+(a) apostille refers to a certificate that authenticates the origin of a public
+document (e.g., a birth, marriage or death certificate, a judgment, an
+extract of a register or a notarial attestation). Apostilles can only be
+issued for documents issued in one country which is a party to The
+Hague Apostille Convention and that are to be used in another country
+which is also a party to the Convention.
+(b) entity or processing entities refer to Listed Companies / RTAs /
+Depositories / DPs / AMCs.
+(c) relevant authority for the purpose of legal heirship certificate or
+equivalent certificate shall mean a revenue authority not below the rank
+of a Tehsildar or equivalent authority.
+(d) verifiable death certificate shall refer to:
+(i) an original death certificate or copy of death certificate attested by
+the nominee subject to verification with the original;
+or
+(ii) copy of death certificate duly attested by a notary public or a
+Gazetted Officer or a Judicial Magistrate First Class (“JMFC”);
+or
+(iii) death certificate with Quick Response (QR) code
+3. Introduction of Quick Transmission Processing (“QTP”) for low value
+claims and revision of thresholds for simplified documentation
+3.1 The threshold for QTP and simplified documentation shall be as follows:
+Type of holding Claims threshold Claims threshold
+under Quick under simplified
+Transmission documentation
+Processing (QTP)
+(₹ in Lakhs)
+(₹ in Thousands)
+Securities in physical mode
+10 10
+Securities in
+30 30
+dematerialised mode
+3.2 The value of securities shall be quantified by the claimant on the basis of
+the previous closing price of such securities at any one of the recognized
+stock exchanges. For units issued by AMCs, last available Net Asset Value
+(NAV) shall be considered.
+4. Documentation requirements for transmission:
+4.1 Cases where nomination has been made
+4.1.1 Where the securities are held with a nomination, the nominees(s)
+shall receive the assets of deceased sole holder / joint holders as
+trustee on behalf of legal heir(s) of deceased holder(s).
+Type of holding |  | Claims threshold |  | Claims threshold
+under simplified
+documentation
+(₹ in Lakhs)
+  Claims threshold: under Quick
+  Claims threshold: Transmission
+  Claims threshold: Processing (QTP)
+  Claims threshold: (₹ in Thousands)
+  Type of holding: Securities in physical mode; : 10; Claims threshold
+under simplified
+documentation
+(₹ in Lakhs): 10
+  Type of holding: Securities in
+dematerialised mode; : 30; Claims threshold
+under simplified
+documentation
+(₹ in Lakhs): 30
+
+Claims threshold
+  Claims threshold: under simplified
+  Claims threshold: documentation
+  Claims threshold: (₹ in Lakhs)
+
+4.1.2 The nominee(s) shall be informed about the procedure to be followed
+for the claim on receipt of intimation of death of the security holder(s).
+In such cases, the following documents shall be required to be
+submitted:
+(a) Transmission request form by the nominee(s) (format specified
+at Annexure-3);
+(b) Latest client master list (“CML”) of the demat account of the
+nominee(s);
+(c) Verifiable death certificate;
+(d) Original security certificate(s) / copy of statement of account
+(“SOA”), as may be applicable.
+4.1.3 Upon demise of one of the nominees prior to the demise of the
+investor and if no change is made in the nomination, then the assets
+attributable to the deceased nominee shall be distributed to the
+surviving nominees on pro rata basis.
+4.1.4 The regulated entity shall be fully discharged from its liabilities upon
+transmission of assets to the nominee(s).
+4.2 Cases where there is no nomination
+In cases where there is no nomination, the transmission of securities of the
+deceased holder(s) shall be made in favour of claimant(s)/legal heir(s). In
+such cases, the following documents shall be required to be submitted:
+4.2.1 Common requirements
+(a) Transmission request form by the claimant(s) (format specified at
+Annexure-2 for QTP claims and Annexure-3 for other claims);
+(b) Latest CML of the demat account of the claimant(s);
+(c) Verifiable death certificate;
+(d) Original security certificate / copy of SOA, as may be applicable.
+4.2.2 Additional requirements
+4.2.2.1 Requirements QTP for low value cases
+The claimant(s) shall submit the transmission request form-cum-
+undertaking as per format specified at Annexure-2 on a plain paper
+along with a document establishing relationship between the
+claimant(s) and the deceased security holder(s).
+Note: Transmission of securities under QTP shall be permitted only
+in favour of immediate relatives of the deceased security holder(s)
+viz. parents, spouse, children and parents-in-law.
+4.2.2.2 Requirements under simplified documentation category
+The claimant(s) shall submit the following additional documents for
+processing of claim:
+(a) Notarized indemnity bond indemnifying the processing entity
+(format specified at Annexure-4); and
+(b) Notarised affidavit-cum-NOC from all legal heirs confirming
+identification and claim of legal ownership to the securities and
+no objection (format specified at Annexure-5);
+OR
+Copy of family settlement deed executed by all legal heirs, duly
+attested by a Notary Public, Gazetted Officer, or accepted and
+approved by a Magistrate, Judge or Civil Court.
+N ote:
+1. In case the claimant submits any court issued documents viz., Succession
+Certificate or Probate of Will or Letter of Administration or Court Decree,
+the requirement of submission of following documents shall not be
+applicable:
+(i) Notarised indemnity bond;
+(ii) Affidavit-cum-NOC from non-claimant legal heir(s).
+2. The indemnity and affidavit-cum-NOC shall be executed on non-judicial
+stamp paper of appropriate value as specified under the Stamp Act of the
+state where the claimant resides.
+4.2.2.3 Requirements for claims above simplified documentation
+threshold
+For claims above the threshold for simplified documentation, the
+claimant shall submit the following additional documents in addition
+to the common documents requirement:
+(a) Notarised affidavit-cum-NOC from all legal heirs confirming
+identification and claim of legal ownership to the securities and
+no objection (format specified at Annexure-5); and
+(b) Copy of Will as may be applicable in terms of Indian Succession
+Act,1925, along with a notarized indemnity bond from the legal
+heir(s)/claimant(s) to whom the securities have to be transmitted,
+as per the format specified;
+OR
+Legal Heirship Certificate or its equivalent issued by relevant
+authority which will mean a revenue authority not below the rank
+of a Tehsildar or equivalent authority, along with a notarized
+indemnity bond from the legal heir (s)/claimant(s) to whom the
+securities have to be transmitted, as per the format specified at
+Annexure-4;
+OR
+Copy of Succession certificate or Letter of Administration or
+Court Decree.
+Note:
+1. In case the claimant submits any court issued documents viz.,
+Succession Certificate or Probate of Will or Letter of Administration or
+Court Decree, the requirement of submission of Affidavit-cum-NOC from
+non-claimant legal heir(s) shall not be applicable.
+2. The affidavit-cum-NOC shall be executed on non-judicial stamp paper of
+appropriate value as specified under the Stamp Act of the state where the
+claimant resides.
+3. The processing entities may, for cases above threshold for simplified
+documentation, seek additional documents over and above those
+prescribed by SEBI, if so required and for reasons to be recorded in
+writing.
+5. Transmission Grid
+A grid summarising the documentation required for processing transmission of
+securities is provided at Annexure-1.
+6. Standard Procedure for Submission of Claims:
+6.1 Modes and procedure for submission of claim
+6.1.1 The entity shall necessarily use standardised forms in the following
+formats for receiving the claims and other documents:
+(i) Transmission Request form-cum-Undertaking on plain paper for
+claims under QTP category – (Annexure-2),
+(ii) Transmission Request Form for claims other than QTP category –
+(Annexure-3),
+(iii) Notarised indemnity bond indemnifying the processing entity
+(Annexure-4), and
+(iv) Notarised affidavit-cum-NOC from legal heirs, as applicable,
+confirming identification and claim of legal ownership to the
+securities and no objection (Annexure-5).
+6.1.2 Such forms shall be made available by the entity to the claimant in
+physical mode as well as on their websites along with the list of
+documents to be submitted by a claimant and the procedure to be
+followed for settlement of claims in various scenarios.
+6.1.3 The entity shall acknowledge the receipt of claim once the documents are
+submitted by the claimant. Also, while issuing such acknowledgement,
+the entity shall, at that time itself, inform the claimant about any pending
+or missing or incomplete or incorrect documents.
+6.1.4 On subsequent submission of all the required documents, the entity shall
+issue a confirmation to the claimant that all required documents have
+been received for processing of the claim.
+6.1.5 The entity may additionally offer an online facility for submitting such
+claims. Once the claimant uploads the relevant forms and required
+documents, the entity shall issue an acknowledgement/confirmation
+through appropriate channels and enable online tracking of the claim
+status. If original documents are needed for submission or verification,
+the claimant will be required to present them to the entity in person.
+6.1.6 For securities held in physical mode, after verifying and processing the
+request, the processing entity shall initiate the demat conversion request
+in the depository system for direct credit of securities in the demat
+account of the security holder/claimant.
+Post confirmation of the demat conversion request, the processing entity
+shall send an intimation to the security holder/claimant regarding
+successful dematerialisation of the securities.
+In case of the securities which are required to be locked in, the RTA,
+while crediting the securities in the demat account of the security
+holder/claimant, shall incorporate/intimate the Depository about the lock-
+in and its period.
+The RTA shall retain the physical securities as per the existing procedure
+and deface the certificate with a stamp "Securities issued in
+dematerialised form" on the face/ reverse of the certificate, subsequent
+to processing of service request.”
+6.1.7 Any deviation from the procedure laid down by SEBI, shall be
+communicated to the claimant with reasons to be recorded in writing
+within a specified time.
+6.1.8 In cases where processing entities exercise the discretion to seek
+additional documents, such requirement of additional document shall be
+consistent across processing entities and for similar kind of cases of
+clients.
+6.1.9 The processing entities shall also adopt similar approach for transmission
+of securities transferred to Investor Education and Protection Fund.
+6.1.10 Modes for proof of death in case the in case of death of an investor
+outside India
+6.1.10.1 In cases involving death of an investor outside India, ‘proof of
+death’ document is issued by an authority outside the country.
+In such cases, the entity shall accept the certified true copy of
+the document issued for ‘proof of death’, certified in the country
+of its issuance through any of the following modes:
+(a) a Court Magistrate or Judge or Notary Public in the country
+of issuance; or
+(b) Consularisation by Indian Embassy/ Consulate General in
+the country of issuance; or
+(c) apostilled; or
+(d) certification by authorised officials of overseas branches of
+Scheduled Commercial Banks registered in India.
+(e) certification by authorised officials of branches of overseas
+banks with whom Indian banks have correspondent banking
+relationships.
+6.1.10.2 In case the original death certificate is issued in a language
+other than English, the claimant shall also submit a self-certified
+copy of translation of death certificate into English along with
+certified copy of the original death certificate.
+6.1.11 Time limit for settlement of claims
+6.1.11.1 The entity shall process the transmission case within a period
+not exceeding 21 calendar days or any such period as may be
+specified by the Board, from the date of receipt of all the
+required documents associated with the claim.
+6.1.11.2 In case the transmission claim is not settled within the stipulated
+timelines or rejected, the entity shall communicate to the
+claimant, the reasons, in writing, for such delay/rejection.
+6.1.11.3 In case the entity does not settle the transmission claim within
+the given timelines and such delay is attributable to the entity,
+SEBI may undertake appropriate action in terms of relevant
+act/regulations/circulars etc.
+6.1.11.4 For all cases of transmission involving securities held in physical
+mode, the claimant should have the original security
+certificate(s) (except for cases which fall under duplicate-cum-
+transmission).
+7. Rule of Survivorship
+For transmission of securities to the surviving joint holder(s), RTAs/listed
+entity/AMCs/DPs/Depositories shall continue to comply with clause 23 of
+Table F in Schedule 1 read with Section 56(2) & 56(4)(c) of the
+Companies Act, 2013, and transmit securities in favour of surviving joint
+holder(s), in the event of demise of one or more joint holder(s), provided
+that there is nothing contrary in the Articles of Association of the
+company.
+In such cases, the regulated entity shall not seek any documentation
+including related to KYC, indemnities or undertakings from the surviving
+joint holder, except copy of the Death Certificate of the deceased.
+Annexure-1
+Simplified Grid for Documentation Requirement for Transmission of
+Securities
+Applicability of Documentation Categories
+Category Applicability
+Quick Transmission Processing — very low-value claims
+QTP by immediate relatives (parents, spouse, children,
+parents-in-law)
+Simplified documentation cases other than QTP, within
+Simplified
+the prescribed threshold
+Above Threshold Claims exceeding the simplified documentation threshold
+Documentation Grid
+Item Document required from Above
+QTP Simplified
+claimant (duly signed / executed) Threshold
+Common documents (mandatory
+A
+in all cases)
+1 Transmission request form ✔ ✔ ✔
+Latest Client Master List (CML) of
+2 ✔ ✔ ✔
+the claimant's demat account
+Verifiable death certificate of the
+3 ✔ ✔ ✔
+deceased security holder
+4 Original security
+✔ ✔ ✔
+certificate/statement of SOA
+5 Copy of Birth Certificate or School
+leaving certificate/ Passport or
+Aadhaar attested by guardian (in ✔ ✔ ✔
+case the nominee/claimant/legal
+heir is a minor)
+6 KYC of the Guardian (in case of
+nominee /claimant being a minor / of ✔ ✔ ✔
+unsound mind)
+Category | Applicability
+  Category: QTP; Applicability: Quick Transmission Processing — very low-value claims
+by immediate relatives (parents, spouse, children,
+parents-in-law)
+  Category: Simplified; Applicability: Simplified documentation cases other than QTP, within
+the prescribed threshold
+  Category: Above Threshold; Applicability: Claims exceeding the simplified documentation threshold
+
+Item | Document required from
+claimant (duly signed / executed) |  |  | QTP | Simplified | Above
+Threshold
+  Item: A; : Common documents (mandatory
+  : in all cases)
+  Item: 1; Document required from
+claimant (duly signed / executed): Transmission request form; QTP: ✔; Simplified: ✔; Above
+Threshold: ✔
+  Item: 2; Document required from
+claimant (duly signed / executed): Latest Client Master List (CML) of
+the claimant's demat account; QTP: ✔; Simplified: ✔; Above
+Threshold: ✔
+  Item: 3; Document required from
+claimant (duly signed / executed): Verifiable death certificate of the
+deceased security holder; QTP: ✔; Simplified: ✔; Above
+Threshold: ✔
+  Item: 4; Document required from
+claimant (duly signed / executed): Original security
+certificate/statement of SOA; QTP: ✔; Simplified: ✔; Above
+Threshold: ✔
+  Item: 5; Document required from
+claimant (duly signed / executed): Copy of Birth Certificate or School
+leaving certificate/ Passport or
+Aadhaar attested by guardian (in
+case the nominee/claimant/legal
+heir is a minor); QTP: ✔; Simplified: ✔; Above
+Threshold: ✔
+  Item: 6; Document required from
+claimant (duly signed / executed): KYC of the Guardian (in case of
+nominee /claimant being a minor / of
+unsound mind); QTP: ✔; Simplified: ✔; Above
+Threshold: ✔
+
+Relationship proof - applicable
+B
+for “QTP”
+Document evidencing relationship
+between the claimant and the
+deceased security holder
+7 ✔ — —
+(applicable only where claimant is
+parent, spouse, child or parent-in-
+law)
+Transmission Request Form-cum-
+8 Undertaking on plain paper as per ✔ — —
+specified format
+Indemnity and consent -
+C applicable for “Simplified”
+category
+Notarised indemnity bond
+indemnifying the RTA / listed
+entity/AMC as may be applicable.
+However, in case the claimant
+submits any court issued documents
+9 — ✔ —
+viz., Succession Certificate or
+Probate of Will or Letter of
+Administration or Court Decree, the
+requirement of submission of
+Notarised indemnity bond will not be
+applicable.
+Notarised affidavit cum NOC from
+all* legal heirs, confirming
+identification and claim of legal
+10 — ✔ —
+ownership to the securities and no
+objection.
+OR
+B |  | Relationship proof - applicable |  |  |  | 
+  Relationship proof - applicable: for “QTP”
+  B: 7; : Document evidencing relationship
+between the claimant and the
+deceased security holder
+(applicable only where claimant is
+parent, spouse, child or parent-in-
+law); : ✔; : —; : —
+  B: 8; : Transmission Request Form-cum-
+Undertaking on plain paper as per
+specified format; : ✔; : —; : —
+  B: C; Relationship proof - applicable: Indemnity and consent -
+  Relationship proof - applicable: applicable for “Simplified”
+  Relationship proof - applicable: category
+  B: 9; : Notarised indemnity bond
+indemnifying the RTA / listed
+entity/AMC as may be applicable.
+However, in case the claimant
+submits any court issued documents
+viz., Succession Certificate or
+Probate of Will or Letter of
+Administration or Court Decree, the
+requirement of submission of
+Notarised indemnity bond will not be
+applicable.; : —; : ✔; : —
+  B: 10; : Notarised affidavit cum NOC from
+all* legal heirs, confirming
+identification and claim of legal
+ownership to the securities and no
+objection.
+OR; : —; : ✔; : —
+
+copy of family settlement deed
+executed by all legal heirs, duly
+attested by a notary public, gazetted
+officer, or accepted and approved by
+a magistrate, judge or civil court.
+*In case the claimant submits any
+court issued documents viz.,
+Succession Certificate or Probate of
+Will or Letter of Administration or
+Court Decree, the requirement of
+submission of Affidavit-cum-NOC
+from non-claimant legal heir(s) will
+not be applicable.
+Other documents - applicable for
+D
+“Above Threshold” category
+Notarised affidavit-cum-NOC from
+all* legal heirs, confirming
+identification and claim of legal
+ownership to the securities and no
+objection.
+*In case the claimant submits any
+11 — — ✔
+court issued documents viz.,
+Succession Certificate or Probate of
+Will or Letter of Administration or
+Court Decree, the requirement of
+submission of Affidavit-cum-NOC
+from non-claimant legal heir(s) shall
+not be applicable.
+12 Any ONE of the following
+succession documents: — — ✔
+ | copy of family settlement deed
+executed by all legal heirs, duly
+attested by a notary public, gazetted
+officer, or accepted and approved by
+a magistrate, judge or civil court.
+*In case the claimant submits any
+court issued documents viz.,
+Succession Certificate or Probate of
+Will or Letter of Administration or
+Court Decree, the requirement of
+submission of Affidavit-cum-NOC
+from non-claimant legal heir(s) will
+not be applicable. |  |  |  |  | 
+  : D; : Other documents - applicable for
+  : “Above Threshold” category
+  : 11; copy of family settlement deed
+executed by all legal heirs, duly
+attested by a notary public, gazetted
+officer, or accepted and approved by
+a magistrate, judge or civil court.
+*In case the claimant submits any
+court issued documents viz.,
+Succession Certificate or Probate of
+Will or Letter of Administration or
+Court Decree, the requirement of
+submission of Affidavit-cum-NOC
+from non-claimant legal heir(s) will
+not be applicable.: Notarised affidavit-cum-NOC from
+all* legal heirs, confirming
+identification and claim of legal
+ownership to the securities and no
+objection.
+*In case the claimant submits any
+court issued documents viz.,
+Succession Certificate or Probate of
+Will or Letter of Administration or
+Court Decree, the requirement of
+submission of Affidavit-cum-NOC
+from non-claimant legal heir(s) shall
+not be applicable.; : —; : —; : ✔
+  : 12; copy of family settlement deed
+executed by all legal heirs, duly
+attested by a notary public, gazetted
+officer, or accepted and approved by
+a magistrate, judge or civil court.
+*In case the claimant submits any
+court issued documents viz.,
+Succession Certificate or Probate of
+Will or Letter of Administration or
+Court Decree, the requirement of
+submission of Affidavit-cum-NOC
+from non-claimant legal heir(s) will
+not be applicable.: Any ONE of the following
+succession documents:; : —; : —; : ✔
+
+Copy of Will as may be applicable in
+terms of Indian Succession
+Act,1925, along with a notarized
+indemnity bond from the legal
+heir(s)/claimant(s) to whom the
+securities have to be transmitted, as
+per the format specified
+OR
+Legal Heirship Certificate or its
+equivalent issued by relevant
+authority which will mean a revenue
+authority not below the rank of a
+Tehsildar or equivalent authority,
+along with a notarized indemnity
+bond from the legal heir
+(s)/claimant(s) to whom the
+securities have to be transmitted, as
+per specified format;
+OR
+Copy of Succession certificate or
+Letter of Administration or Court
+Decree.
+Note: The processing entities may, for cases above threshold for simplified
+documentation, seek additional documents over and above those prescribed by
+SEBI, if so required.
+
+Annexure-2
+Transmission Request Form-cum-Undertaking for Quick Transmission
+Processing (QTP)
+Where No Nominee is Registered
+(To be submitted on Plain Paper)
+Tick (☐→☑) the boxes wherever applicable and fill in the details legibly.
+To: Date: mm, dd, yyyy
+<Company Name>/<Fund Name>/RTA Name/DP>
+<Address>
+<City> - <Pincode
+PART A – CLAIMANT AND DECEASED HOLDER INFORMATION
+DP ID - Client ID / Folio No.
+Deceased Holder Name:
+Claimant Name
+Claimant PAN / PEKRN (Mention
+only number)
+Category of Claimant
+☐ Parent ☐ Spouse ☐ Child ☐ Parent-in-law
+Documentary Proof attached (Refer
+Annexure – A for the documents list)
+PART B – TRANSMISSION REQUEST FORM
+I, the claimant named hereinabove, hereby inform you about the demise of the above-
+mentioned security/unit holder(s) and request you to transmit the securities/units held
+by the deceased security/unit holder(s) in my favor in my capacity as Legal Heir
+Successor to the Estate of the deceased Administrator of the Estate of the deceased
+PART C – UNDERTAKING
+DP ID - Client ID / Folio No. | 
+  DP ID - Client ID / Folio No.: Deceased Holder Name:
+  DP ID - Client ID / Folio No.: Claimant Name
+  DP ID - Client ID / Folio No.: Claimant PAN / PEKRN (Mention
+only number)
+  DP ID - Client ID / Folio No.: Category of Claimant; : ☐ Parent ☐ Spouse ☐ Child ☐ Parent-in-law
+  DP ID - Client ID / Folio No.: Documentary Proof attached (Refer
+Annexure – A for the documents list)
+
+I/We _____________________________, legal heir(s) of Late
+Mr./Ms.____________________ (“Name of the Deceased Holder”), residing at
+_________________________________________ do hereby state and undertake as
+under:
+1. The deceased holder held the following securities / MF unit holdings in his/her
+name as sole/single holder:
+S. No. Company / Folio No. / DP- No. of Certificate Distinctive
+Fund Name Client ID Securities / Number (for Numbers (for
+with Scheme Units / physical physical
+Name Shares Held shares / shares /
+securities) securities)
+From:
+1
+To:
+From:
+2
+To:
+From:
+3
+To:
+2. Above referred deceased holder died without registering any nominee.
+3. That I/We are the legal heir(s) of the deceased as per the details in the below table
+and that we are the only legal heirs/legatees of the deceased holder.
+Name of the Legal Age Relationship with the deceased
+Heir(s)*
+* Where any legal heir is a minor, such minor is represented herein by his/her natural/legal
+guardian.
+ |  |  |  |  | 
+  : S. No.; : Company /
+Fund Name
+with Scheme
+Name; : Folio No. / DP-
+Client ID; : No. of
+Securities /
+Units /
+Shares Held; : Certificate; : Distinctive
+  : Number (for; : Numbers (for
+  : physical; : physical
+  : shares /; : shares /
+  : securities); : securities)
+  : 1; : From:
+To:
+  : 2; : From:
+To:
+  : 3; : From:
+To:
+
+Company /
+  Company /: Fund Name
+  Company /: with Scheme
+  Company /: Name
+
+Folio No. / DP-
+  Folio No. / DP-: Client ID
+
+No. of
+  No. of: Securities /
+  No. of: Units /
+  No. of: Shares Held
+
+Name of the Legal
+Heir(s)* | Age | Relationship with the deceased
+
+Therefore, I/We, the Legal Heir(s)/Claimant(s), have approached
+_______________________ (Name of the Company / AMC / RTA / DP /
+Depository) with a request to transmit the aforesaid securities in the name of the
+undersigned, Mr./Ms. _______________________________________________
+[Name(s) of the legal heir(s)/claimant(s)], on my/our behalf. I/We, am/are furnishing
+the documents as mentioned below for transmission of the securities in our name:
+S. No. Document Submitted Remarks
+1 Original Transmission Request Form (duly filled and ☐
+signed)
+2 Self-attested copy of Latest Client Master List (CML) ☐
+of claimants’ demat account
+3 Self-attested copy of Verifiable Death Certificate of ☐
+the deceased holder
+4 Original Security Certificate / Statement of Account (if ☐
+applicable).
+5 If claimant is a minor – Copy of Birth Certificate or ☐
+School leaving certificate/ Passport or Aadhaar (where
+the date of birth is available) – Attested by the
+Guardian (Natural or Legal).
+6 KYC of Guardian (if claimant is a minor or of unsound ☐
+mind).
+7 Relationship Proof (where claimant is spouse, child, ☐
+parent or parent-in-law) or Affidavit as per Annexure-
+B.
+8 Nomination Form or Nomination Opt-Out form ☐
+9 FATCA-CRS Declaration in a prescribed format, ☐
+wherever applicable
+ |  |  |  |  |  |  |  |  |  |  | 
+  : S. No.; : Document; : Submitted; : Remarks
+  : 1; : Original Transmission Request Form (duly filled and
+signed); : ☐
+  : 2; : Self-attested copy of Latest Client Master List (CML)
+of claimants’ demat account; : ☐
+  : 3; : Self-attested copy of Verifiable Death Certificate of
+the deceased holder; : ☐
+  : 4; : Original Security Certificate / Statement of Account (if
+applicable).; : ☐
+  : 5; : If claimant is a minor – Copy of Birth Certificate or
+School leaving certificate/ Passport or Aadhaar (where
+the date of birth is available) – Attested by the
+Guardian (Natural or Legal).; : ☐
+  : 6; : KYC of Guardian (if claimant is a minor or of unsound
+mind).; : ☐
+  : 7; : Relationship Proof (where claimant is spouse, child,
+parent or parent-in-law) or Affidavit as per Annexure-
+B.; : ☐
+  : 8; : Nomination Form or Nomination Opt-Out form; : ☐
+  : 9; : FATCA-CRS Declaration in a prescribed format,
+wherever applicable; : ☐
+
+S. No. Document Submitted Remarks
+10 Signature of the Nominee/ Claimant shall be attested ☐
+only by a Notary Public or a Judicial Magistrate First
+Class (JMFC) in lieu of banker’s attestation (applicable
+only for transmission of units held in SOA)
+PART D – OTHER INFORMATION ABOUT CLAIMANT (Applicable only for
+transmission of units held in SOA)
+KYC Acknowledgment attached KYC form attached
+Tax Status: Resident Individual Resident Minor (through Guardian) NRI PIO
+/ OCI Others (please specify)
+Contact details of the Claimant
+Mobile No. | | | | | | | | | | | Tel. No. STD -
+Email Address
+Above mobile belongs to: Self Spouse Dependent parent(s) Son
+Daughter
+Above email belongs to: Self Spouse Dependent parent(s) Son
+Daughter
+Address (Please note that address will be updated as per claimant’s address on KYC form /
+KYC Registration Agency records)
+Address Line 1
+Address Line 2
+City: State PIN | | | | | |
+Bank Account Details of the Claimant
+Bank Name
+Account No. |11-digit IFSC | | | | | | | | | | |
+A/c. Type ( ) SB Current NRO NRE FCNR
+✓
+| 9-digit MICR No.| | | | | | | | |
+Name of bank branch
+City PIN | | | | | |
+Please attach & tick✓ Cancelled cheque with claimant’s name printed OR
+Claimant’s Bank Statement/Passbook
+ |  |  |  |  |  |  |  |  |  |  | 
+  : S. No.; : Document; : Submitted; : Remarks
+  : 10; : Signature of the Nominee/ Claimant shall be attested
+only by a Notary Public or a Judicial Magistrate First
+Class (JMFC) in lieu of banker’s attestation (applicable
+only for transmission of units held in SOA); : ☐
+
+Mobile No. | | | | | | | | | | | Tel. No. STD -
+  Mobile No. | | | | | | | | | | | Tel. No. STD -: Email Address
+  Mobile No. | | | | | | | | | | | Tel. No. STD -: Above mobile belongs to: Self Spouse Dependent parent(s) Son
+Daughter
+  Mobile No. | | | | | | | | | | | Tel. No. STD -: Above email belongs to: Self Spouse Dependent parent(s) Son
+Daughter
+
+Address Line 1
+  Address Line 1: Address Line 2
+  Address Line 1: City: State PIN | | | | | |
+
+Bank Name
+  Bank Name: Account No. |11-digit IFSC | | | | | | | | | | |
+  Bank Name: A/c. Type ( ) SB Current NRO NRE FCNR
+✓
+| 9-digit MICR No.| | | | | | | | |
+  Bank Name: Name of bank branch
+  Bank Name: City PIN | | | | | |
+
+PART E – DECLARATION AND RESPONSIBILITY CLAUSE
+I/We confirm that the above documents have been submitted and that the information,
+facts, and particulars furnished by me/us in this undertaking and the accompanying
+documents are true, correct, and complete to the best of my/our knowledge and belief,
+and no material information / fact has been concealed or misrepresented therein.
+I/We further undertake and confirm that in the event any information, declaration, or
+document furnished by me/us herein is subsequently found to be false, incorrect,
+incomplete, forged, or fraudulent, the responsibility and liability for resolving the
+resultant discrepancy, dispute, or claim – including any consequential loss, cost, or
+legal action – shall rest solely and exclusively with me / us, the claimant(s), and I/We
+shall keep the Company/AMC/RTA/Depository Participant / Depository fully
+indemnified and harmless against any loss, claim, demand, or liability arising directly
+or indirectly therefrom. I/We also knowledge to share the above demise information to
+the regulatory authorities or statutory authorities or to the entities entrusted by the
+regulatory/statutory authorities from time to time for onward circulation/dissemination
+to all applicable regulated entities.
+Claimant(s) Signature
+Place Date
+Note: Where any person required to sign this document is unable to sign, he/she may
+affix his/her left thumb impression in lieu of signature.
+ANNEXURE-A: PROOF OF RELATIONSHIP
+A self-attested copy of the proof of relationship as referred to above is enclosed
+herewith:
+Tick against the document* given as proof of relationship
+Birth certificate which lists the parent’s name ☐
+School leaving certificate ☐
+School records/service records ☐
+Claimant(s) Signature | 
+  Claimant(s) Signature: Place; : Date
+
+Tick against the document* given as proof of relationship
+  Tick against the document* given as proof of relationship: Birth certificate which lists the parent’s name ☐
+School leaving certificate ☐
+School records/service records ☐
+
+Passport ☐
+Marriage Certificate ☐
+Ration Card ☐
+Voter ID ☐
+Aadhar ☐
+Permanent Account Number ☐
+Will ☐
+Legal Heirship Certificate ☐
+Court Decree ☐
+Letter of Administration ☐
+Succession Certificate ☐
+Probate of Will (where available) ☐
+*In case none of the above documents are available, a notarized Affidavit in the
+format given in Annexure-B.
+ANNEXURE-B: DRAFT OF THE AFFIDAVIT
+To be executed on Non-Judicial Stamp Paper of appropriate value (as applicable in the relevant
+State where the claimant resides) and notarized / attested by a Gazetted Officer or Judicial
+Magistrate First Class (JMFC)
+I/We,______________________________________ Son / daughter/legal heir of
+_________________ residing at
+______________________________________________ do hereby solemnly
+affirm and state on oath as follows.
+That Mr. / Mrs. _________________________________________(“Name of the
+Deceased Holder”) held the following securities:
+S. Company / Fund Folio No. / DP- No. of Certificate Distinctive
+No. Name with Client ID Securities / Number (for Numbers (for
+Scheme Name Units / Shares physical shares / physical
+Held securities) shares /
+securities)
+From:
+1
+To:
+ |  |  |  |  | 
+  : S.
+No.; : Company / Fund
+Name with
+Scheme Name; : Folio No. / DP-
+Client ID; : No. of
+Securities /
+Units / Shares
+Held; : Certificate; : Distinctive
+  : Number (for; : Numbers (for
+  : physical shares /; : physical
+  : securities); : shares /
+  : securities)
+  : 1; : From:
+To:
+
+S.
+  S.: No.
+
+Company / Fund
+  Company / Fund: Name with
+  Company / Fund: Scheme Name
+
+Folio No. / DP-
+  Folio No. / DP-: Client ID
+
+No. of
+  No. of: Securities /
+  No. of: Units / Shares
+  No. of: Held
+
+S. Company / Fund Folio No. / DP- No. of Certificate Distinctive
+No. Name with Client ID Securities / Number (for Numbers (for
+Scheme Name Units / Shares physical shares / physical
+Held securities) shares /
+securities)
+From:
+2
+To:
+From:
+3
+To:
+That the aforesaid deceased holder died leaving behind the following persons as the
+legal heirs without registering any nominee:
+S. Name of the Legal Address and contact Age Relation with the
+No. Heir(s) details Deceased
+1
+2
+3
+That among the aforesaid legal heirs, Master/
+Kumari.____________________________ aged ____ years is a minor and is being
+represented by Mr./Ms. _____________________(“Name of the Guardian”) being
+his / her father / mother / legal guardian.
+Signature of the Deponent: X________________
+Note: Where any person required to sign this document is unable to sign, he/she may
+affix his/her left thumb impression in lieu of signature.
+VERIFICATION
+I /We hereby solemnly affirm and state that what is stated herein above is true and
+correct and nothing has been concealed therein and that we I am competent to
+contract and entitled to rights and benefits of the abovementioned securities of the
+deceased.
+Solemnly affirmed at Signature of the Deponent:
+ |  |  |  |  | 
+  : S.
+No.; : Company / Fund
+Name with
+Scheme Name; : Folio No. / DP-
+Client ID; : No. of
+Securities /
+Units / Shares
+Held; : Certificate; : Distinctive
+  : Number (for; : Numbers (for
+  : physical shares /; : physical
+  : securities); : shares /
+  : securities)
+  : 2; : From:
+To:
+  : 3; : From:
+To:
+
+S.
+  S.: No.
+
+Folio No. / DP-
+  Folio No. / DP-: Client ID
+
+No. of
+  No. of: Securities /
+  No. of: Units / Shares
+  No. of: Held
+
+S.
+No. | Name of the Legal
+Heir(s) | Address and contact
+details | Age | Relation with the
+Deceased
+  S.
+No.: 1
+  S.
+No.: 2
+  S.
+No.: 3
+
+__________________________
+Signed before me
+--------------------------------------------------
+Signature of Notary with Official Seal of Notary & Regn. No.
+* strikeout whichever is not applicable
+Annexure-3
+Transmission Request Form (For Transmission under other than QTP
+Category)
+(For Transmission of Securities / Units on death of the Sole holder / all holders)
+Tick (☐→☑) the boxes wherever applicable and fill in the details legibly.
+To: Date: mm, dd, yyyy
+<Company Name>/<Fund Name>/RTA Name/DP>
+<Address>
+<City> - <Pincode
+Part A – Claimant and Deceased Holder information
+DP ID / Client ID / Folio No.
+Deceased Holder Name:
+Claimant Name
+Claimant PAN / PEKRN (Mention
+only number)
+Part B – Details of Securities
+I/We, the Nominee / Legal Heir / Claimant of the above referred deceased investor(s),
+hereby inform you about the demise of the above-mentioned security/unit holder(s)
+and request you to transmit the securities/units held by the deceased security/unit
+holder(s) as listed below in my/our favor in my/our capacity as Nominee(s) Legal
+Heir Successor to the Estate of the deceased Administrator of the Estate of the
+deceased
+S. Company / Fund Folio No. / DP- No. of Certificate Number Distinctive
+No. Name with Client ID Securities / (for physical shares Numbers (for
+Scheme Name Units / Shares / securities) physical shares /
+Held securities)
+From:
+1
+To:
+2 From:
+DP ID / Client ID / Folio No. | 
+  DP ID / Client ID / Folio No.: Deceased Holder Name:
+  DP ID / Client ID / Folio No.: Claimant Name
+  DP ID / Client ID / Folio No.: Claimant PAN / PEKRN (Mention
+only number)
+
+ |  |  |  |  |  |  | 
+  : S.
+No.; : Company / Fund
+Name with
+Scheme Name; : Folio No. / DP-
+Client ID; : No. of; : Certificate Number; : Distinctive
+  : Securities /; : (for physical shares; : Numbers (for
+  : Units / Shares; : / securities); : physical shares /
+  : Held; : securities)
+  : 1; : From:
+To:
+  : 2; : From:
+
+S.
+  S.: No.
+
+Company / Fund
+  Company / Fund: Name with
+  Company / Fund: Scheme Name
+
+Folio No. / DP-
+  Folio No. / DP-: Client ID
+
+S. Company / Fund Folio No. / DP- No. of Certificate Number Distinctive
+No. Name with Client ID Securities / (for physical shares Numbers (for
+Scheme Name Units / Shares / securities) physical shares /
+Held securities)
+To:
+From:
+3
+To:
+Part C – Other information about Nominee / Legal Heir / Claimant (Applicable
+only for transmission of units held in SOA)
+KYC Acknowledgment attached KYC form attached
+Tax Status: Resident Individual Resident Minor (through Guardian) NRI PIO
+/ OCI Others (please specify)
+Contact details of the Nominee / Legal Heir / Claimant
+Mobile No. | | | | | | | | | | | Tel. No. STD -
+Email Address
+Above mobile belongs to: Self Spouse Dependent parent(s) Son
+Daughter
+Above email belongs to: Self Spouse Dependent parent(s) Son
+Daughter
+Address (Please note that address will be updated as per claimant’s address on KYC form / KYC Registration
+Agency records)
+Address Line 1
+Address Line 2
+City: State PIN | | | | | |
+Bank Account Details of the Nominee / Legal Heir / Claimant
+Bank Name
+Account No. |11-digit IFSC | | | | | | | | | | |
+A/c. Type ( ) S B Current NRO NRE FCNR
+✓
+| 9-digit MICR No.| | | | | | | | |
+Name of bank and branch
+City PIN | | | | | |
+ |  |  |  |  |  |  | 
+  : S.
+No.; : Company / Fund
+Name with
+Scheme Name; : Folio No. / DP-
+Client ID; : No. of; : Certificate Number; : Distinctive
+  : Securities /; : (for physical shares; : Numbers (for
+  : Units / Shares; : / securities); : physical shares /
+  : Held; : securities)
+  : To:
+  : 3; : From:
+To:
+
+S.
+  S.: No.
+
+Company / Fund
+  Company / Fund: Name with
+  Company / Fund: Scheme Name
+
+Folio No. / DP-
+  Folio No. / DP-: Client ID
+
+Mobile No. | | | | | | | | | | | Tel. No. STD -
+  Mobile No. | | | | | | | | | | | Tel. No. STD -: Email Address
+  Mobile No. | | | | | | | | | | | Tel. No. STD -: Above mobile belongs to: Self Spouse Dependent parent(s) Son
+Daughter
+  Mobile No. | | | | | | | | | | | Tel. No. STD -: Above email belongs to: Self Spouse Dependent parent(s) Son
+Daughter
+
+Address Line 1
+  Address Line 1: Address Line 2
+  Address Line 1: City: State PIN | | | | | |
+
+Bank Name
+  Bank Name: Account No. |11-digit IFSC | | | | | | | | | | |
+  Bank Name: A/c. Type ( ) S B Current NRO NRE FCNR
+✓
+| 9-digit MICR No.| | | | | | | | |
+  Bank Name: Name of bank and branch
+  Bank Name: City PIN | | | | | |
+
+Please attach & tick✓ Cancelled cheque with claimant’s name printed OR Claimant’s Bank
+Statement/Passbook
+Part D – Consent by other Nominee(s) to be added as Joint Holder(s)
+(Applicable only in case of claims submitted by nominee)
+Other nominee(s) nominated by the deceased holder in the above referred folio(s) as
+listed below hereby consent to transmit the units with me as the first holder and add
+other nominee(s) as Joint Holder(s) in the new transmitted folio.
+Name of the Nominee(s) to be PAN/ PEKN KYC Compliance*
+added as joint holder
+*if KYC not compliance/not done, KYC form with relevant supporting documents to be submitted.
+I/We hereby provide my/our consent to add me/us as Joint Holder in the new
+transmission folio where claimant would be the first holder.
+Name of the Nominee(s) to be added as Signature
+joint holder
+Part E – Declaration and Responsibility Clause
+I/We confirm that the above documents have been submitted and that the information,
+facts, and particulars furnished by me/us in this undertaking and the accompanying
+documents are true, correct, and complete to the best of my/our knowledge and belief,
+and no material information / fact has been concealed or misrepresented therein.
+I/We further undertake and confirm that in the event any information, declaration, or
+document furnished by me/us herein is subsequently found to be false, incorrect,
+incomplete, forged, or fraudulent, the responsibility and liability for resolving the
+resultant discrepancy, dispute, or claim – including any consequential loss, cost, or
+legal action – shall rest solely and exclusively with me/us, the claimant(s), and I/We
+shall keep the Company/AMC/RTA/Depository Participant fully indemnified and
+Name of the Nominee(s) to be
+added as joint holder | PAN/ PEKN | KYC Compliance*
+
+Name of the Nominee(s) to be added as
+joint holder | Signature
+
+harmless against any loss, claim, demand, or liability arising directly or indirectly
+therefrom. I/We also knowledge to share the above demise information to the
+regulatory authorities or statutory authorities or to the entities entrusted by the
+regulatory/statutory authorities from time to time.
+Claimant Signature
+Place Date
+Note: Where any person required to sign this document is unable to sign, he/she may
+affix his/her left thumb impression in lieu of signature.
+Documents checklist to be annexed along with the transmission request form.
+S. No. Document Submitted Remarks
+1 Original Transmission Request Form (duly filled and ☐
+signed)
+2 Self-attested copy of Latest Client Master List (CML) ☐
+of claimants’ demat account
+3 Self-attested copy of Verifiable Death Certificate of ☐
+the deceased holder
+4 Original Security Certificate / Copy of Statement of ☐
+Account (if applicable)
+5 If claimant is a minor - Birth Certificate or School ☐
+leaving certificate/ Passport or last four digits of
+Aadhaar (where the date of birth is available –
+Attested by the Guardian (Natural or Legal).
+6 KYC of Guardian (if claimant is a minor or of unsound ☐
+mind)
+7 Nomination Form or Nomination Opt-Out form ☐
+8 FATCA-CRS Declaration in a prescribed format ☐
+9 Signature of the Nominee/ Claimant shall be attested ☐
+only by a Notary Public or a Judicial Magistrate First
+Class (JMFC) in lieu of banker’s attestation (applicable
+only for transmission of units held in SOA)
+Claimant Signature | 
+  Claimant Signature: Place; : Date
+
+ |  |  |  |  |  |  |  |  |  |  | 
+  : S. No.; : Document; : Submitted; : Remarks
+  : 1; : Original Transmission Request Form (duly filled and
+signed); : ☐
+  : 2; : Self-attested copy of Latest Client Master List (CML)
+of claimants’ demat account; : ☐
+  : 3; : Self-attested copy of Verifiable Death Certificate of
+the deceased holder; : ☐
+  : 4; : Original Security Certificate / Copy of Statement of
+Account (if applicable); : ☐
+  : 5; : If claimant is a minor - Birth Certificate or School
+leaving certificate/ Passport or last four digits of
+Aadhaar (where the date of birth is available –
+Attested by the Guardian (Natural or Legal).; : ☐
+  : 6; : KYC of Guardian (if claimant is a minor or of unsound
+mind); : ☐
+  : 7; : Nomination Form or Nomination Opt-Out form; : ☐
+  : 8; : FATCA-CRS Declaration in a prescribed format; : ☐
+  : 9; : Signature of the Nominee/ Claimant shall be attested
+only by a Notary Public or a Judicial Magistrate First
+Class (JMFC) in lieu of banker’s attestation (applicable
+only for transmission of units held in SOA); : ☐
+
+S. No. Document Submitted Remarks
+10 ☐
+Notarised indemnity bond indemnifying the RTA /
+listed entity/AMC as may be applicable
+11 Notarised affidavit cum NOC from all legal heirs, ☐
+confirming identification and claim of legal ownership
+to the securities and no objection
+OR
+copy of family settlement deed executed by all legal
+heirs, duly attested by a notary public, gazetted officer,
+or accepted and approved by a magistrate, judge or
+civil court.
+12 Notarised affidavit cum NOC from all legal heirs, ☐
+confirming identification and claim of legal ownership
+to the securities and no objection
+13 Any ONE of the following succession documents: ☐
+Copy of Will as may be applicable in terms of Indian
+Succession Act,1925, along with a notarized
+indemnity bond from the legal heir(s)/claimant(s) to
+whom the securities have to be transmitted
+OR
+Legal Heirship Certificate or its equivalent issued by
+relevant authority which will mean a revenue authority
+not below the rank of a Tehsildar or equivalent
+authority, along with a notarized indemnity bond from
+the legal heir (s)/claimant(s) to whom the securities
+have to be transmitted;
+OR
+Copy of Succession certificate or Letter of
+Administration or Court Decree.
+Note:
+1. For claim submitted by nominee, only documents specified at serial no. 1-9 shall be submitted.
+2. For claim submitted by legal heir(s)/claimant(s) under “Simplified” category, documents
+specified at serial no. 1-11, as applicable, shall be submitted.
+3. For claim submitted by legal heir(s)/claimant(s) under “Above Threshold” category, documents
+specified at serial no. 1-9, 12 and 13, as applicable, shall be submitted.
+ |  |  |  |  |  |  |  |  |  |  | 
+  : S. No.; : Document; : Submitted; : Remarks
+  : 10; : Notarised indemnity bond indemnifying the RTA /
+listed entity/AMC as may be applicable; : ☐
+  : 11; : Notarised affidavit cum NOC from all legal heirs,
+confirming identification and claim of legal ownership
+to the securities and no objection
+OR
+copy of family settlement deed executed by all legal
+heirs, duly attested by a notary public, gazetted officer,
+or accepted and approved by a magistrate, judge or
+civil court.; : ☐
+  : 12; : Notarised affidavit cum NOC from all legal heirs,
+confirming identification and claim of legal ownership
+to the securities and no objection; : ☐
+  : 13; : Any ONE of the following succession documents:
+Copy of Will as may be applicable in terms of Indian
+Succession Act,1925, along with a notarized
+indemnity bond from the legal heir(s)/claimant(s) to
+whom the securities have to be transmitted
+OR
+Legal Heirship Certificate or its equivalent issued by
+relevant authority which will mean a revenue authority
+not below the rank of a Tehsildar or equivalent
+authority, along with a notarized indemnity bond from
+the legal heir (s)/claimant(s) to whom the securities
+have to be transmitted;
+OR
+Copy of Succession certificate or Letter of
+Administration or Court Decree.; : ☐
+
+Annexure-4
+Note: To be executed in the presence of a Notary Public / Judicial Magistrate
+First Class (JMFC) / Gazetted Officer
+BOND OF INDEMNITY
+For Transmission of Securities / Mutual Fund Units upon demise of Sole
+Holder / All Holders who died without registering a Nominee
+To be furnished jointly or severally, as may be applicable, by all Legal Heir(s),
+including the Claimant(s)
+To be submitted on Non-Judicial Stamp Paper of appropriate value, as
+applicable in the relevant State where the claimant resides
+ASSET TYPE – TICK AS APPLICABLE
+Securities (Shares / Debentures / Bonds / Mutual Fund units etc.) held in:
+☐ Physical mode / Statement of Account (SOA)
+☐ Demat mode
+PART A – DETAILS OF HOLDING
+I/We do hereby solemnly affirm and state on oath as follows:
+That Mr./Ms. ___________________________________ (“Name of the deceased
+security/unit holder”) was the sole holder of the following securities / mutual fund units:
+S. Name of Company Client ID / DP ID / Distinctive No. (if No. of Securities /
+No. / Mutual Fund Folio No. / applicable) Units/shares Held
+Scheme Certificate No.
+From:
+1
+To:
+2 From:
+ |  |  |  |  |  |  |  | 
+  : S.
+No.; : Name of Company; : Client ID / DP ID /; : Distinctive No. (if
+applicable); : No. of Securities /
+Units/shares Held
+  : / Mutual Fund; : Folio No. /
+  : Scheme; : Certificate No.
+  : 1; : From:
+To:
+  : 2; : From:
+
+S.
+  S.: No.
+
+Distinctive No. (if
+  Distinctive No. (if: applicable)
+
+S. Name of Company Client ID / DP ID / Distinctive No. (if No. of Securities /
+No. / Mutual Fund Folio No. / applicable) Units/shares Held
+Scheme Certificate No.
+To:
+From:
+3
+To:
+From:
+4
+To:
+PART B – BASIS OF SUCCESSION & DETAILS OF LEGAL HEIR(S)
+That the aforesaid deceased holder died on ____________________, without
+registering any nominee, leaving behind him/her the following persons as the only
+surviving legal heirs, according to the laws of:
+☐ Intestate succession by which the deceased was governed at the time of his/her
+death.
+☐ Testamentary succession – i.e., under a Will of the deceased.
+(Please tick one of above checkboxes, as applicable)
+Name of Legal Heir(s) / Address & Contact Relationship with the
+Age
+Claimant(s)* Details Deceased
+*If any of the Legal Heir(s) other than claimant has expired, verifiable death certificate
+should be submitted for such deceased Legal Heir(s) also.
+ |  |  |  |  |  |  |  | 
+  : S.
+No.; : Name of Company; : Client ID / DP ID /; : Distinctive No. (if
+applicable); : No. of Securities /
+Units/shares Held
+  : / Mutual Fund; : Folio No. /
+  : Scheme; : Certificate No.
+  : To:
+  : 3; : From:
+To:
+  : 4; : From:
+To:
+
+S.
+  S.: No.
+
+Distinctive No. (if
+  Distinctive No. (if: applicable)
+
+No. of Securities /
+  No. of Securities /: Units/shares Held
+
+ |  |  |  |  |  |  |  |  | 
+  : Name of Legal Heir(s) /; : Address & Contact; : Age; : Relationship with the
+  : Claimant(s)*; : Details; : Deceased
+
+PART C – REQUEST & INDEMNITY
+Therefore, I/We, the Legal Heir(s)/Claimant(s) and deponent(s) herein, have
+approached ______________________________ (Name of the Listed Company /
+Issuer / AMC / RTA / Depository Participant / Depository) with a request to
+transfer/transmit the aforesaid securities/units in the name of the undersigned Mr./Ms.
+____________________[Name(s) of the legal heir(s)/claimant(s)] (#), on my/our
+behalf, without insisting on production of a Succession Certificate / Probate of Will /
+Letter of Administration or any Court Order, for which we execute this indemnity as
+herein contained, relying on the information given by us and believing the same to be
+true.
+In consideration of my/our request to transfer/transmit the above-said securities/units
+to the name of the undersigned legal heir(s)/claimant(s) named above (#), I/We hereby
+jointly and severally agree and undertake to indemnify and keep indemnified, saved,
+defended and held harmless the said Listed Company/Issuer/AMC and its
+RTA/Depository Participant/Depository, and their respective successors and assigns,
+at all times hereafter, against all losses, costs, claims, actions, demands, risks,
+charges, expenses, damages, and liabilities whatsoever, which they may suffer and/or
+incur by reason of transferring/transmitting the said securities/units as aforesaid, at
+my/our request, to the undersigned legal heir(s)/claimant(s), without insisting on
+production of a Succession Certificate / Probate of Will / Letter of Administration or
+any Court Order (of competent jurisdiction).
+This indemnity shall be binding on me/us, our respective heirs, executors,
+administrators, and legal representatives, and shall remain in full force and effect
+irrespective of whether the asset transmitted is a security or a mutual fund unit, or
+both.
+I/We declare that, to the best of my/our knowledge and belief, there is no pending
+dispute, litigation or competing claim amongst the legal heir(s) and claimant(s) in
+relation to the aforesaid securities/units or the succession thereof.
+PART D – EXECUTION
+IN WITNESS WHEREOF the said
+1) Mr./Ms. Name:___________________ Signature:_ (Name
+& signature of witness),
+2) Mr./Ms. Name:___________________ Signature:_ (Name
+& signature of witness),
+have hereunto set their respective hands and seals this ______ day of
+______________. Signed and delivered by the said legal heir(s).
+Signature of the Legal Heir(s) /
+Name of the Legal Heir(s) / Claimant(s)
+Claimant(s)
+1. X
+2. X
+3. X
+Note: Where any person required to sign this document is unable to sign,
+he/she may affix his/her left thumb impression in lieu of signature.
+PART E – ATTESTATION BY NOTARY
+Signed before me,
+At: ________________________________________
+On (date): ________________________________________
+____________________________
+Signature of Notary
+Official Stamp, Seal & Registration No. of Notary:
+________________________________________
+ |  |  | 
+  : Name of the Legal Heir(s) / Claimant(s); : Signature of the Legal Heir(s) /
+  : Claimant(s)
+  : 1.; : X
+  : 2.; : X
+  : 3.; : X
+
+Annexure-5
+To be executed on Non-Judicial Stamp Paper of appropriate value (as applicable in
+the relevant State where the claimant resides) and notarized / attested by a Gazetted
+Officer / Judicial Magistrate First Class (JMFC)
+AFFIDAVIT-CUM-NO OBJECTION DECLARATION
+For Transmission of Securities / Mutual Fund Units upon demise of Sole Holder / All
+Holders who died without registering a Nominee
+To be furnished jointly or severally, as may be applicable, by the Claimant(s) and all Non-
+Claimant Legal Heir(s)
+ASSET TYPE – TICK AS APPLICABLE
+Securities (Shares / Debentures / Bonds / Mutual Fund units etc.) held in:
+☐ Physical mode / Statement of Account (SOA)
+☐ Demat mode
+PART A – DEPONENT(S)
+I/We __________________________________, son(s)/daughter(s)/legal heir(s) of Late Mr. /
+Mrs._____________________________, residing at______________________________,
+do hereby solemnly affirm and state on oath as under:
+PART B – DECLARATIONS
+1. The above-mentioned deceased holder held the securities/units described in Part C in
+his/her name as the sole holder.
+2. The deceased holder died on ____________________ without registering any nominee.
+3. Basis of succession (applicable only for cases above threshold category):
+☐ Succession Certificate ☐ Probate of Will ☐ Will
+☐ Letter of Administration ☐ Legal Heirship Certificate ☐ Court Decree
+☐ Law of Intestate Succession
+4. A copy of the applicable document referred to above is enclosed herewith.
+5. The persons named in Part D are the only legal heir(s)/legatee(s) of the deceased.
+6. Where any legal heir named herein is a minor, such minor is represented by his/her natural
+/ legal guardian.
+7. The claimant(s) named in Part E have applied for transmission of the said securities/units
+in their favour.
+8. I/We declare that, to the best of my/our knowledge and belief, there is no pending dispute,
+litigation or competing claim amongst the legal heir(s) and claimant(s) in relation to the
+aforesaid securities/units or the succession thereof.
+9. I/We, being the non-claimant legal heir(s) named in Part D and do hereby voluntarily and
+unconditionally relinquish and renounce all rights, title, interest, and claim, present or
+future, in the said securities/units in favor of the claimant(s) and shall have no claim
+whatsoever thereto at any time hereafter.
+10. I/We have no objection whatsoever to the transmission of the said securities/units in favor
+of the claimant(s) named herein, and consent to such transmission being effected by the
+Listed Company/Issuer/AMC/RTA/Depository Participant/Depository.
+11. I/We declare that the statements made herein, and the documents enclosed herewith, are
+true and correct to the best of my/our knowledge and belief, and that nothing material has
+been concealed or misrepresented. I/We shall be solely responsible for resolving any
+issue, dispute, or claim that may arise should any statement or document furnished herein
+be found to be false, incorrect, or incomplete, and shall keep the Listed Company / Issuer
+/ AMC / RTA / Depository Participant / Depository fully indemnified against any loss or
+liability arising therefrom.
+PART C – DETAILS OF SECURITIES / UNITS
+Client ID / DP ID / Distinctive No. (if
+S. Name of Company / No. of Securities /
+Folio No. / Certificate applicable)
+No. Mutual Fund Scheme Units Held
+No.
+From:
+1
+To:
+From:
+2
+To:
+From:
+3
+To:
+From:
+4
+To:
+PART D – DETAILS OF LEGAL HEIRS (INCLUDING NON-CLAIMANTS)
+Relationship with
+Name of Legal Heir(s) Address & Contact Details Age
+Deceased
+ |  |  |  |  |  | 
+  : S.
+No.; : Name of Company /
+Mutual Fund Scheme; : Client ID / DP ID /; : Distinctive No. (if; : No. of Securities /
+Units Held
+  : Folio No. / Certificate; : applicable)
+  : No.
+  : 1; : From:
+To:
+  : 2; : From:
+To:
+  : 3; : From:
+To:
+  : 4; : From:
+To:
+
+S.
+  S.: No.
+
+Name of Company /
+  Name of Company /: Mutual Fund Scheme
+
+No. of Securities /
+  No. of Securities /: Units Held
+
+ |  |  |  |  | 
+  : Name of Legal Heir(s); : Address & Contact Details; : Age; : Relationship with
+  : Deceased
+
+Relationship with
+Name of Legal Heir(s) Address & Contact Details Age
+Deceased
+PART E – DETAILS OF CLAIMANT(S)
+Relationship with
+Name of Claimant Address & Contact Details Age
+Deceased
+PART F – VERIFICATION
+I/We solemnly affirm and verify that the statements made in the foregoing paragraphs are true
+and correct to the best of my/our knowledge and belief, and that nothing material has been
+concealed therefrom. I/We declare that I am/we are competent to contract and am/are entitled
+to the rights and benefits relating to the aforesaid securities/units.
+Place: ____________________________
+Date: ____________________________
+Signature(s) of Claimant(s):
+X __________________ X __________________ X __________________
+Signature(s) of Non-Claimant Legal Heir(s)**:
+X __________________ X __________________ X __________________
+ |  |  |  |  | 
+  : Name of Legal Heir(s); : Address & Contact Details; : Age; : Relationship with
+  : Deceased
+
+ |  |  |  |  | 
+  : Name of Claimant; : Address & Contact Details; : Age; : Relationship with
+  : Deceased
+
+** The signatures of non-claimant legal heir(s) are required only where the claimant has not
+furnished a Succession Certificate, Probate of Will (where applicable and available), Letter of
+Administration or Court Decree. Where any such court-issued document is furnished, this
+instrument shall operate as an affidavit of the named legal heir(s)/claimant(s) alone, and no
+NOC or signature from non-claimant legal heir(s) shall be required.
+Note: Where any person required to sign this document is unable to sign, he/she may
+affix his/her left thumb impression in lieu of signature.
+ATTESTATION
+Signed before me, by above signatories, identity/(ies) of whom has/have been verified.
+At: ________________________________________
+On (date): ________________________________________
+____________________________
+Signature and Seal of Notary / Gazetted Officer
+Registration No. (if Notary): ________________________________________

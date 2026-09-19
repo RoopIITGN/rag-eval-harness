@@ -1,0 +1,34 @@
+National Stock Exchange of India Limited
+Circular
+Department: FUTURES & OPTIONS SEGMENT
+Download Ref No: NSE/FAOP/75912 Date: August 24, 2026
+Circular Ref. No: 118/2026
+All Members,
+Exclusion of Futures and Options contracts on BAJAJHLDNG
+This is in reference to SEBI Circular Ref. No: SEBI/HO/MRD-PoD2/CIR/P/2024/00181 dated December 30,
+2024 and chapter 3.5 of Exchange circular No. NSE/FAOP/73928 dated April 28, 2026 regarding eligibility
+criteria of stocks.
+Members are requested to note that the contracts for new expiry months in the following security will not be
+issued on expiry of existing contract months:
+Sr. No Symbol Security Name
+1 BAJAJHLDNG Bajaj Holdings & Investment Limited
+However, the existing unexpired contracts of expiry months August 2026, September 2026 and October 2026
+would continue to be available for trading till their respective expiry and new strikes would also be introduced
+in the existing contract months.
+Accordingly, no contracts shall be available for trading in the above-mentioned security with effect from
+October 28, 2026.
+For and on behalf of
+National Stock Exchange of India Limited
+Aarti Surve
+Chief Manager
+Toll Free No Email id
+1800-266-0050 (Option 1) msm@nse.co.in
+Department: FUTURES & OPTIONS SEGMENT | 
+  Department: FUTURES & OPTIONS SEGMENT: Download Ref No: NSE/FAOP/75912; : Date: August 24, 2026
+  Department: FUTURES & OPTIONS SEGMENT: Circular Ref. No: 118/2026
+
+Sr. No | Symbol | Security Name
+  Sr. No: 1; Symbol: BAJAJHLDNG; Security Name: Bajaj Holdings & Investment Limited
+
+Toll Free No | Email id
+  Toll Free No: 1800-266-0050 (Option 1); Email id: msm@nse.co.in
