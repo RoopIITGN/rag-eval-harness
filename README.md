@@ -180,8 +180,8 @@ leave both halves too small to measure or compare anything.
 
 ```
 query
-  ├── BM25                    ─┐
-  ├── dense (exhaustive KNN)  ─┴─ RRF fusion (Azure AI Search, native)
+  ├── BM25                                                   ─┐
+  ├── dense (exhaustive KNN, text-embedding-3-small, 1536d)  ─┴─ RRF fusion
   ├── cross-encoder rerank over top-20        (sentence-transformers, local)
   ├── GATE: retrieval-score threshold         → refuse, no LLM call
   ├── generation with forced citation schema  (constrained decoding)
@@ -227,8 +227,17 @@ Environment (`.env`, gitignored):
 ```
 AZURE_SEARCH_ENDPOINT=https://<service>.search.windows.net
 AZURE_SEARCH_KEY=<admin key>
+
+AZURE_OPENAI_ENDPOINT=https://<resource>.openai.azure.com/
+AZURE_OPENAI_KEY=<key>
+AZURE_OPENAI_EMBEDDING_DEPLOYMENT=text-embedding-3-small
+AZURE_OPENAI_API_VERSION=2024-10-21
+
 ANTHROPIC_API_KEY=<key>
 ```
+The Azure OpenAI endpoint is the bare host. The portal also shows an
+`/openai/v1` path for the OpenAI-compatible client; the `AzureOpenAI` client
+appends its own routing and will 404 if that suffix is included.
 
 **Two regions, deliberately.** Azure AI Search runs in Central India; the
 `text-embedding-3-small` deployment is in Sweden Central, where the model is
@@ -247,7 +256,8 @@ service after the query vector arrives.
 ```bash
 python src/extract.py           # PDFs → frozen text, with table-aware parsing
 python src/chunk.py             # three chunking configs, offsets verified
-python src/index.py             # push to three Azure AI Search indexes
+python src/create_indexes.py    # three Azure AI Search indexes, exhaustive KNN
+python src/index.py             # embed chunks and upload
 python src/generate_evalset.py  # draft eval set
 python src/verify_evalset.py    # human review loop; flips verified: true
 python src/run_ablation.py      # → reports/ablation.md
