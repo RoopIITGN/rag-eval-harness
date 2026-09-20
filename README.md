@@ -32,18 +32,18 @@ operational notices.
 | Total | 90,852 tokens |
 | Median document | 948 tokens |
 | Smallest / largest | 415 / 16,425 tokens |
-| Chunks at 512 tokens (64 overlap) | ~202 |
+| Chunks at 512 tokens (64 overlap) | 222–223 |
 
 The whole corpus fits in a long-context window, so retrieval isn't strictly
 necessary for answering. It's here for cost — retrieval is paid once at index
 time rather than on every query — and for clause-level citation, which a stuffed
 prompt can't provide.
 
-At ~202 chunks the index is small enough that approximate nearest-neighbour
+At ~220 chunks the index is small enough that approximate nearest-neighbour
 search buys nothing measurable, so exhaustive KNN is used throughout. The
 reranking pool is 20 rather than the more common 50: at this corpus size, 50
-candidates is a quarter of the entire index, which leaves the reranker little to
-discriminate between.
+candidates is nearly a quarter of the entire index, which leaves the reranker
+little to discriminate between.
 
 The amendment circulars are there deliberately. They create a supersession
 graph, where a gold answer can be correct with respect to a circular that has
@@ -84,6 +84,9 @@ Every chunk is checked with `verify()` before use: `text[char_start:char_end]`
 must equal the chunk exactly, and the chunks must cover every character of the
 document. An offset bug produces no error downstream — it silently shifts every
 gold-span match, so the assertion runs at build time instead.
+
+All three indexes are populated and document counts match the chunk counts
+exactly, confirming nothing was dropped during upload.
 
 ---
 
@@ -180,8 +183,9 @@ leave both halves too small to measure or compare anything.
 
 ```
 query
-  ├── BM25                                                   ─┐
-  ├── dense (exhaustive KNN, text-embedding-3-small, 1536d)  ─┴─ RRF fusion
+  ├── BM25                                              ─┐
+  ├── dense (exhaustive KNN, text-embedding-3-small)    ─┴─ RRF fusion
+  │                                                        (Azure AI Search, native)
   ├── cross-encoder rerank over top-20        (sentence-transformers, local)
   ├── GATE: retrieval-score threshold         → refuse, no LLM call
   ├── generation with forced citation schema  (constrained decoding)
@@ -222,7 +226,7 @@ configuration. Install from this.
 `requirements.lock.txt` is exact pinned versions from a verified clean install,
 for reproducing results when something doesn't match.
 
-Environment (`.env`, gitignored):
+Environment (`.env`, gitignored — see `.env.example`):
 
 ```
 AZURE_SEARCH_ENDPOINT=https://<service>.search.windows.net
@@ -235,9 +239,10 @@ AZURE_OPENAI_API_VERSION=2024-10-21
 
 ANTHROPIC_API_KEY=<key>
 ```
-The Azure OpenAI endpoint is the bare host. The portal also shows an
-`/openai/v1` path for the OpenAI-compatible client; the `AzureOpenAI` client
-appends its own routing and will 404 if that suffix is included.
+
+`AZURE_OPENAI_ENDPOINT` is the bare host. The Foundry portal also surfaces an
+`/openai/v1` path for use with the OpenAI-compatible client; the `AzureOpenAI`
+client appends its own routing and will return 404 if that suffix is included.
 
 **Two regions, deliberately.** Azure AI Search runs in Central India; the
 `text-embedding-3-small` deployment is in Sweden Central, where the model is
@@ -249,18 +254,29 @@ Cross-region embedding adds roughly 250ms per query. That cost lands on indexing
 but not on reported retrieval latency, which is measured inside the search
 service after the query vector arrives.
 
+**Embedding throughput.** `index.py` embeds ~870 chunks across three
+configurations, roughly 270K tokens. Azure OpenAI Standard deployments bill per
+token consumed rather than per token of provisioned capacity, so the
+tokens-per-minute setting affects run time, not cost — provision generously. On
+a low TPM deployment the API returns 429 with a 60-second `Retry-After`;
+`index.py` handles rate limits separately from transient errors and honours the
+server's hint rather than backing off exponentially.
+
 ---
 
 ## Pipeline
 
+Scripts import from `src/` but resolve data paths relative to the repo root, so
+run them from the root with `PYTHONPATH=src`:
+
 ```bash
-python src/extract.py           # PDFs → frozen text, with table-aware parsing
-python src/chunk.py             # three chunking configs, offsets verified
-python src/create_indexes.py    # three Azure AI Search indexes, exhaustive KNN
-python src/index.py             # embed chunks and upload
-python src/generate_evalset.py  # draft eval set
-python src/verify_evalset.py    # human review loop; flips verified: true
-python src/run_ablation.py      # → reports/ablation.md
+PYTHONPATH=src python src/extract.py          # PDFs → frozen text, table-aware
+PYTHONPATH=src python src/chunk.py            # three chunk sets, offsets verified
+PYTHONPATH=src python src/create_indexes.py   # three indexes, exhaustive KNN
+PYTHONPATH=src python src/index.py            # embed chunks and upload
+PYTHONPATH=src python src/generate_evalset.py # draft eval set
+PYTHONPATH=src python src/verify_evalset.py   # human review; flips verified: true
+PYTHONPATH=src python src/run_ablation.py     # → reports/ablation.md
 ```
 
 ---
@@ -273,7 +289,7 @@ python src/run_ablation.py      # → reports/ablation.md
 - **Sample size.** Each query moves recall by roughly 1.7 points. Differences
   smaller than that are not distinguishable from noise, which is why
   configuration comparisons use paired tests rather than raw deltas.
-- **Corpus scale.** See Corpus above — at ~202 chunks, approximate
+- **Corpus scale.** See Corpus above — at ~220 chunks, approximate
   nearest-neighbour search and a large reranking pool both stop earning their
   cost.
 - **Table-heavy documents.** NSE circulars are substantially tabular. Generic
