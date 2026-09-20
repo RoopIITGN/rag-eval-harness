@@ -230,6 +230,16 @@ AZURE_SEARCH_KEY=<admin key>
 ANTHROPIC_API_KEY=<key>
 ```
 
+**Two regions, deliberately.** Azure AI Search runs in Central India; the
+`text-embedding-3-small` deployment is in Sweden Central, where the model is
+available for the deployment types this project uses. The search service stays
+local because that's where query latency is measured and where the data lives.
+
+Cross-region embedding adds roughly 250ms per query. That cost lands on indexing
+(paid once, for ~870 chunks across three configurations) and on evaluation runs,
+but not on reported retrieval latency, which is measured inside the search
+service after the query vector arrives.
+
 ---
 
 ## Pipeline
@@ -267,3 +277,7 @@ python src/run_ablation.py      # → reports/ablation.md
 - **No semantic ranker.** Azure AI Search's L2 semantic reranker is not
   available on the Free tier, so reranking uses a local cross-encoder. Same
   architectural role, different model.
+- **Cross-region embedding.** The embedding deployment is in a different region
+  from the search service, so end-to-end query latency includes a ~250ms network
+  hop that a single-region deployment would not. Reported retrieval latency
+  excludes it; a production deployment would co-locate both.
