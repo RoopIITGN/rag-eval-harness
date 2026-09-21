@@ -5,217 +5,243 @@ THE PROBLEM THIS SOLVES
 -----------------------
 The naive approach -- "show an LLM a chunk, ask it to write a question" --
 produces questions that are semantic paraphrases of the passage that answers
-them. Dense retrieval then looks excellent and BM25 looks useless, because
-the generator deliberately avoided lexical overlap.
-
-Any hybrid-vs-dense ablation run on such a set measures the question
-generator, not the retrieval system.
+them. Dense retrieval then looks excellent and BM25 looks useless, because the
+generator deliberately avoided lexical overlap. Any hybrid-vs-dense ablation
+run on such a set measures the question generator, not the retrieval system.
 
 WHAT THIS DOES INSTEAD
 ----------------------
-1. Generates from the FULL DOCUMENT, not a single chunk, so the question
-   isn't anchored to one passage's wording.
-2. Runs a second pass rewriting each question the way a user would actually
-   type it -- terse, keyword-shaped, no polite framing.
-3. Deliberately mixes in exact-identifier lookups ("what does NSE/MSD/75324
-   say about X"), which is the query class where BM25 wins and dense fails.
-   Omitting these guarantees a misleading ablation.
-4. Tags every query by type so recall can be reported by subgroup.
+1. Generates from the FULL DOCUMENT, not a single chunk, so the question isn't
+   anchored to one passage's wording.
+2. Rewrites a share of questions into search-box phrasing -- terse,
+   keyword-shaped, the way a person actually types.
+3. Deliberately includes exact-identifier lookups, the query class where BM25
+   wins and dense retrieval fails. Omitting these guarantees a misleading
+   ablation.
+4. Tags every query by type so recall is reported by subgroup, not blended.
 5. Locates the answer span by string search against the FROZEN document text,
    so gold labels are (doc_id, char_start, char_end) and survive re-chunking.
 
-Output: data/goldset.jsonl -- one record per query.
-Every record needs human verification before use; see verify_evalset.py.
+Every record is written with verified: false. Run verify_evalset.py before use.
 """
 
 from __future__ import annotations
 
 import json
 import os
-import random
 import re
+import sys
+from collections import Counter
 from pathlib import Path
 
-from anthropic import Anthropic
+from dotenv import load_dotenv
+from openai import AzureOpenAI
 
-DOCS_DIR = Path("data/documents")
-OUT_PATH = Path("data/goldset.jsonl")
+ROOT = Path(__file__).resolve().parents[1]
+load_dotenv(ROOT / ".env")
+
+DOCS_DIR = ROOT / "data/documents"
+OUT_PATH = ROOT / "data/goldset.jsonl"
+
+PER_DOC = 3           # 47 docs x 3 -> ~140 candidates, all hand-verifiable
+MAX_TOKENS = 8000     # reasoning models spend budget before emitting output
+HEADER_CHARS = 250    # spans starting inside the letterhead are not useful
 
 CIRCULAR_ID = re.compile(r"\b(?:[A-Z]{2,}[A-Z0-9()]*)(?:[/-][A-Z0-9()]+){2,}\b")
-
-# Query types, and the share of the set each should occupy.
-# The exact_id slice is what keeps the BM25 leg honest.
-QUERY_MIX = {
-    "natural":    0.40,   # how a person would ask, full sentence
-    "keyword":    0.25,   # terse, search-box style
-    "exact_id":   0.20,   # names a circular number -- BM25's home ground
-    "multi_hop":  0.15,   # needs evidence from two documents
-}
 
 
 GENERATE_PROMPT = """You are building an evaluation set for a document \
 retrieval system over Indian securities-market circulars.
 
 Below is the FULL TEXT of one circular. Write {n} questions that a compliance \
-or operations analyst might realistically ask, where the answer is contained \
-in this document.
+or operations analyst might realistically ask, where the answer is contained in \
+this document.
 
 Rules:
 - Base each question on the document as a whole, not on one paragraph.
 - Do NOT paraphrase a single sentence into a question. Ask what someone would \
-  actually want to know.
-- Vary the specificity. Some questions should be about obligations, some about \
-  dates or thresholds, some about who a provision applies to.
-- For each question, quote the EXACT sentence or passage from the document that \
-  answers it. Copy it verbatim, character for character.
+actually want to know.
+- Vary the specificity: some about obligations, some about dates or thresholds, \
+some about who a provision applies to.
+- Do NOT ask about the letterhead, the circular's own reference number, or the \
+signatory. Ask about substance.
+- For each question, quote the EXACT passage from the document that answers it. \
+Copy it verbatim, character for character, including punctuation. This is used \
+to locate the answer in the source text, so an approximate quote is useless.
 
-Return JSON only, no preamble:
+Return JSON only, no preamble, no code fences:
 {{"questions": [{{"question": "...", "answer_passage": "..."}}]}}
 
 DOCUMENT ({doc_id}):
 {text}
 """
 
-
-REWRITE_PROMPT = """Rewrite each question below as the same person would type \
-it into a search box -- terse, keyword-shaped, no polite framing, no full \
-sentence structure. Keep the meaning identical.
+REWRITE_PROMPT = """Rewrite each question below as the same person would type it \
+into a search box: terse, keyword-shaped, no polite framing, no full sentence \
+structure. Keep the meaning identical.
 
 Example:
   in:  "What is the deadline for reporting a margin shortfall to the Exchange?"
   out: "margin shortfall reporting deadline"
 
-Return JSON only: {{"rewritten": ["...", "..."]}}
+Return JSON only, no preamble, no code fences:
+{{"rewritten": ["...", "..."]}}
 
 QUESTIONS:
 {questions}
 """
 
 
-def load_documents() -> dict[str, str]:
-    """Load the FROZEN extracted text. Every offset is relative to these
-    exact strings -- re-extracting with a different parser invalidates
-    every label in the goldset."""
-    return {p.stem: p.read_text(encoding="utf-8") for p in DOCS_DIR.glob("*.txt")}
+def client() -> AzureOpenAI:
+    return AzureOpenAI(
+        azure_endpoint=os.environ["AZURE_OPENAI_ENDPOINT"],
+        api_key=os.environ["AZURE_OPENAI_KEY"],
+        api_version=os.environ["AZURE_OPENAI_API_VERSION"],
+    )
+
+
+def ask(c: AzureOpenAI, prompt: str) -> dict:
+    """One call. No temperature -- reasoning models reject anything but the
+    default, and variety here comes from the documents, not from sampling."""
+    resp = c.chat.completions.create(
+        model=os.environ["AZURE_OPENAI_CHAT_DEPLOYMENT"],
+        messages=[{"role": "user", "content": prompt}],
+        max_completion_tokens=MAX_TOKENS,
+    )
+    raw = (resp.choices[0].message.content or "").strip()
+    if not raw:
+        raise ValueError(f"empty response (finish_reason={resp.choices[0].finish_reason})")
+    raw = re.sub(r"^```(?:json)?\s*|\s*```$", "", raw)
+    return json.loads(raw)
 
 
 def locate(text: str, passage: str) -> tuple[int, int] | None:
-    """Find the answer passage in the source document.
+    """Find the answer passage in the frozen document text.
 
-    Models normalise whitespace and quotes when copying, so exact matching
-    fails often. Fall back to a whitespace-insensitive search.
+    Models normalise whitespace and quote characters when copying, so exact
+    matching fails often enough to need a fallback.
     """
     idx = text.find(passage)
     if idx != -1:
         return idx, idx + len(passage)
 
-    # Whitespace-insensitive retry
-    pattern = re.escape(passage.strip())
-    pattern = re.sub(r"\\\s+", r"\\s+", pattern)
+    cleaned = passage.strip()
+    if not cleaned:
+        return None
+
+    pattern = re.escape(cleaned)
+    pattern = re.sub(r"\\\s+", r"\\s+", pattern)          # whitespace-insensitive
+    pattern = pattern.replace("\\'", "['\u2019]").replace('\\"', '["\u201c\u201d]')
     m = re.search(pattern, text)
     return (m.start(), m.end()) if m else None
 
 
-def generate_for_document(client, doc_id: str, text: str, n: int) -> list[dict]:
-    resp = client.messages.create(
-        model="claude-sonnet-4-6",
-        max_tokens=4000,
-        temperature=0.7,          # variety matters here, unlike everywhere else
-        messages=[{"role": "user",
-                   "content": GENERATE_PROMPT.format(n=n, doc_id=doc_id, text=text)}],
-    )
-    raw = resp.content[0].text.strip().removeprefix("```json").removesuffix("```")
-    return json.loads(raw)["questions"]
+def own_serial(doc_id: str, text: str) -> str | None:
+    """The circular's serial number, confirmed present in its own header.
 
+    Taken from the filename rather than parsed out of the text: PDF extraction
+    inserts stray spaces inside identifiers ("NCL/CMPT/ 74926",
+    "POD1 I/10421"), which breaks any regex that tries to parse the full ID.
+    The serial is what distinguishes one circular from another, and it's what
+    a person actually types.
 
-def rewrite_as_queries(client, questions: list[str]) -> list[str]:
-    resp = client.messages.create(
-        model="claude-sonnet-4-6",
-        max_tokens=2000,
-        temperature=0.3,
-        messages=[{"role": "user",
-                   "content": REWRITE_PROMPT.format(questions=json.dumps(questions))}],
-    )
-    raw = resp.content[0].text.strip().removeprefix("```json").removesuffix("```")
-    return json.loads(raw)["rewritten"]
-
-
-def make_exact_id_queries(doc_id: str, text: str, base: list[dict]) -> list[dict]:
-    """Turn a question into an identifier lookup.
-
-    This is the query class dense retrieval cannot handle -- circular numbers
-    carry almost no semantic signal, so '/19839/' and '/13804/' embed to
-    nearly the same point. Leaving these out of the eval set would make the
-    BM25 leg look pointless and the ablation misleading.
+    The header check guards against a mislabelled filename -- a missing
+    exact-ID query costs one data point, a wrong one corrupts a measurement.
     """
-    ids = CIRCULAR_ID.findall(text[:1500])   # the circular's own ID is up top
-    if not ids:
-        return []
-    cid = ids[0]
-    out = []
-    for q in base:
-        stripped = re.sub(r"^(what|when|who|how)\s+(is|are|does|do)\s+", "", q["question"],
-                          flags=re.I).rstrip("?")
-        out.append({**q, "question": f"{cid} {stripped}", "query_type": "exact_id"})
-    return out
+    serial = doc_id.rsplit("-", 1)[-1]
+    if re.search(rf"(?<![0-9]){re.escape(serial)}(?![0-9])", text[:3000]):
+        return serial
+    return None
 
 
-def main(per_doc: int = 4, seed: int = 0):
-    random.seed(seed)
-    client = Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
-    docs = load_documents()
+def make_exact_id_query(doc_id: str, text: str, q: dict) -> dict | None:
+    serial = own_serial(doc_id, text)
+    if serial is None:
+        return None
+    issuer = doc_id.split("-")[0]          # SEBI or NSE
+    stripped = re.sub(r"^(what|when|who|which|how)\s+(is|are|does|do|must|should)\s+",
+                      "", q["question"], flags=re.I).rstrip("?")
+    return {**q, "question": f"{issuer} circular {serial} {stripped}",
+            "query_type": "exact_id"}
+
+
+def main() -> None:
+    docs = sorted(DOCS_DIR.glob("*.txt"))
     if not docs:
-        raise SystemExit(f"No .txt files in {DOCS_DIR}. Run ingest.py first.")
+        sys.exit(f"No documents in {DOCS_DIR}. Run extract.py first.")
 
-    records, qid, unlocated = [], 0, 0
+    c = client()
+    records: list[dict] = []
+    qid = 0
+    dropped = Counter()
 
-    for doc_id, text in docs.items():
-        generated = generate_for_document(client, doc_id, text, per_doc)
+    for n, doc in enumerate(docs, start=1):
+        text = doc.read_text(encoding="utf-8")
+        print(f"[{n}/{len(docs)}] {doc.stem}", end=" ", flush=True)
 
-        # Split the generated questions across query types
-        natural = generated[: max(1, int(per_doc * 0.6))]
-        for_keyword = generated[max(1, int(per_doc * 0.6)):]
+        try:
+            generated = ask(c, GENERATE_PROMPT.format(
+                n=PER_DOC, doc_id=doc.stem, text=text))["questions"]
+        except Exception as e:
+            print(f"-> generation failed: {type(e).__name__}")
+            dropped["generation_failed"] += PER_DOC
+            continue
 
-        typed: list[dict] = [{**q, "query_type": "natural"} for q in natural]
+        # Split: keep most as natural phrasing, rewrite one into search style
+        natural = generated[:-1] if len(generated) > 1 else generated
+        to_rewrite = generated[-1:] if len(generated) > 1 else []
 
-        if for_keyword:
-            rewritten = rewrite_as_queries(client, [q["question"] for q in for_keyword])
-            typed += [{**q, "question": r, "query_type": "keyword"}
-                      for q, r in zip(for_keyword, rewritten)]
+        typed = [{**q, "query_type": "natural"} for q in natural]
 
-        typed += make_exact_id_queries(doc_id, text, natural[:1])
+        if to_rewrite:
+            try:
+                rewritten = ask(c, REWRITE_PROMPT.format(
+                    questions=json.dumps([q["question"] for q in to_rewrite])))["rewritten"]
+                typed += [{**q, "question": r, "query_type": "keyword"}
+                          for q, r in zip(to_rewrite, rewritten)]
+            except Exception:
+                typed += [{**q, "query_type": "natural"} for q in to_rewrite]
 
+        if natural:
+            eid = make_exact_id_query(doc.stem, text, natural[0])
+            if eid:
+                typed.append(eid)
+
+        kept = 0
         for q in typed:
-            span = locate(text, q["answer_passage"])
+            span = locate(text, q.get("answer_passage", ""))
             if span is None:
-                unlocated += 1
-                continue                      # cannot label it; drop it
+                dropped["span_not_found"] += 1
+                continue
+            if span[0] < HEADER_CHARS:
+                dropped["span_in_header"] += 1
+                continue
             qid += 1
+            kept += 1
             records.append({
                 "query_id": qid,
                 "query": q["question"],
                 "query_type": q["query_type"],
                 "query_source": "llm_generated",
-                "verified": False,            # flipped by verify_evalset.py
-                "gold_spans": [{"doc_id": doc_id, "start": span[0], "end": span[1]}],
+                "verified": False,
+                "gold_spans": [{"doc_id": doc.stem, "start": span[0], "end": span[1]}],
                 "require": "all",
                 "answer_passage": q["answer_passage"],
-                "reference_answer": None,     # filled later, for groundedness
+                "reference_answer": None,
             })
+        print(f"-> {kept} kept")
 
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    with OUT_PATH.open("w") as f:
+    with OUT_PATH.open("w", encoding="utf-8") as f:
         for r in records:
             f.write(json.dumps(r, ensure_ascii=False) + "\n")
 
-    by_type: dict[str, int] = {}
-    for r in records:
-        by_type[r["query_type"]] = by_type.get(r["query_type"], 0) + 1
-
-    print(f"wrote {len(records)} queries to {OUT_PATH}")
-    print(f"  by type: {by_type}")
-    print(f"  dropped {unlocated} (answer passage not locatable in source text)")
-    print(f"\nNEXT: run verify_evalset.py and hand-check at least 20%.")
+    by_type = Counter(r["query_type"] for r in records)
+    print(f"\nwrote {len(records)} candidate queries -> {OUT_PATH}")
+    print(f"  by type: {dict(by_type)}")
+    if dropped:
+        print(f"  dropped: {dict(dropped)}")
+    print("\nNEXT: verify_evalset.py -- nothing counts until verified: true")
 
 
 if __name__ == "__main__":

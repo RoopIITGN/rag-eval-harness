@@ -301,9 +301,20 @@ PYTHONPATH=src python src/run_ablation.py     # → reports/ablation.md
   supersession graph is not used at query time, so an answer can be correct with
   respect to a circular that has since been amended.
 - **No semantic ranker.** Azure AI Search's L2 semantic reranker is not
-  available on the Free tier, so reranking uses a local cross-encoder. Same
-  architectural role, different model.
+  available on the Free tier, so reranking runs locally with
+  `cross-encoder/ms-marco-MiniLM-L-6-v2` on CPU — roughly 50–150ms for a pool
+  of 20. Same architectural role, different model and different machine. A
+  managed reranker would move that cost server-side and out of the client's
+  latency budget.
+- **Dated API version.** Scripts use the `AzureOpenAI` client with a pinned API
+  version. Azure's v1 endpoint removes the need to pin one; migrating is a
+  client-construction change in each script.
 - **Cross-region embedding.** The embedding deployment is in a different region
   from the search service, so end-to-end query latency includes a ~250ms network
   hop that a single-region deployment would not. Reported retrieval latency
   excludes it; a production deployment would co-locate both.
+- **Extraction artifacts inside identifiers.** PDF extraction occasionally
+  inserts spaces within circular IDs (`NCL/CMPT/ 74926`). Retrieval is
+  unaffected — the analyzer tokenizes on both slashes and whitespace — but it
+  breaks any attempt to parse full identifiers out of the text, so exact-ID
+  eval queries are built from the document's serial number instead.
