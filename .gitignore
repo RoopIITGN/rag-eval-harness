@@ -5,3 +5,7 @@ __pycache__/
 data/raw_pdfs/
 data/runs.jsonl
 *:Zone.Identifier
+src/backup_index.py
+.env.*
+!.env.example
+*.backup.jsonl
