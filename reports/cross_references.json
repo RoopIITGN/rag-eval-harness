@@ -1,0 +1,110 @@
+{
+  "citations": [
+    {
+      "from": "NSE-CMPT-75424",
+      "to": "NSE-CMPT-74926",
+      "from_date": "2026-07-27",
+      "to_date": "2026-06-29",
+      "context": "le Exchange Traded Funds (ETFs) This is further to our circular no. 081/2026 (Download Reference No: NCL/CMPT/74926) dated June 29, 2026, in respect of Cross Margining Exchange Traded Funds (ETFs). The revised list of eligibl"
+    },
+    {
+      "from": "NSE-CMPT-75463",
+      "to": "NSE-CMPT-75321",
+      "from_date": "2026-07-29",
+      "to_date": "2026-07-21",
+      "context": "n Collateral Timings This is in partial modification to circular ref. no. 090/2026 (Download Ref No: NCL/CMPT/75321 dated July 21, 2026) regarding timings for collateral addition and release. The revised cut-off time for plac"
+    },
+    {
+      "from": "NSE-CMPT-75922",
+      "to": "NSE-CMPT-75424",
+      "from_date": "2026-08-24",
+      "to_date": "2026-07-27",
+      "context": "e Exchange Traded Funds (ETFs) This is further to our circular no. 0094/2026 (Download Reference No: NCL/CMPT/75424) dated July 27, 2026, in respect of Cross Margining Exchange Traded Funds (ETFs). The revised list of eligibl"
+    },
+    {
+      "from": "NSE-FAOP-75958",
+      "to": "NSE-FAOP-75371",
+      "from_date": "2026-08-25",
+      "to_date": "2026-07-23",
+      "context": "res & Options Contracts on Three Individual Securities In continuation to Exchange circular Ref. No. NSE/FAOP/75371 dated July 23, 2026 members are requested to note the market lot for the below securities which will be avail"
+    },
+    {
+      "from": "SEBI-16006",
+      "to": "SEBI-7885",
+      "from_date": "2026-07-10",
+      "to_date": "2026-03-25",
+      "context": " for Mutual Funds dated March 20, 2026 (“the Master Circular”) and SEBI Circular no. HO/(92)2026-IMD-POD- 2/I/7885/2026 dated March 25, 2026, intraday borrowings by mutual funds shall be subject to the following conditions: "
+    },
+    {
+      "from": "SEBI-18038",
+      "to": "SEBI-10557",
+      "from_date": "2026-08-03",
+      "to_date": "2026-04-29",
+      "context": "xtension of timeline for enrolment with PaRRVA as specified in SEBI Circular No. HO/38/14/(4)2026-MIRSD-POD/I/10557/2026 dated April 29, 2026 1. SEBI vide circular no. HO/38/12/11(1)2025-MIRSD-POD/I/73/2025 dated October 30, "
+    },
+    {
+      "from": "SEBI-19839",
+      "to": "SEBI-13804",
+      "from_date": "2026-08-28",
+      "to_date": "2026-06-15",
+      "context": " close-out procedure for Exchange Traded Funds (ETFs) 1. SEBI vide Circular No. HO/47/11/11(1)2026-MRD-POD3/I/13804/2026 dated June 15, 2026 has provided for various norms related to base price, price bands, call auction in p"
+    },
+    {
+      "from": "SEBI-6961",
+      "to": "SEBI-2765",
+      "from_date": "2026-03-13",
+      "to_date": "2026-01-16",
+      "context": " in the equity cash segment of the Stock Exchanges vide circular reference no. HO/47/11/11(3)2025-MRD- POD2/I/2765/2026 dated January 16, 2026, effective from August 03, 2026. 6. It is clarified that borrowings by equity-ori"
+    },
+    {
+      "from": "SEBI-7885",
+      "to": "SEBI-6961",
+      "from_date": "2026-03-25",
+      "to_date": "2026-03-13",
+      "context": "ect: Addendum to SEBI Circular on Borrowing by Mutual Funds 1. SEBI vide Circular No. HO/(92)2026-IMD-POD-2/I/6961/2026 dated March 13, 2026 (hereafter referred as “the circular”) prescribed certain guidelines on borrowing b"
+    }
+  ],
+  "families": [
+    {
+      "subject": "change in collateral timings",
+      "members": [
+        {
+          "doc_id": "NSE-CMPT-72357",
+          "date": "2026-01-16"
+        },
+        {
+          "doc_id": "NSE-CMPT-75321",
+          "date": "2026-07-21"
+        },
+        {
+          "doc_id": "NSE-CMPT-75463",
+          "date": "2026-07-29"
+        }
+      ],
+      "newest": "NSE-CMPT-75463"
+    },
+    {
+      "subject": "revised list of cross margin eligible exchange traded funds (etfs)",
+      "members": [
+        {
+          "doc_id": "NSE-CMPT-74926",
+          "date": "2026-06-29"
+        },
+        {
+          "doc_id": "NSE-CMPT-75424",
+          "date": "2026-07-27"
+        },
+        {
+          "doc_id": "NSE-CMPT-75922",
+          "date": "2026-08-24"
+        }
+      ],
+      "newest": "NSE-CMPT-75922"
+    }
+  ],
+  "unchecked_short_serials": [
+    "SEBI-122",
+    "SEBI-41"
+  ],
+  "undated": []
+}
