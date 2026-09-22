@@ -1,51 +1,104 @@
 CIRCULAR
-HO/38/14/(11)2026-MIRSD-POD1/ I/18038/2026 August 03, 2026
+HO/38/14/(4)2026-MIRSD-POD/I/10557/2026 April 29, 2026
 To,
-All Registered Investment Advisers
-All Registered Research Analysts
-Investment Adviser Administration and Supervisory Body (IAASB)
-Research Analyst Administration and Supervisory Body (RAASB)
+All Registered Credit Rating Agencies (“CRAs”)
+All Registered Investment Advisers (“IAs”)
+All Registered Research Analysts (“RAs”)
+All Registered Stock Brokers (“SBs”)
+All Recognised Stock Exchanges (“SEs”)
+All Recognised Clearing Corporations (“CCs”)
+All Recognised Depositories
+Association of Mutual Funds in India (“AMFI”)
+All exchange empanelled Algo Providers through Stock Brokers
 Dear Sir/Madam,
-Sub: Extension of timeline for enrolment with PaRRVA as specified in SEBI
-Circular No. HO/38/14/(4)2026-MIRSD-POD/I/10557/2026 dated April 29,
-2026
-1. SEBI vide circular no. HO/38/12/11(1)2025-MIRSD-POD/I/73/2025 dated October
-30, 2025, specified that Investment Advisers (“IAs”)/ Research Analysts (“RAs”)
-who wish to communicate certified past performance data to clients (including
-prospective clients) must enrol with Past Risk and Return Verification Agency
-(“PaRRVA”) within three months of its operationalization, else such IAs/RAs will
-not be able to communicate certified past performance data to clients post three
-months from the date of operationalization of PaRRVA.
-2. Subsequently, SEBI, vide circular no. HO/38/14/(4)2026-MIRSD-POD/I/10557/
-2026 dated April 29, 2026, specified that IAs/RAs who wish to communicate
-certified past performance data to clients (including prospective clients) must enrol
-with PaRRVA by August 03, 2026, in view of operationalization of PaRRVA from
-May 04, 2026.
-3. However, SEBI has received representations from industry participants and
-PaRRVA requesting for an extension of aforesaid timeline for enrolment. After due
-consideration, SEBI has decided to extend the timeline until September 03, 2026,
-All Registered Investment Advisers
-  All Registered Investment Advisers: All Registered Research Analysts
-  All Registered Investment Advisers: Investment Adviser Administration and Supervisory Body (IAASB)
-  All Registered Investment Advisers: Research Analyst Administration and Supervisory Body (RAASB)
-
-  : Sub: Extension of timeline for enrolment with PaRRVA as specified in SEBI
-  : Circular No. HO/38/14/(4)2026-MIRSD-POD/I/10557/2026 dated April 29,
-  : 2026
-
-with the objective of facilitating a smooth and seamless implementation of the
-framework.
-4. This circular is issued in exercise of powers conferred under Section 11(1) of
-Chapter IV of the Securities and Exchange Board of India Act, 1992, read with
-Regulation 16D, 16E and 16F of the SEBI (Intermediaries) Regulations, 2008,
-Regulation 29 of the SEBI (Investment Advisers) Regulations, 2013 and Regulation
-33 of SEBI (Research Analysts) Regulations, 2014 to protect the interests of
-investors in securities, to promote the development of, and to regulate the
-securities markets.
-5. This circular is available on SEBI website at www.sebi.gov.in under the category:
-‘Legal → Circulars’.
+Subject: Operationalisation of Past Risk and Return Verification Agency
+(“PaRRVA”)
+Background
+1. SEBI, vide circular no. SEBI/HO/MIRSD/MIRSD-PoD/P/CIR/2025/51 dated April 4,
+2025, specified the framework for recognition and operationalisation of PaRRVA.
+As specified in the said circular, A CRA may be recognized as a PaRRVA, in terms
+of Regulation 12A of the ‘SEBI (Credit Rating Agencies) Regulations, 1999’
+(“CRA Regulations”) read with Regulation 16E of the SEBI (Intermediaries
+Regulations), 2008 (“Intermediaries Regulations”) and such CRA shall engage with
+a recognized SE which will serve as the PaRRVA Data Centre (“PDC”).
+Recognition of PaRRVA
+2. In pursuance of the above circular, Care Ratings Limited (“CRL”) has been granted
+recognition as PaRRVA, with National Stock Exchange India Limited (“NSE”)
+acting as PDC. The recognition shall be valid until it is revoked or suspended by
+SEBI.
+3. Post successful completion of the pilot-phase, CRL shall begin providing its
+services on regular basis from May 04, 2026.
+Communication of certified past performance by IAs/RAs to clients
+4. SEBI, vide circular no. HO/38/12/11(1)2025-MIRSD-POD/I/73/2025 dated October
+30, 2025, as an interim arrangement, permitted IAs/RAs to communicate certified
+past performance data of the period prior to operationalization of PaRRVA (“pre-
+PaRRVA period”) to a client, in accordance with the provisions laid down in the
+said circular. The circular inter alia also mandates the following:
+4.1. IAs/RAs who wish to communicate certified past performance data to clients
+(including prospective clients) must enroll with PaRRVA within three months of
+its operationalization, else such IAs/RAs will not be able to communicate
+certified past performance data to clients post three months from the date of
+operationalization of PaRRVA.
+4.2. After two years from the date of operationalization of PaRRVA, IAs/RAs will be
+permitted to communicate/display only PaRRVA verified risk and return
+metrics and will not be permitted to use past performance data related to
+the period prior to the date of operationalization of PaRRVA, in any
+communication to clients (including prospective clients).
+5. In view of the above, it is specified that-
+5.1. IAs/RAs who wish to communicate certified past performance data to clients
+(including prospective clients) must enroll with PaRRVA by August 03, 2026.
+5.2. IAs/RAs may communicate certified past performance data to clients (including
+prospective clients), only up to May 03, 2028.
+Change in composition of Oversight Committee
+6. Paragraph 27 of the SEBI Circular no. SEBI/HO/MIRSD/MIRSD-
+PoD/P/CIR/2025/51 dated April 4, 2025 mandates PaRRVA to constitute an
+oversight committee to oversee the activities of the CRA as PaRRVA and the Stock
+Exchange as PDC. The said para also prescribed the composition of the oversight
+committee.
+7. Based on receipt of representations from PaRRVA and PDC regarding the
+challenges faced in constitution of the committee, the proposed composition of the
+oversight committee has been revised as under:
+7.1. The committee may consist of representatives of PaRRVA, PDC,
+intermediaries/regulated persons and SEBI recognised investor association
+and an eminent individual having substantial regulatory experience as
+Chairperson of the committee.
+7.2. The PaRRVA representative/s shall be of the designation ‘Executive Director’
+or ‘Senior Director’ and should have requisite experience, capabilities, and
+expertise to contribute effectively to the committee.
+7.3. The PDC representative/s shall be preferably at the CXO level1, to ensure
+strategic oversight and operational alignment, and should possess the
+requisite experience, capabilities, and expertise to contribute effectively to the
+committee.
+7.4. Member/s representing at least two of the intermediaries/regulated persons.
+8. The committee shall consist of a minimum of five members and may be expanded
+by PaRRVA to include more members if required. However, the total number of
+independent members (i.e. Chairperson, representatives of
+intermediaries/regulated persons and investor association) shall be more than the
+total number of representatives of PaRRVA and PDC.
+Compliance by regulated persons
+9. The provisions of Paragraph 27 of the SEBI circular dated April 4, 2025 stands
+modified to the extent of Paragraph no. 7 and 8 as detailed above. All other
+provisions specified in said circular shall continue to remain applicable.
+10. This circular is issued in exercise of powers conferred under Section 11(1) of the
+Securities and Exchange Board of India Act, 1992 read with
+1 CXO means CRO (Chief Regulatory Officer), CTO (Chief Technology Officer), CFO (Chief Financial
+Officer) or an official holding similar position in Stock Exchange
+(i) Regulation 16D, 16E and 16F of the Intermediaries Regulations
+(ii) Regulation 33 of the Securities and Exchange Board of India(Research
+Analysts) Regulations,2014,
+(iii) Regulation 29 of the Securities and Exchange Board of India (Investment
+Advisers) Regulations,2013,
+(iv) Regulation 50 of the Securities and Exchange Board of India (Stock
+Brokers) Regulations, 2026,
+(v) Regulation 12A of the CRA Regulations and
+(vi) Regulation 38B of Securities Contracts (Regulation) (Stock Exchanges and
+Clearing Corporations) Regulations, 2018
+to protect the interests of investors in securities market and to promote the
+development of, and to regulate the securities market.
+11. This circular is available on SEBI website at www.sebi.gov.in under the category
+"Legal > Circulars.
 Yours faithfully,
-Sanjukta Mahala
-Deputy General Manager
-Tel. No. 022-26449288
-E-mail: sanjuktam@sebi.gov.in
+Aradhana Verma
+General Manager
++91-22-26449633
+E-mail: aradhanad@sebi.gov.in

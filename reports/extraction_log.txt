@@ -1,4 +1,4 @@
-# extraction run 2026-09-19T15:27:23
+# extraction run 2026-09-22T11:01:07
 # 47 documents
 
 NSE-CMPT-72357                     3,738 chars   ok
@@ -24,7 +24,7 @@ NSE-FAOP-75958                     2,348 chars   ok
 NSE-FAOP-76068                     2,150 chars   ok
 NSE-FAOP-76186                    16,135 chars   ok
 SEBI-10421                         2,368 chars   ok
-SEBI-10557                         2,790 chars   ok
+SEBI-10557                         6,106 chars   ok
 SEBI-122                           6,668 chars   ok
 SEBI-12676                        15,688 chars   ok
 SEBI-13567                         8,525 chars   ok
