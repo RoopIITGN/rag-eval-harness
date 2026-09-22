@@ -275,7 +275,9 @@ def review(r: dict, progress: str, rows: list[dict]):
             span = ask_span(default_doc=r["gold_spans"][0]["doc_id"])
             if span:
                 r.setdefault("original_spans", r["gold_spans"])
+                r.setdefault("original_answer_passage", r.get("answer_passage"))
                 r["gold_spans"] = [span]
+                r["answer_passage"] = doc(span["doc_id"])[span["start"]:span["end"]]
                 r["require"] = "all"
                 r.pop("twin_span_added", None)   # new span may need its own twin
                 r.setdefault("_changes", []).append("respanned")
