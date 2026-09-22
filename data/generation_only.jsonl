@@ -1,0 +1,3 @@
+{"query": "Is Kotak's PSU Bank ETF still eligible for cross margining?", "reference_answer": "No. PSUBANK was on the list effective July 29, 2026 (NCL/CMPT/75424, minimum 500) and is absent from the list effective August 26, 2026 (NCL/CMPT/75922).", "requires_documents": ["NSE-CMPT-75424", "NSE-CMPT-75922"]}
+{"query": "Can the UTI Nifty IT ETF still be used for cross margin?", "reference_answer": "No. ITBETA was dropped from the list effective August 26, 2026 (NCL/CMPT/75922).", "requires_documents": ["NSE-CMPT-75424", "NSE-CMPT-75922"]}
+{"query": "How many ETFs are currently eligible for cross margining?", "reference_answer": "50, per the list effective August 26, 2026 (NCL/CMPT/75922). The two previous lists had 52.", "requires_documents": ["NSE-CMPT-75922"]}
