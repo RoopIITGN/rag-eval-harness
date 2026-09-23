@@ -100,6 +100,56 @@
         }
       ],
       "newest": "NSE-CMPT-75922"
+    },
+    {
+      "subject": "quantity freeze limits for indices",
+      "members": [
+        {
+          "doc_id": "NSE-FAOP-74469",
+          "date": "2026-05-29"
+        },
+        {
+          "doc_id": "NSE-FAOP-74942",
+          "date": "2026-06-30"
+        },
+        {
+          "doc_id": "NSE-FAOP-75521",
+          "date": "2026-07-31"
+        },
+        {
+          "doc_id": "NSE-FAOP-76068",
+          "date": "2026-08-31"
+        }
+      ],
+      "newest": "NSE-FAOP-76068"
+    },
+    {
+      "subject": "introduction of futures & options contracts on three individual securities",
+      "members": [
+        {
+          "doc_id": "NSE-FAOP-75371",
+          "date": "2026-07-23"
+        },
+        {
+          "doc_id": "NSE-FAOP-75958",
+          "date": "2026-08-25"
+        }
+      ],
+      "newest": "NSE-FAOP-75958"
+    },
+    {
+      "subject": "dividend: adjustment of futures and options contracts in the security industower",
+      "members": [
+        {
+          "doc_id": "NSE-FAOP-75563",
+          "date": "2026-08-04"
+        },
+        {
+          "doc_id": "NSE-FAOP-75644",
+          "date": "2026-08-07"
+        }
+      ],
+      "newest": "NSE-FAOP-75644"
     }
   ],
   "unchecked_short_serials": [

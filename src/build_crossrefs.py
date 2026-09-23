@@ -48,6 +48,7 @@ MIN_SERIAL_LEN = 4
 MONTHS = "January|February|March|April|May|June|July|August|September|October|November|December"
 DATE = re.compile(rf"({MONTHS})\s+(\d{{1,2}}),?\s+(\d{{4}})")
 SUBJECT = re.compile(r"^\s*Sub(?:ject)?\s*:\s*(.+)$", re.M)
+ADDRESSEE = re.compile(r"^\s*(?:All Members|All Mutual Funds|To,?)\b.*$", re.M)
 
 
 def doc_date(text: str) -> str | None:
@@ -63,8 +64,30 @@ def doc_date(text: str) -> str | None:
 
 
 def doc_subject(text: str) -> str | None:
-    m = SUBJECT.search(text[:1500])
-    return re.sub(r"\s+", " ", m.group(1)).strip().rstrip(".").lower() if m else None
+    """The circular's subject line, however it is written.
+
+    SEBI circulars and NSE clearing circulars label it ("Sub:" / "Subject:").
+    NSE futures-and-options circulars don't -- the subject is an unlabelled
+    heading on the line after the addressee. Missing that cost the detector an
+    entire four-circular monthly series whose limits superseded each other.
+    """
+    head = text[:1500]
+    m = SUBJECT.search(head)
+    if m:
+        return re.sub(r"\s+", " ", m.group(1)).strip().rstrip(".").lower()
+
+    a = ADDRESSEE.search(head)
+    if not a:
+        return None
+    for line in head[a.end():].split("\n"):
+        line = line.strip()
+        if not line or ADDRESSEE.match(line):
+            continue
+        # A heading, not the opening sentence of the body.
+        if len(line) > 160 or re.match(r"^(this is|members are|in pursuance|exchange is)", line, re.I):
+            return None
+        return re.sub(r"\s+", " ", line).strip().rstrip(".").lower()
+    return None
 
 
 def main() -> None:
