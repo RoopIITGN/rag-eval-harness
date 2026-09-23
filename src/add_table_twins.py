@@ -16,8 +16,8 @@ For each single-span record, this finds any other line in the same document
 carrying the same values, and adds it as a second span with require: "any".
 
 Scope, deliberately narrow:
-  - one- and two-line windows only; a span covering three or more lines of a
-    table has no counterpart that can be found reliably.
+  - windows of up to four lines; beyond that nothing more is found, and the
+    risk of a coincidental match rises.
   - single-span records only. Multi-span records (multi-hop, widened) already
     have their own require semantics; a flat span list can't express "either
     form of span k", so they're reported and left alone.
@@ -72,15 +72,21 @@ def lines_with_offsets(text: str):
 def find_twin(doc: str, span: dict) -> dict | None:
     """Look for a one- or two-line window carrying the same values.
 
-    Two lines, because a column header containing a line break -- the ETF
-    lists' "Minimum Quantity Required\n(in multiple thereon)" -- makes every
-    labelled row wrap onto a second line.
+    Up to four lines, because a labelled row wraps once per column header that
+    contains a line break. The ETF lists' "Minimum Quantity Required\n(in
+    multiple thereon)" costs one; the dividend strike tables have three --
+    "Instrument\nType", "OLD STRIKE\nPRICE", "REVISED STRIKE\nPRICE" -- so
+    their labelled rows occupy four lines.
+
+    The limit only ever applied to the candidate window. A gold span itself can
+    span any number of lines, which is why labelled-span -> body-row twins were
+    found all along and the reverse direction was not.
     """
     target = canon(doc[span["start"]:span["end"]])
     if len(target) < MIN_TOKENS:
         return None
     lines = list(lines_with_offsets(doc))
-    for width in (1, 2):
+    for width in (1, 2, 3, 4):
         for k in range(len(lines) - width + 1):
             s, e = lines[k][0], lines[k + width - 1][1]
             if not (e <= span["start"] or s >= span["end"]):   # overlaps the span itself
