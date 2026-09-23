@@ -15,9 +15,10 @@ attributed to the right one.
 > different corpus, different eval set, smaller scale. The architecture,
 > methodology and failure analysis are the same.
 
-**Status: in progress.** Retrieval is built and indexed; the evaluation set is
-under human review; generation and the refusal gates are next. Building in the
-open — see commit history.
+**Status: in progress.** Retrieval is built and indexed. In the evaluation set,
+every supersession chain has been reviewed and the remaining generated
+questions are under review. Generation and the refusal gates are next. Building
+in the open — see commit history.
 
 ---
 
@@ -47,8 +48,8 @@ reranking pool is 20 rather than the more common 50: at this corpus size, 50
 candidates is nearly a quarter of the entire index, which leaves the reranker
 little to discriminate between.
 
-The amendment circulars are there deliberately. They create chains in which a
-later circular extends, modifies or replaces an earlier one — see
+The amendment circulars are there deliberately. They form chains in which a
+later circular extends, modifies, replaces or completes an earlier one — see
 [Supersession](#supersession). NSE circulars are substantially tabular, which is
 the harder chunking case.
 
@@ -77,8 +78,9 @@ non-zero on failure. It checks that each file's serial appears in the document's
 own header — before its subject line, where a circular states its own
 identity — rather than merely somewhere in the text; that no two files have
 identical content; and it reports near-duplicates for inspection. The four eval
-queries generated from the duplicate were rejected, and the real circular was
-added, which turned out to form a genuine supersession pair with 18038.
+queries generated from the duplicate were rejected with that reason recorded,
+and the real circular was added, which turned out to form a genuine supersession
+pair with 18038.
 
 ---
 
@@ -162,7 +164,8 @@ candidates**.
 
 Every record is written with `verified: false` and counts for nothing until a
 person confirms it. `verify_evalset.py` shows each query with its gold span
-highlighted in context, and records one decision:
+highlighted in context, flags any query whose source circular has a related or
+newer one, and records one decision:
 
 | Decision | Used when |
 |---|---|
@@ -176,13 +179,30 @@ highlighted in context, and records one decision:
 Rejected records stay in the file with a reason, so the rejection rate is
 reportable rather than silently discarded. Re-reviewing a decided record moves
 the earlier decision into `review_history` rather than overwriting it. Every
-record carries `query_source`, so the mix of generated, designed and
-human-authored queries is visible.
+record carries `query_source`, so the mix of generated and designed queries is
+visible.
+
+Four patterns account for most of what review caught in the generated set:
+
+- **References to an unseen document.** *"When does this circular come into
+  effect?"* — written by a model looking at one circular, meaningless to a user
+  who isn't. Rewritten, or rejected where several circulars would answer.
+- **Boilerplate.** Contact blocks, instructions to load contract files,
+  directions to market infrastructure institutions, statements of legal
+  authority — text that recurs almost verbatim across circulars and has no
+  single right answer. Rejected.
+- **Ambiguity across a chain.** *"When does the revised list take effect?"* has
+  three correct answers in a chain of three revisions. Rejected, or rewritten to
+  name the circular it means.
+- **Stale answers.** A question generated from a circular that a later one
+  changed carries the old answer as ground truth. Re-pointed to the current
+  circular. See [Supersession](#supersession).
 
 | | Count |
 |---|---|
 | Generated candidates | 169 |
-| Designed supersession queries | 18 |
+| Designed supersession queries | 32 |
+| Held out — generation only | 3 |
 | Accepted / rejected | _from `verify_evalset.py --stats` when review completes_ |
 
 ### Gold labels are character spans, not chunk IDs
@@ -227,20 +247,26 @@ Each circular's date is read from its header, and the review screen names the
 newest member of any family, warning when a query's gold span sits in an older
 one. That's fine only when the query names the older circular explicitly.
 
-The corpus turned out to contain three distinct kinds of chain, and they break
-retrieval in different ways:
+Across the corpus this found nine citations and two subject families, making
+six chains. They change in different ways, and each breaks retrieval
+differently:
 
-| Chain | Kind | What goes wrong |
+| Chain | Kind of change | What goes wrong |
 |---|---|---|
-| Collateral timings (3 NSE circulars) | **Partial modification** | Current state lives in two documents. Two cut-offs moved 8 PM → 9 PM → 8 PM, so the oldest circular gives the right number from a superseded source and the middle one gives the wrong number |
-| Cross-margin ETF lists (3 NSE circulars) | **Full replacement** | The newest list governs everything. ETFs were removed and symbols renamed — the old symbol survives only inside the new scheme name, luring keyword search to the stale list |
-| PaRRVA enrolment (2 SEBI circulars) | **Extension** | The deadline moved a month. The extension also restates the old date, so even the right document carries the stale answer |
+| Collateral timings · 3 NSE | **Partial modification** | Current state lives in two documents. Two cut-offs moved 8 PM → 9 PM → 8 PM, so the oldest circular gives the right number from a superseded source and the middle one gives the wrong number |
+| Cross-margin ETF lists · 3 NSE | **Full replacement** | The newest list governs everything. ETFs were removed and symbols renamed; the old symbol survives only inside the new scheme name, luring keyword search to the stale list |
+| PaRRVA enrolment · 2 SEBI | **Extension** | The deadline moved a month. The extension restates the old date, so even the right document carries the stale answer |
+| ETF price bands · 2 SEBI | **Extension of start date** | Only the date moved, so the older circular's content is still current — but it also describes the regime it replaced, so the stale answer sits inside the correct document |
+| Mutual fund borrowing · 3 SEBI | **Deferral, then partial supersession** | The last circular supersedes only the intraday half of the first; the other half still governs. It was issued in July but took effect in September, so in August the older rules were in force despite a newer circular existing |
+| F&O launch · 2 NSE | **Deferred detail** | The first circular defers lot sizes to a later one. Retrieving it yields "not yet announced" — not wrong when written, useless now |
 
-**18 designed queries** (IDs 1001–1018) test these chains directly, each with a
-recorded `stale_trap` — the document that gives a wrong or unsourced answer if
-retrieved instead. They include *silent* cases, where the newer circular never
-mentions a fact so the older one still governs, and point-in-time queries, where
-naming the older circular makes its answer the correct one.
+**32 designed queries** (IDs 1001–1032) test these chains directly, each with a
+recorded `stale_trap` — the document that gives a wrong, outdated or unsourced
+answer if retrieved instead. They include *silent* cases, where the newer
+circular never mentions a fact so the older one still governs; *flips*, where the
+answer changes from no to yes; *point-in-time* queries, where naming the older
+circular makes its answer the correct one; and multi-hop queries whose answer
+needs both circulars.
 
 Span-level scoring matters here. When a value is unchanged across circulars, the
 stale document gives the right number — but a compliance answer citing a
@@ -400,21 +426,25 @@ run them from the root with `PYTHONPATH=src`:
 
 ```bash
 # corpus
-PYTHONPATH=src python src/extract.py            # PDFs → frozen text, table-aware
-PYTHONPATH=src python src/validate_corpus.py    # identity + duplicate gate; exits 1 on failure
-PYTHONPATH=src python src/chunk.py              # three chunk sets, offsets verified
-PYTHONPATH=src python src/create_indexes.py     # three indexes, exhaustive KNN
-PYTHONPATH=src python src/index.py              # embed chunks and upload
+PYTHONPATH=src python src/extract.py                 # PDFs → frozen text, table-aware
+PYTHONPATH=src python src/validate_corpus.py         # identity + duplicate gate; exits 1 on failure
+PYTHONPATH=src python src/chunk.py                   # three chunk sets, offsets verified
+PYTHONPATH=src python src/create_indexes.py          # three indexes, exhaustive KNN
+PYTHONPATH=src python src/index.py                   # embed chunks and upload
 
 # eval set
-PYTHONPATH=src python src/generate_evalset.py   # draft candidates -- run once; overwrites goldset.jsonl
-PYTHONPATH=src python src/build_crossrefs.py    # related circulars, dated, for the review screen
-PYTHONPATH=src python src/verify_evalset.py     # human review (--ids, --from, --list, --stats)
-PYTHONPATH=src python src/add_table_twins.py    # second span for table answers (--apply)
+PYTHONPATH=src python src/generate_evalset.py        # draft candidates -- run once; overwrites goldset.jsonl
+PYTHONPATH=src python src/build_crossrefs.py         # related circulars, dated, for the review screen
+PYTHONPATH=src python src/verify_evalset.py          # human review (--ids, --from, --list, --stats)
+PYTHONPATH=src python src/add_table_twins.py         # second span for table answers (--apply)
+PYTHONPATH=src python src/fix_respanned_passages.py  # one-off repair, safe to re-run
 
 # results
-PYTHONPATH=src python src/run_ablation.py       # → reports/ablation.md
+PYTHONPATH=src python src/run_ablation.py            # → reports/ablation.md
 ```
+
+The designed queries live in `data/supersession_slice*.jsonl`, one file per
+chain, and are appended to `goldset.jsonl` for review.
 
 ---
 
@@ -431,12 +461,18 @@ PYTHONPATH=src python src/run_ablation.py       # → reports/ablation.md
   search and a large reranking pool both stop earning their cost.
 - **Single-document generation.** The generator sees one circular at a time, so
   it produces no multi-hop queries and can't see supersession. Both are covered
-  only by the 18 designed queries, which makes them a small slice to draw
+  only by the 32 designed queries, which makes them a small slice to draw
   conclusions from.
 - **Supersession detection.** Citation matching skips serials under four digits,
   which match regulation numbers and amounts too often. Subject-line matching
   catches only families whose circulars share an exact subject — true of
   recurring NSE notices, rarely of SEBI circulars.
+- **Issue date is not effective date.** `build_crossrefs.py` orders related
+  circulars by the date in their header, which is when they were issued. A
+  circular can be issued well before it takes effect — in the mutual fund
+  borrowing chain, the newest was issued in July and took effect in September —
+  so "newest" is a prompt for review, not a statement of which rule is in force
+  on a given date.
 - **Removal questions.** Queries whose answer is an absence can't be expressed
   as spans, so they're excluded from retrieval evaluation.
 - **Duplicated tables.** Emitting both forms of every table was meant to help
@@ -451,6 +487,9 @@ PYTHONPATH=src python src/run_ablation.py       # → reports/ablation.md
   so a table on a page where a paragraph continues onto the next lands mid
   sentence. Address blocks are occasionally mistaken for tables, making this
   more common than it should be.
+- **Annexures outside the corpus text.** Some circulars refer to annexures, such
+  as strike-price schemes, that didn't extract with the body. Questions whose
+  answer lives there can point only at the reference, not the content.
 - **Extraction artifacts inside identifiers.** PDF extraction occasionally
   inserts spaces within circular IDs (`NCL/CMPT/ 74926`). Retrieval is
   unaffected — the analyzer tokenizes on both slashes and whitespace — but it
