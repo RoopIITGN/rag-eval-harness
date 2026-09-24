@@ -47,7 +47,7 @@ ROOT = Path(__file__).resolve().parents[1]
 load_dotenv(ROOT / ".env")
 
 CONFIG, MODE, TOP_K = "512-recursive", "hybrid", 5
-MAX_TOKENS = 4000
+MAX_TOKENS = 16000
 
 ANSWER_TOOL = {
     "type": "function",
@@ -93,12 +93,18 @@ extracts from Indian securities-market regulatory circulars.
 Rules:
 - Every claim in your answer must be supported by a quote from a chunk.
 - Quote verbatim. Copy the characters exactly; do not paraphrase inside a quote.
+- Keep each quote SHORT -- one sentence or clause, at most about 25 words. Quote \
+the smallest span that supports the claim.
+- A quote must come from ONE chunk. Never join text from two chunks into a \
+single quote. Cite twice instead.
 - If the chunks do not contain the answer, set sufficient_context to false and \
 leave the answer empty. Do not answer from your own knowledge.
 - Circulars amend one another. If two chunks disagree, prefer the later circular \
 and say which one you relied on.
-- State the current position in your FIRST sentence. Mention a superseded value \
-only afterwards, and only if it clarifies.
+- State the current position in your FIRST sentence.
+- Do not claim that one circular supersedes another unless a chunk says so. You \
+may note that an earlier chunk gives a different value, but only describe a \
+supersession that the text states.
 - The answer is prose only. Do not put quotes, "Supporting quote:" labels or \
 circular reference numbers in it -- citations belong in the citations field.
 
