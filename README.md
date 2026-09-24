@@ -15,8 +15,8 @@ attributed to the right one.
 > different corpus, different eval set, smaller scale. The architecture,
 > methodology and failure analysis are the same.
 
-**Status: in progress.** Retrieval is built, indexed and measured against 214
-verified queries. Generation and the refusal gates are next. Building in the
+**Status: in progress.** Retrieval, generation and the refusal gates are built
+and measured against 214 verified queries. CI gating is next. Building in the
 open — see commit history.
 
 ---
@@ -185,10 +185,6 @@ The subgroup table shows where it goes wrong: multi-hop falls from 79.2% to
 `cross-encoder/ms-marco-MiniLM-L-6-v2` is trained on web passages and has no
 purchase on a circular serial or a table row. With a pool of 20 and recall@20
 already at 97.2%, its only job is ordering — and it does that worse than RRF.
-
-The ordering was checked before drawing that conclusion: rerank scores come
-back strictly descending, so this is the model disagreeing with RRF rather than
-an inverted comparator.
 
 So reranking is measured and reported, not shipped. A managed reranker trained
 on this kind of text, or a larger pool where there is more to reorder, might
@@ -395,6 +391,122 @@ in `data/generation_only.jsonl`.
 
 ---
 
+## Generation
+
+Answers are produced by `gpt-5-mini` from the top 5 chunks of the
+`512-recursive` + `hybrid` configuration, through a forced tool call that
+requires a citation and a verbatim quote for every claim. Groundedness is judged
+by `gpt-5` — a different model, though the same family, which is recorded below
+as a limitation.
+
+Full report: [`reports/generation.md`](reports/generation.md).
+
+| | |
+|---|---|
+| Answered | 190 of 214 (88.8%) |
+| Refused | 24 (11.2%) |
+| Grounded, of answered | **94.7%** (180/190) |
+| Citations rejected by Gate 3 | 21 queries |
+
+| Query type | answered | grounded |
+|---|---|---|
+| natural | 76 | 96.1% |
+| keyword | 31 | 96.8% |
+| exact_id | 39 | 94.9% |
+| supersession | 24 | 91.7% |
+| multi_hop | 20 | 90.0% |
+
+The designed slices are the hardest, which is what they were built for.
+
+### Refusals are scored without a judge
+
+Retrieval already recorded, per query, whether the gold span reached the top 5.
+That makes refusal correctness checkable arithmetic rather than an opinion.
+
+| Retrieval | Pipeline | count | |
+|---|---|---|---|
+| found the answer | answered | 180 | as intended |
+| found the answer | refused | 21 | lost answer |
+| missed | refused | 3 | correct refusal |
+| missed | answered | **10** | **answered without the source** |
+
+The last row is the one that matters: retrieval missed and the pipeline answered
+anyway, at 4.7%. Those answers come from the model's own knowledge or from the
+wrong chunk, and citation verification is the only thing between them and the
+user. Of the 13 queries retrieval missed, the gates caught 3.
+
+### A higher groundedness score was the worse result
+
+An earlier configuration scored **98.8%** groundedness — and was worse.
+
+| | earlier | now |
+|---|---|---|
+| Groundedness rate | 98.8% | 94.7% |
+| Answers judged grounded | 167 | **180** |
+| Lost answers | 41 | 21 |
+
+The earlier rate was high because the pipeline discarded a fifth of everything
+it could have answered. Loosening it admitted 21 more answers — the marginal,
+harder ones — so the denominator grew faster than the numerator. Thirteen more
+correct, grounded answers reach the user, and the headline rate fell.
+
+Reporting the rate alone would have made the worse system look like the better
+one. Refusal rate and groundedness are one result, not two.
+
+### Two fixes, one of which cannot be claimed
+
+| | before | after | |
+|---|---|---|---|
+| `no tool call` failures | 13 | **0** | token budget |
+| Lost answers | 41 | **21** | |
+| Citation failures | 25 | 21 | inside the noise |
+
+Thirteen refusals were not refusals at all: `gpt-5-mini` is a reasoning model and
+was spending its whole 4,000-token budget thinking, leaving nothing for the tool
+call. Raising the budget fixed all thirteen.
+
+The second fix followed a diagnosis. Every rejected quote was over 110
+characters — the model was quoting whole paragraphs, which cannot survive a
+chunk boundary or the overlap between adjacent chunks. No rejection was caused
+by character normalisation, so the gate was not too strict; the quotes were too
+long. Requiring short, single-chunk quotes moved citation failures from 25 to
+21 — **inside the generator's own flip rate, so it is reported as inconclusive
+rather than as a fix.**
+
+### The variance floor, and why tuning stopped
+
+Neither model accepts `temperature=0`, so both are non-deterministic. Thirty
+queries were answered twice and judged twice.
+
+| | flips | of | rate |
+|---|---|---|---|
+| Generator: answered vs refused | 6 | 30 | **20.0%** |
+| Judge: grounded vs not, on identical text | 0 | 24 | 0.0% |
+
+A fifth of queries flip between answered and refused across two runs of the same
+question — they sit near the gate boundary, and which side they land on is not
+stable. Any change smaller than about six queries is therefore uninterpretable,
+which covers the quote-length fix and most of the movement in groundedness.
+
+That is where prompt tuning stopped. Further changes could not be evaluated at
+this resolution, and reporting them as improvements would be reading noise.
+
+### What the failures show
+
+Query 84 asks for the intraday net position limit for index options. The
+generator answered **₹1,000 crore** — the figure from a consultation paper the
+circular quotes and never adopted — rather than the ₹5,000 crore it sets. That
+query exists in the designed slice precisely because the document carries three
+limit sets, and it caught the failure it was built for.
+
+The supersession failures are attribution rather than arithmetic. One answer
+cites "the July 22, 2026 circular" where the document is dated July 21 — a date
+the model constructed. Another asserts a launch date as fact without support.
+The answers are right; the provenance is invented. That is the failure mode
+citation verification exists to catch, and the judge flags what survives it.
+
+---
+
 ## Table twins
 
 `extract.py` writes each table twice — the page's flattened text, and labelled
@@ -451,18 +563,27 @@ query
   ├── dense (exhaustive KNN, text-embedding-3-small)    ─┴─ RRF fusion
   │                                                        (Azure AI Search, native)
   ├── cross-encoder rerank over top-20        (measured, NOT shipped -- see Results)
-  │
-  │   ── built above this line · in progress below ──
-  │
-  ├── GATE: retrieval-score threshold         → refuse, no LLM call
-  ├── generation with forced citation schema  (constrained decoding)
-  └── GATE: citation + quote verification     → refuse if unsupported
+  ├── GATE 1: retrieval-score threshold       (measured, NO usable signal -- left open)
+  ├── generation with forced citation schema  (forced tool call, gpt-5-mini)
+  ├── GATE 2: sufficient_context == false     → refuse
+  └── GATE 3: citation + quote verification   → refuse if unsupported
 ```
 
-Refusal is to be enforced in code before the generator is invoked, not requested
-in the prompt. Citation validity is a set-membership check and quote
-verification a substring match — both deterministic, both free, both run before
-anything reaches the user.
+Refusal is enforced in code, not requested in the prompt. Gate 2 is a required
+boolean in the response schema rather than an instruction the model may ignore.
+Gate 3 is a set-membership check on chunk ids and a substring match on quoted
+spans — deterministic, free, and run before anything reaches the user. A
+partially verified answer is refused whole: an answer carrying one fabricated
+citation is a wrong answer, and showing four-fifths of it hides the problem.
+
+**Gate 1 is open, and that is a measured decision.** `src/calibrate_gate.py`
+compares RRF score distributions for the queries retrieval answered and the ones
+it missed; they overlap almost entirely. The best available threshold catches 6
+of 13 misses while refusing 32 of 201 correct answers. RRF sums reciprocal
+ranks, so the top score sits near 2/61 whether or not anything relevant was
+found — it measures agreement between two rankings, not relevance. The
+production system gated on a cross-encoder score, a real relevance estimate on a
+wide scale; this repo does not ship the reranker, so that signal is unavailable.
 
 The search indexes hold nothing that isn't reproducible from the repo: chunk
 text and offsets are committed, the schema is code, and vectors regenerate in
@@ -552,8 +673,14 @@ PYTHONPATH=src python src/verify_evalset.py          # human review (--ids, --fr
 PYTHONPATH=src python src/add_table_twins.py         # second span for table answers (--apply)
 PYTHONPATH=src python src/fix_respanned_passages.py  # one-off repair, safe to re-run
 
+# generation
+PYTHONPATH=src python src/calibrate_gate.py          # is a retrieval-score gate worth setting?
+PYTHONPATH=src python src/generate.py "your question"
+PYTHONPATH=src python src/diagnose_citations.py      # why did a quote fail verification?
+
 # results
 PYTHONPATH=src python src/run_ablation.py            # → reports/ablation.md (--report reuses runs.jsonl)
+PYTHONPATH=src python src/run_generation_eval.py     # → reports/generation.md (--limit N, --report)
 ```
 
 Designed queries live in `data/*_slice_*.jsonl`, one file per chain, and are
@@ -573,10 +700,30 @@ appended to `goldset.jsonl` for review.
 - **Reranker choice.** `ms-marco-MiniLM-L-6-v2` is a general web-passage model
   and is the wrong tool for this text; its failure here is a result about that
   model at this pool size, not about cross-encoder reranking in general.
-- **Reranking pool.** Fixed at 20. BM25 alone reaches 99.5% at recall@20 while
-  hybrid reaches 97.2%, so RRF is dropping documents at the pool boundary. A
-  larger pool would give both fusion and the reranker more to work with, and is
-  the first thing to vary next.
+- **Reranking pool, and what to try next.** The pool is fixed at 20. BM25 alone
+  reaches 99.5% at recall@20 while hybrid reaches 97.2%, so RRF is dropping
+  documents at the pool boundary — raising the pool lifts the ceiling itself,
+  which is worth more than reordering within a low one, and is the first thing
+  to vary. Only then is a managed reranker worth testing: Azure AI Search's L2
+  semantic ranker needs Basic tier or above, billed hourly, so a short-lived
+  service would answer it cheaply. The headroom is small either way — 93.9%
+  against a 97.2% ceiling — so it ranks below the generation work.
+- **Generator non-determinism.** `gpt-5-mini` rejects `temperature=0`, and 20%
+  of queries flip between answered and refused across two runs. Differences
+  smaller than roughly six queries cannot be evaluated, which is where prompt
+  tuning stopped.
+- **Judge independence.** Generator and judge are different models from the same
+  family, so self-preference cannot be ruled out. The judge was stable across
+  repeats — 0 flips in 24 — but stability is not independence. A judge from
+  another provider would settle it.
+- **Groundedness is attribution, not correctness.** An answer drawn confidently
+  from the wrong retrieved chunk scores as grounded. Answer correctness would
+  need reference answers, which exist for the 72 designed queries and not for
+  the 142 generated ones.
+- **Answers without a source.** Retrieval missed on 13 queries and the pipeline
+  answered 10 of them anyway. `sufficient_context` is the model's own judgement
+  and it is optimistic; citation verification catches fabricated quotes but not
+  a plausible answer built from the wrong chunk.
 - **Corpus scale.** At ~225 chunks, approximate nearest-neighbour search and a
   large reranking pool both stop earning their cost.
 - **Single-document generation.** The generator sees one circular at a time, so
