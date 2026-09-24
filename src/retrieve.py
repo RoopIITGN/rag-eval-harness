@@ -48,9 +48,20 @@ _reranker = None
 
 @lru_cache(maxsize=4096)
 def embed(text: str) -> tuple[float, ...]:
-    """Cached so one query embeds once, not once per config-mode pair."""
-    v = _aoai.embeddings.create(input=[text], model=_deployment).data[0].embedding
-    return tuple(v)
+    """Cached so one query embeds once, not once per config-mode pair.
+
+    Retries on transient failures: a long evaluation run should survive a DNS
+    blip or a dropped connection rather than losing everything computed so far.
+    """
+    import time
+    for attempt in range(5):
+        try:
+            return tuple(_aoai.embeddings.create(
+                input=[text], model=_deployment).data[0].embedding)
+        except Exception:
+            if attempt == 4:
+                raise
+            time.sleep(2 ** attempt)
 
 
 def client(config: str) -> SearchClient:
