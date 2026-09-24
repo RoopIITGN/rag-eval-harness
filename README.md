@@ -186,6 +186,10 @@ The subgroup table shows where it goes wrong: multi-hop falls from 79.2% to
 purchase on a circular serial or a table row. With a pool of 20 and recall@20
 already at 97.2%, its only job is ordering — and it does that worse than RRF.
 
+The ordering was checked before drawing that conclusion: rerank scores come
+back strictly descending, so this is the model disagreeing with RRF rather than
+an inverted comparator.
+
 So reranking is measured and reported, not shipped. A managed reranker trained
 on this kind of text, or a larger pool where there is more to reorder, might
 change that; this one doesn't earn its place.
