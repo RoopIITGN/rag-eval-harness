@@ -134,31 +134,41 @@ def recall_by_subgroup(runs, gold, config, mode, k) -> dict[str, tuple[int, int]
 
 # --------------------------------------------------------- significance
 
-def mcnemar(runs, gold, config_a, config_b, mode, k) -> dict:
-    """Paired comparison. Only DISCORDANT queries carry information --
-    queries both configs get right (or both wrong) say nothing about which
-    is better, and including them just adds variance."""
+def mcnemar_runs(runs, gold, key_a: tuple[str, str], key_b: tuple[str, str], k) -> dict:
+    """Paired comparison between any two runs, each identified by (config, mode).
+
+    Only DISCORDANT queries carry information -- queries both runs get right
+    (or both wrong) say nothing about which is better, and including them just
+    adds variance.
+
+    Keyed by (config, mode) rather than by config alone, because the headline
+    comparison of this harness is four retrieval modes within one chunking
+    configuration, not one mode across configurations.
+    """
     from scipy.stats import binomtest
 
+    hit = lambda r: r is not None and r <= k
     a_only = b_only = both = neither = 0
     for qid, g in gold.items():
-        ra = runs[(config_a, mode)].get(qid)
-        rb = runs[(config_b, mode)].get(qid)
+        ra, rb = runs[key_a].get(qid), runs[key_b].get(qid)
         if ra is None or rb is None:
             continue
-        ha = (lambda r: r is not None and r <= k)(
-            satisfied_at_rank(ra, g["gold_spans"], g.get("require", "all")))
-        hb = (lambda r: r is not None and r <= k)(
-            satisfied_at_rank(rb, g["gold_spans"], g.get("require", "all")))
-        if ha and hb:      both += 1
-        elif ha:           a_only += 1
-        elif hb:           b_only += 1
-        else:              neither += 1
+        ha = hit(satisfied_at_rank(ra, g["gold_spans"], g.get("require", "all")))
+        hb = hit(satisfied_at_rank(rb, g["gold_spans"], g.get("require", "all")))
+        if ha and hb:   both += 1
+        elif ha:        a_only += 1
+        elif hb:        b_only += 1
+        else:           neither += 1
 
     n_disc = a_only + b_only
     p = binomtest(a_only, n_disc, 0.5).pvalue if n_disc else 1.0
     return {"a_only": a_only, "b_only": b_only, "both": both,
             "neither": neither, "discordant": n_disc, "p_value": p}
+
+
+def mcnemar(runs, gold, config_a, config_b, mode, k) -> dict:
+    """Two configurations at the same retrieval mode."""
+    return mcnemar_runs(runs, gold, (config_a, mode), (config_b, mode), k)
 
 
 def bootstrap_ci(runs, gold, config, mode, k, n_boot=5000, seed=0):
