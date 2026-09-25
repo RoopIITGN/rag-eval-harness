@@ -425,6 +425,44 @@ Full report: [`reports/generation.md`](reports/generation.md).
 
 The designed slices are the hardest, which is what they were built for.
 
+### End to end, by query type
+
+Retrieval and generation measured on the same queries, so the two stages can be
+compared directly. "Retrieval ok" means every span the label requires reached
+the top 5; "end to end ok" means the pipeline then answered and the judge found
+the answer grounded.
+
+| Query type | n | retrieval ok | end to end ok | gap |
+|---|---|---|---|---|
+| keyword | 35 | 100% | 86% | 14 |
+| natural | 84 | 98% | 87% | 11 |
+| exact_id | 43 | 93% | 86% | 7 |
+| supersession | 28 | 89% | 79% | 10 |
+| multi_hop | 24 | **79%** | **75%** | 4 |
+
+**The gap is roughly constant.** Generation loses a similar fraction whatever
+the query type, so the difficulty is concentrated in finding the text rather
+than in using it once found. The designed slices are hardest at both stages,
+which is what they were built to be.
+
+Multi-hop is the clearest case, because `require: "all"` means a query fails if
+either of its spans is missed:
+
+| Outcome | n |
+|---|---|
+| retrieved everything, answered, grounded | 14 |
+| retrieved everything, answered, ungrounded | 2 |
+| retrieved everything, refused — a lost answer | 3 |
+| retrieval missed, refused — correct | 1 |
+| retrieval missed, answered anyway | 4 |
+
+Of the 19 multi-hop queries where retrieval succeeded, the pipeline answered 16
+and got 14 right. The four answered on partial retrieval are not all failures —
+one of them is the query whose second document turns out to be unnecessary,
+since the citing circular restates the date it cites. The rest are genuine
+half-answers, and they are the clearest evidence that `sufficient_context` is
+optimistic when some of the required text is present and some is not.
+
 ### Refusals are scored without a judge
 
 Retrieval already recorded, per query, whether the gold span reached the top 5.
@@ -819,7 +857,9 @@ appended to `goldset.jsonl` for review.
 - **Answers without a source.** Retrieval missed on 13 queries and the pipeline
   answered 10 of them anyway. `sufficient_context` is the model's own judgement
   and it is optimistic; citation verification catches fabricated quotes but not
-  a plausible answer built from the wrong chunk.
+  a plausible answer built from the wrong chunk. Partial retrieval is the worst
+  case: on multi-hop queries where one required span was found and the other was
+  not, the pipeline answered 4 times out of 5 rather than refusing.
 - **Corpus scale.** At ~225 chunks, approximate nearest-neighbour search and a
   large reranking pool both stop earning their cost.
 - **Single-document generation.** The generator sees one circular at a time, so
