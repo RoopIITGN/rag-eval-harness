@@ -1,32 +1,40 @@
-# Per-metric acceptance thresholds for the CI gate.
+# Acceptance thresholds for the CI gate.
 #
-# Margins matter: with ~60 queries each one moves recall by 1.7 points, and
-# judge scores carry their own variance. A threshold set exactly at the
-# observed value will block good changes roughly half the time.
+# Set from measured baselines, not guessed. Each min sits below the observed
+# value by enough to absorb the variance that metric actually carries -- see
+# reports/ablation.md and reports/generation.md.
 #
-# Policy: fail only on the SECOND consecutive breach (see gate.py --retry),
-# so a single noisy run doesn't block a PR.
+# CI checks the COMMITTED reports rather than re-running the pipeline, so these
+# numbers only move when someone commits new results. There is no run-to-run
+# noise inside CI itself, which is why there is no "fail on the second breach"
+# policy here: a breach means a committed artefact got worse.
 
-retrieval:
+retrieval:                      # 512-recursive + hybrid, from reports/runs.jsonl
   recall_at_5:
-    min: 0.75          # set ~2 SE below the measured baseline
+    min: 0.90                   # measured 93.9%, bootstrap CI 90.7-96.7
     on_breach: block
-  recall_at_50:
-    min: 0.88
-    on_breach: warn    # ceiling metric; a dip is informative, not fatal
+  recall_at_20:
+    min: 0.94                   # measured 97.2%; the reranking ceiling
+    on_breach: warn             # a dip here is informative, not fatal
 
-generation:
+generation:                     # from reports/generations.jsonl
   groundedness:
-    min: 0.85
+    min: 0.88                   # measured 94.7% of answered queries
     on_breach: block
-  citation_validity:       # deterministic, no judge variance -- can be strict
-    min: 1.00
-    on_breach: block
+  answered_without_source:
+    max: 0.08                   # measured 4.7% -- retrieval missed, pipeline answered
+    on_breach: block            # the safety metric: an answer with no source behind it
   refusal_rate:
-    max: 0.25          # over-refusal is a failure mode too
+    max: 0.20                   # measured 11.2%; over-refusal is a failure mode too
     on_breach: warn
+  gate3_rejection_rate:
+    max: 0.15                   # measured 9.8% of queries had a citation rejected
+    on_breach: warn             # rising means the generator is quoting less carefully
 
-cost:
-  p95_retrieval_ms:
-    max: 400
-    on_breach: warn
+# Not thresholded:
+#
+#   citation validity -- every answer that survives Gate 3 has valid citations by
+#   construction, so measuring it would always return 1.00.
+#
+#   retrieval latency -- measured inside Azure AI Search, not reproducible from
+#   committed artefacts, and the embedding hop is cross-region in this setup.

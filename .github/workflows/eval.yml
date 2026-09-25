@@ -1,0 +1,39 @@
+# Checks the committed results, not a fresh pipeline run.
+#
+# Re-running retrieval and generation in CI would need Azure credentials as
+# repository secrets, take about forty minutes per pull request, and -- because
+# neither model accepts temperature=0 -- produce a different answer each time.
+# A gate that fluctuates teaches people to ignore it.
+#
+# So CI asserts two things about what is in the repository: that the evaluation
+# set is still internally consistent, and that the committed metrics have not
+# regressed. Both run in seconds with no secrets. Re-running the pipeline is a
+# deliberate act, done locally, and its output is committed.
+
+name: eval
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      # No Azure or model clients needed: the gate reads committed artefacts.
+      - name: Install
+        run: pip install pyyaml scipy
+
+      - name: Corpus integrity
+        run: PYTHONPATH=src python src/validate_corpus.py
+
+      - name: Evaluation gate
+        run: PYTHONPATH=src python src/gate.py
