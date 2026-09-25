@@ -4,9 +4,15 @@ Hybrid retrieval over Indian securities-market regulatory circulars, with an
 evaluation harness that scores retrieval and generation independently.
 
 Built on 47 public SEBI and NSE circulars. Azure AI Search for hybrid BM25 +
-dense retrieval with RRF fusion, a local cross-encoder reranker, and an
-evaluation layer that measures each stage separately so failures can be
-attributed to the right one.
+dense retrieval with RRF fusion, answers generated through a forced citation
+schema with every quote verified in code, and an evaluation layer that measures
+each stage separately so failures can be attributed to the right one.
+
+Three results from measuring rather than assuming: a cross-encoder reranker was
+**cut** after it cost 7.5 points of recall; a refusal gate was **left open**
+after calibration showed its score carried no signal; and the configuration with
+the **highest** groundedness score turned out to be the worse system, because it
+was discarding a fifth of the answers it could have given.
 
 > **What this is.** A from-scratch, public reproduction of a retrieval
 > architecture I built in production at Garuda Yashas Capital, rebuilt here on
@@ -15,9 +21,10 @@ attributed to the right one.
 > different corpus, different eval set, smaller scale. The architecture,
 > methodology and failure analysis are the same.
 
-**Status: in progress.** Retrieval, generation and the refusal gates are built
-and measured against 214 verified queries. CI gating is next. Building in the
-open — see commit history.
+**Status: complete through generation.** Retrieval, generation, the refusal
+gates, the CI gate and an HTTP service are built and measured against 214
+verified queries. Every number below is reproducible from committed artefacts
+without Azure credentials. Built in the open — see commit history.
 
 ---
 
@@ -210,28 +217,6 @@ dominate, 512 is. A single recall@5 number would have hidden the trade entirely.
 **Recursive splitting shows no advantage over fixed splitting at the same size**
 — 7 queries against 2, p = 0.180. The gain is chunk size, not the separator
 hierarchy.
-
-### Latency, split by where the time goes
-
-60 queries, `512-recursive` + `hybrid`, pool 20. Written by
-`src/measure_latency.py` to `reports/latency.json`.
-
-| Stage | p50 | p95 | max |
-|---|---|---|---|
-| embed (Central India → Sweden Central) | 360ms | 624ms | 1446ms |
-| search (Azure AI Search) | 119ms | **132ms** | 395ms |
-| retrieval, end to end | 478ms | 746ms | 1841ms |
-
-One end-to-end number would have been unreadable. Three quarters of the wait is
-the embedding call crossing regions — a deployment choice made for model
-availability, not a property of the retrieval system. Search itself has almost
-no tail: p50 119ms against p95 132ms, which is what exhaustive KNN over 225
-chunks plus BM25 should look like. The embedding hop carries a 4× tail instead.
-
-Co-locating the embedding deployment with the search service is the single
-change that would matter, and the split is what identifies it. Generation is
-excluded: it is a reasoning model and runs to seconds, an order of magnitude
-above everything here.
 
 ### recall@5 by query type — 512-recursive
 
@@ -546,6 +531,84 @@ table rows in the corpus it pairs 195 with no mismatches.
 
 ---
 
+## Serving
+
+`src/api.py` exposes the pipeline over HTTP. It decides nothing: retrieval
+configuration, the citation schema and all three gates live in `generate.py`,
+which is what the evaluation harness measures — so the numbers in `reports/`
+describe this endpoint, not an approximation of it.
+
+```bash
+PYTHONPATH=src uvicorn api:app --port 8000
+curl -s -X POST localhost:8000/ask -H 'content-type: application/json' \
+     -d '{"question":"What is the current deadline for enrolling with PaRRVA?"}'
+```
+
+```json
+{
+  "answered": true,
+  "answer": "Current deadline for enrolling with PaRRVA is September 03, 2026. I relied on
+             the SEBI circular dated August 03, 2026 that extended the timeline; an
+             earlier circular had set August 03, 2026.",
+  "citations": [
+    {"chunk_id": "chunk_2", "doc_id": "SEBI-18038",
+     "source_quote": "SEBI has decided to extend the timeline until September 03, 2026,",
+     "char_start": 1461, "char_end": 1526}
+  ],
+  "retrieved": ["SEBI-10557", "SEBI-18038", "SEBI-10557", "SEBI-10557", "SEBI-18038"],
+  "elapsed_ms": 15969
+}
+```
+
+Two choices in that response are deliberate.
+
+**Citations carry the offsets of the quote, not of the chunk.** 1461–1526 is 65
+characters for a 65-character quote, so a caller can slice straight into
+`data/documents/SEBI-18038.txt` and get the same text back. Returning the
+chunk's own span would point at 1,800 characters and make the citation
+decorative.
+
+**A refusal is a 200 with a reason, not an error.** Refusing is a correct
+outcome. Signalling it as a failure invites callers to retry, or to fall back to
+an answer with nothing behind it — which is what the gates exist to prevent.
+
+`Dockerfile` builds a CPU-only image and bakes in the cross-encoder, so a cold
+start on a scale-to-zero platform does not reach the Hugging Face Hub.
+Deployment to Azure Container Apps is not included: the subscription used for
+this work was expiring, and a dead URL in a README is worse than none.
+
+---
+
+## CI
+
+`.github/workflows/eval.yml` runs two checks on every pull request, in seconds,
+with no secrets.
+
+**Goldset integrity.** Every gold span must still resolve against the frozen
+text in `data/documents`, query ids must be unique, and verified records must
+carry a span. This is the check that matters in practice: re-extracting a PDF
+shifts every offset in that document and silently invalidates its labels.
+Nothing errors — the numbers just quietly become wrong — so it is asserted
+instead.
+
+**Thresholds.** `src/gate.py` computes metrics from the committed artefacts and
+compares them against `config/thresholds.yaml`, set from measured baselines.
+`block` fails the build; `warn` prints and passes.
+
+CI does not re-run the pipeline. That would need Azure credentials as repository
+secrets, take about forty minutes per pull request, and — since neither model
+accepts `temperature=0` — return a different answer each time. A gate that
+fluctuates teaches people to ignore it. Running the pipeline is a deliberate,
+local act, and its output is committed; CI asserts that what is committed has
+not regressed.
+
+Two thresholds were deliberately dropped. Citation validity would always read
+1.00, because every answer surviving Gate 3 has valid citations by construction.
+Retrieval latency is not reproducible from committed files and is dominated by a
+cross-region hop, so it measures the deployment rather than the system.
+
+---
+
 ## Metrics, and why these ones
 
 **recall@5** — what the generator actually sees. The headline, because a
@@ -703,7 +766,18 @@ PYTHONPATH=src python src/diagnose_citations.py      # why did a quote fail veri
 # results
 PYTHONPATH=src python src/run_ablation.py            # → reports/ablation.md (--report reuses runs.jsonl)
 PYTHONPATH=src python src/run_generation_eval.py     # → reports/generation.md (--limit N, --report)
+PYTHONPATH=src python src/measure_latency.py         # → reports/latency.json
+PYTHONPATH=src python src/capture_examples.py        # → reports/examples.md
+
+# serve and gate
+PYTHONPATH=src uvicorn api:app --port 8000
+PYTHONPATH=src python src/gate.py                    # what CI runs
 ```
+
+Everything under `reports/` is committed. Retrieval runs, generation runs,
+latency, worked examples and the cross-reference graph are all in the
+repository, so every number above can be recomputed — or disputed — without
+Azure credentials.
 
 Designed queries live in `data/*_slice_*.jsonl`, one file per chain, and are
 appended to `goldset.jsonl` for review.
@@ -742,11 +816,6 @@ appended to `goldset.jsonl` for review.
   from the wrong retrieved chunk scores as grounded. Answer correctness would
   need reference answers, which exist for the 72 designed queries and not for
   the 142 generated ones.
-- **Answer latency.** Retrieval is 478ms p50; a full answer takes roughly 20
-  seconds, almost all of it the reasoning model. That is too slow for an
-  interactive endpoint. A non-reasoning generator would cut it by an order of
-  magnitude, and the citation schema does not depend on reasoning — it is a
-  forced tool call, which any tool-capable model supports.
 - **Answers without a source.** Retrieval missed on 13 queries and the pipeline
   answered 10 of them anyway. `sufficient_context` is the model's own judgement
   and it is optimistic; citation verification catches fabricated quotes but not
@@ -756,12 +825,6 @@ appended to `goldset.jsonl` for review.
 - **Single-document generation.** The generator sees one circular at a time, so
   it produces no multi-hop queries and cannot see supersession. Both rest
   entirely on the 72 designed queries.
-- **Multi-hop queries are hard to design.** At least one designed multi-hop
-  query is answerable from a single circular: the citing circular restates the
-  date it cites, so the second document is not needed. Its label still requires
-  both, which understates multi-hop recall by up to one query. Regulatory
-  drafting is redundant by habit, and a question that looks like it spans two
-  documents often does not.
 - **Supersession detection.** Citation matching skips serials under four digits,
   which match regulation numbers and amounts too often. Subject matching catches
   only families sharing an exact subject. Neither can see a chain whose
