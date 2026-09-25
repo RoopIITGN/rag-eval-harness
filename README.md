@@ -751,6 +751,12 @@ appended to `goldset.jsonl` for review.
 - **Single-document generation.** The generator sees one circular at a time, so
   it produces no multi-hop queries and cannot see supersession. Both rest
   entirely on the 72 designed queries.
+- **Multi-hop queries are hard to design.** At least one designed multi-hop
+  query is answerable from a single circular: the citing circular restates the
+  date it cites, so the second document is not needed. Its label still requires
+  both, which understates multi-hop recall by up to one query. Regulatory
+  drafting is redundant by habit, and a question that looks like it spans two
+  documents often does not.
 - **Supersession detection.** Citation matching skips serials under four digits,
   which match regulation numbers and amounts too often. Subject matching catches
   only families sharing an exact subject. Neither can see a chain whose
