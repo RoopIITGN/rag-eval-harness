@@ -211,6 +211,28 @@ dominate, 512 is. A single recall@5 number would have hidden the trade entirely.
 — 7 queries against 2, p = 0.180. The gain is chunk size, not the separator
 hierarchy.
 
+### Latency, split by where the time goes
+
+60 queries, `512-recursive` + `hybrid`, pool 20. Written by
+`src/measure_latency.py` to `reports/latency.json`.
+
+| Stage | p50 | p95 | max |
+|---|---|---|---|
+| embed (Central India → Sweden Central) | 360ms | 624ms | 1446ms |
+| search (Azure AI Search) | 119ms | **132ms** | 395ms |
+| retrieval, end to end | 478ms | 746ms | 1841ms |
+
+One end-to-end number would have been unreadable. Three quarters of the wait is
+the embedding call crossing regions — a deployment choice made for model
+availability, not a property of the retrieval system. Search itself has almost
+no tail: p50 119ms against p95 132ms, which is what exhaustive KNN over 225
+chunks plus BM25 should look like. The embedding hop carries a 4× tail instead.
+
+Co-locating the embedding deployment with the search service is the single
+change that would matter, and the split is what identifies it. Generation is
+excluded: it is a reasoning model and runs to seconds, an order of magnitude
+above everything here.
+
 ### recall@5 by query type — 512-recursive
 
 | Mode | exact_id (43) | keyword (35) | natural (84) | supersession (28) | multi_hop (24) |

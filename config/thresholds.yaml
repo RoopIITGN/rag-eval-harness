@@ -36,5 +36,6 @@ generation:                     # from reports/generations.jsonl
 #   citation validity -- every answer that survives Gate 3 has valid citations by
 #   construction, so measuring it would always return 1.00.
 #
-#   retrieval latency -- measured inside Azure AI Search, not reproducible from
-#   committed artefacts, and the embedding hop is cross-region in this setup.
+#   retrieval latency -- see reports/latency.json. Not gated: it is dominated by
+#   a cross-region embedding hop, so it measures the deployment rather than the
+#   retrieval system, and it is not reproducible in CI without Azure access.
