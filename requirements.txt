@@ -33,3 +33,7 @@ pytest>=8.3.0
 # OpenAI
 openai>=1.54.0
 pyyaml>=6.0
+fastapi>=0.115
+uvicorn[standard]>=0.32
+fastapi>=0.115
+uvicorn[standard]>=0.32

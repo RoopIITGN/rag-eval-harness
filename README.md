@@ -742,6 +742,11 @@ appended to `goldset.jsonl` for review.
   from the wrong retrieved chunk scores as grounded. Answer correctness would
   need reference answers, which exist for the 72 designed queries and not for
   the 142 generated ones.
+- **Answer latency.** Retrieval is 478ms p50; a full answer takes roughly 20
+  seconds, almost all of it the reasoning model. That is too slow for an
+  interactive endpoint. A non-reasoning generator would cut it by an order of
+  magnitude, and the citation schema does not depend on reasoning — it is a
+  forced tool call, which any tool-capable model supports.
 - **Answers without a source.** Retrieval missed on 13 queries and the pipeline
   answered 10 of them anyway. `sufficient_context` is the model's own judgement
   and it is optimistic; citation verification catches fabricated quotes but not

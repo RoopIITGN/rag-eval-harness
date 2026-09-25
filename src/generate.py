@@ -155,8 +155,16 @@ def verify(payload: dict, chunks: dict[str, dict]) -> tuple[list[dict], list[dic
         elif _norm(quote) not in _norm(chunk["content"]):
             bad.append({**c, "problem": "quote does not appear in the cited chunk"})
         else:
+            # Offsets of the QUOTE in the source document, not of the whole
+            # chunk -- a caller linking into the text needs the span it cites.
+            # Located on normalised text, so a quote reflowed across a line
+            # break still resolves; falls back to the chunk if it cannot.
+            start, end = chunk["char_start"], chunk["char_end"]
+            i = chunk["content"].find(quote)
+            if i != -1:
+                start, end = chunk["char_start"] + i, chunk["char_start"] + i + len(quote)
             good.append({**c, "doc_id": chunk["doc_id"],
-                         "char_start": chunk["char_start"], "char_end": chunk["char_end"]})
+                         "char_start": start, "char_end": end})
     return good, bad
 
 
