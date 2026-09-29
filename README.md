@@ -8,8 +8,8 @@ dense retrieval with RRF fusion, answers generated through a forced citation
 schema with every quote verified in code, and an evaluation layer that measures
 each stage separately so failures can be attributed to the right one.
 
-Three results from measuring rather than assuming: a cross-encoder reranker was
-**cut** after it cost 7.5 points of recall; a refusal gate was **left open**
+Three results from measuring rather than assuming: two cross-encoder rerankers
+were **cut** after neither beat plain rank fusion; a refusal gate was **left open**
 after calibration showed its score carried no signal; and the configuration with
 the **highest** groundedness score turned out to be the worse system, because it
 was discarding a fifth of the answers it could have given.
@@ -181,21 +181,43 @@ size, so it isn't claimed. The lead over BM25 is real. Reporting the second
 result without the first would be the easy mistake here: the headline table
 alone makes hybrid look like a clear two-way win.
 
-### Reranking makes retrieval worse
+### Two rerankers, neither of which earns its place
 
-Cross-encoder reranking costs 7.5 points of recall@5 — 19 queries lost against
-3 gained, p = 0.001. The same direction holds at `512-fixed`. It helps only at
-`256-fixed`, and barely.
+| Configuration | recall@5 | vs no reranking |
+|---|---|---|
+| no reranking (RRF order) | **93.9%** | — |
+| `BAAI/bge-reranker-v2-m3` | 92.5% | lost 8, gained 5, p = 0.581 |
+| `cross-encoder/ms-marco-MiniLM-L-6-v2` | 86.4% | lost 19, gained 3, **p = 0.001** |
 
-The subgroup table shows where it goes wrong: multi-hop falls from 79.2% to
-62.5% and exact-identifier queries from 93.0% to 88.4%.
-`cross-encoder/ms-marco-MiniLM-L-6-v2` is trained on web passages and has no
-purchase on a circular serial or a table row. With a pool of 20 and recall@20
-already at 97.2%, its only job is ordering — and it does that worse than RRF.
+Two different verdicts. The current, production-grade model is
+**indistinguishable** from no reranking — p = 0.581 is coin-flipping. The older
+web-passage model actively **hurts**.
 
-So reranking is measured and reported, not shipped. A managed reranker trained
-on this kind of text, or a larger pool where there is more to reorder, might
-change that; this one doesn't earn its place.
+| | exact_id | keyword | natural | supersession | multi_hop |
+|---|---|---|---|---|---|
+| no reranking | 93% | 100% | 98% | 89% | **79%** |
+| bge-reranker-v2-m3 | **95%** | 97% | 96% | 86% | 75% |
+| ms-marco-MiniLM-L-6-v2 | 88% | 94% | 90% | 82% | 62% |
+
+Multi-hop is where both lose most. A cross-encoder optimises for the single best
+chunk, but a `require: "all"` query needs two — pushing the second below rank 5
+fails it. That is a structural mismatch between what these models are trained to
+do and what multi-span queries need, not a quality problem.
+
+**Truncation was ruled out before blaming the model.** MiniLM takes 512 tokens
+for query and document together, and chunks here run to 512 alone, so the
+document could have been cut before scoring. Only 5.1% of pairs exceeded the
+limit, median loss 11 tokens — and the queries reranking lost show the same
+truncation rate as the ones it kept, 21% against 19%. The window was not the
+constraint. See `src/check_truncation.py`.
+
+So reranking is measured and reported, not shipped. The reason is the headroom,
+not the models: recall@20 is 97.2% against 93.9%, so **seven queries** is the
+entire prize, and the run-to-run variance floor is about six. There is nothing
+here for a reranker to win. The lever is the pool, not the ordering.
+
+Both comparisons run offline against the committed retrieval runs, with no index
+and no cost: `src/compare_rerankers.py`.
 
 ### Chunk size wins at fixed k, and loses at equal tokens
 
@@ -831,9 +853,10 @@ appended to `goldset.jsonl` for review.
   the four headline comparisons — hybrid over dense, recursive over fixed — have
   p-values above 0.1 and are reported as inconclusive rather than as wins. A
   larger eval set, not a better retriever, is what would settle them.
-- **Reranker choice.** `ms-marco-MiniLM-L-6-v2` is a general web-passage model
-  and is the wrong tool for this text; its failure here is a result about that
-  model at this pool size, not about cross-encoder reranking in general.
+- **Reranker choice.** Two models were tested, a generation apart. The older
+  one hurt and the current one gained nothing measurable, so the result is about
+  the headroom at this pool size rather than about either model. A managed
+  reranker is worth testing only after the pool is raised.
 - **Reranking pool, and what to try next.** The pool is fixed at 20. BM25 alone
   reaches 99.5% at recall@20 while hybrid reaches 97.2%, so RRF is dropping
   documents at the pool boundary — raising the pool lifts the ceiling itself,
